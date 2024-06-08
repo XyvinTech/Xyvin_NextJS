@@ -6520,14 +6520,14 @@ label {
 .cs_work.cs_work_1 .cs_card_work.cs_style_1 .cs_card.cs_style_1 .cs_work_style_1 {
   width: 15px;
   height: 15px;
-  background: #ff6b00;
+  background: #2E5ACE;
   border-radius: 50%;
 }
 .cs_work.cs_work_1 .cs_card_work.cs_style_1 .cs_card.cs_style_1 .cs_work_style_2 {
   width: 30px;
   height: 1px;
   transform: rotate(90deg);
-  background: #ff6b00;
+  background: #2E5ACE;
   margin-left: -7px;
 }
 .cs_work.cs_work_1 .cs_card_work.cs_style_1 .cs_card .cs_work_title {
