@@ -1995,14 +1995,13 @@ label {
 }
 
 .cs_google_map {
-  height: 530px;
+  height: 800px;
 }
 .cs_google_map iframe {
   height: 100%;
   display: block;
   border: none;
   width: 100%;
-  filter: grayscale(100%) invert(90%) contrast(120%);
 }
 .cs_google_map.cs_type1 {
   height: 100%;
@@ -3320,7 +3319,8 @@ label {
   display: inline-block;
 }
 .cs_site_branding img {
-  max-height: 45px;
+  max-height: 80px;
+  max-width: 80px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -3751,7 +3751,8 @@ label {
     margin-right: 0;
   }
   .cs_site_branding img {
-    max-height: 32px;
+    max-height: 80px;
+    max-width: 80px;
   }
   .cs_site_header.cs_style1 .cs_btn span {
     display: none;

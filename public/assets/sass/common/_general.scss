@@ -1462,13 +1462,12 @@ label {
 }
 
 .cs_google_map {
-    height: 530px;
+    height: 800px;
     iframe {
         height: 100%;
         display: block;
         border: none;
         width: 100%;
-        filter: grayscale(100%) invert(90%) contrast(120%);
     }
     &.cs_type1 {
         height: 100%;

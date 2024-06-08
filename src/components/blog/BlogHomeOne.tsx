@@ -7,6 +7,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import blog_img_1 from "@/assets/img/post_1.jpg";
 import blog_img_2 from "@/assets/img/post_2.jpg";
 import blog_img_3 from "@/assets/img/post_3.jpg";
+import blog_img_4 from "@/assets/img/post_4.jpg";
+import blog_img_5 from "@/assets/img/post_5.jpg";
+import blog_img_6 from "@/assets/img/post_6.jpg";
+import blog_img_7 from "@/assets/img/post_7.jpg";
+import blog_img_8 from "@/assets/img/post_8.jpg";
+import blog_img_9 from "@/assets/img/post_9.jpg";
 import Image, { StaticImageData } from 'next/image';
 
 
@@ -37,19 +43,37 @@ const blog_data: DataType[] = [
   },
   {
     id: 4,
-    img: blog_img_1,
+    img: blog_img_4,
     title: `Reasons Business Needs a Agency`,
     des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
   },
   {
     id: 5,
-    img: blog_img_2,
+    img: blog_img_5,
     title: `How a Creative Agency Can Help?`,
     des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
   },
   {
     id: 6,
-    img: blog_img_3,
+    img: blog_img_6,
+    title: `Maximizing Your Marketing Budget`,
+    des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
+  },
+  {
+    id: 7,
+    img: blog_img_7,
+    title: `Reasons Business Needs a Agency`,
+    des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
+  },
+  {
+    id: 8,
+    img: blog_img_8,
+    title: `How a Creative Agency Can Help?`,
+    des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
+  },
+  {
+    id: 9,
+    img: blog_img_9,
     title: `Maximizing Your Marketing Budget`,
     des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
   },

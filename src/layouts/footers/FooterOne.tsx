@@ -17,9 +17,9 @@ interface DataType {
 }
 
 const footer_data: DataType = {
-  email: `info@email.com`,
-  phone: `(406) 555-0120`,
-  location: `46 JOHN ST TORONTO ON M5V 3W2`,
+  email: `info@xyvin.com`,
+  phone: `+91 6282 822 971`,
+  location: `3RD Floor, Highway Square, NH 66, Padivattom, Ernakulam, Kerala 682024`,
   footer_info: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development.`,
   links: [
     { title: `HOME`, link: "/" },

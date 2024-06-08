@@ -8,6 +8,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import portfolio_img_1 from '@/assets/img/portfolio_1.jpg';
 import portfolio_img_2 from '@/assets/img/portfolio_2.jpg';
 import portfolio_img_3 from '@/assets/img/portfolio_3.jpg';
+import portfolio_img_4 from '@/assets/img/portfolio_4.jpg';
+import portfolio_img_5 from '@/assets/img/portfolio_5.jpg';
+import portfolio_img_6 from '@/assets/img/portfolio_6.jpg';
+import portfolio_img_7 from '@/assets/img/portfolio_7.jpg';
+import portfolio_img_8 from '@/assets/img/portfolio_8.jpg';
+import portfolio_img_9 from '@/assets/img/portfolio_9.jpg';
+import portfolio_img_10 from '@/assets/img/portfolio_10.jpg';
+import portfolio_img_11 from '@/assets/img/portfolio_11.jpg';
+
 
 interface DataType {
   img: StaticImageData;
@@ -32,17 +41,43 @@ const portfolio_slider: DataType[] = [
     category: `Digital Services / Figma Design`,
   },
   {
-    img: portfolio_img_1,
+    img: portfolio_img_4,
     title: `Project Task Management`,
     category: `Digital Services / App Design`,
   },
   {
-    img: portfolio_img_2,
+    img: portfolio_img_5,
     title: `Project Task Management`,
     category: `Digital Services / Web Design`,
   },
   {
-    img: portfolio_img_3,
+    img: portfolio_img_6,
+    title: `Project Task Management`,
+    category: `Digital Services / Figma Design`,
+  },
+
+  {
+    img: portfolio_img_7,
+    title: `Project Task Management`,
+    category: `Digital Services / Web Design`,
+  },
+  {
+    img: portfolio_img_8,
+    title: `Project Task Management`,
+    category: `Digital Services / Figma Design`,
+  },
+  {
+    img: portfolio_img_9,
+    title: `Project Task Management`,
+    category: `Digital Services / App Design`,
+  },
+  {
+    img: portfolio_img_10,
+    title: `Project Task Management`,
+    category: `Digital Services / Web Design`,
+  },
+  {
+    img: portfolio_img_11,
     title: `Project Task Management`,
     category: `Digital Services / Figma Design`,
   },

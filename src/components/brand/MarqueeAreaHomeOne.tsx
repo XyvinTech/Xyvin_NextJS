@@ -9,10 +9,10 @@ const MarqueeAreaHomeOne = () => {
       <div className="cs_moving_section_wrap cs_bold">
         <div className="cs_moving_section_in">
           <div className="cs_moving_section cs_stroke_text">
-            More Creativity Power With Vixan Agency
+          More Creativity Power With Xyvin
           </div>
           <div className="cs_moving_section cs_stroke_text">
-            More Creativity Power With Vixan Agency
+          More Creativity Power With Xyvin
           </div>
         </div>
       </div>

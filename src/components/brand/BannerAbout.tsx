@@ -16,16 +16,16 @@ const BannerAbout = () => {
               How Our Agency is Transforming <br /> Businesses and Brands through <br /> Online Solutions
             </h2>
           </div>
-          <div className="cs_section_heading_right">
+          {/* <div className="cs_section_heading_right">
             <div className="cs_animated_badge">
               <div className="rounded_text rotating">
                 <svg viewBox="0 0 200 200">
                   <path id="textPath" d="M 85,0 A 85,85 0 0 1 -85,0 A 85,85 0 0 1 85,0"
                     transform="translate(100,100)" fill="none" strokeWidth="0"></path>
-                  <g fontSize="22.1px">
+                  <g fontSize="29px">
                     <text textAnchor="start">
                       <textPath className="coloring" href="#textPath" startOffset="0%">
-                        Vixan Digital Agency . Vixan Digital Agency . &nbsp;
+                      Xyvin Technologies Private Limited&nbsp; 
                       </textPath>
                     </text>
                   </g>
@@ -35,7 +35,7 @@ const BannerAbout = () => {
                 <Image src={logo} alt="" />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
