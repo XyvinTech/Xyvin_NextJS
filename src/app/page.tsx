@@ -19,7 +19,7 @@ import Wrapper from '@/layouts/Wrapper';
 
 
 export const metadata = {
-  title: "Vixan - Digital  Creative Agency Next js Template",  
+  title: "Xyvin Tech",  
 };
 
 
