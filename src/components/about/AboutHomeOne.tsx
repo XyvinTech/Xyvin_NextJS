@@ -14,20 +14,20 @@ const about_slider: DataType[] = [
   {
     img: "/assets/img/about_img.jpg",
     sub_title: "Our Mission",
-    title: `Unleashing Creativity to Transform Your Business`,
-    des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`,
+    title: `Empowering innovation through visionary solutions.`,
+    des: `Our goal is to offer businesses, groundbreaking technological solutions that enhance productivity, foster growth, and increase competitiveness in today's rapidly evolving market. Through innovative strategies and advanced implementation, we empower our clients to lead the industry and achieve enduring success in an ever-changing digital environment.`,
   },
   {
     img: "/assets/img/about_img.jpg",
     sub_title: "Our Mission",
-    title: `Unleashing Creativity to Transform Your Business`,
-    des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`,
+    title: `Top-notch marketing and growth excellence`,
+    des: `Our commitment is to devise effective marketing strategies and foster business growth through data-driven insights and precise targeting. We strive to elevate brand visibility, engage audiences effectively, and support our clients in achieving sustainable success in today's competitive landscape.`,
   },
   {
     img: "/assets/img/about_img.jpg",
     sub_title: "Our Mission",
-    title: `Unleashing Creativity to Transform Your Business`,
-    des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`,
+    title: `Delivering world-class strategic partnerships`,
+    des: `We aim to be strategic partners to our clients, providing end-to-end support from concept to deployment, fostering long-term success through tailored solutions, ongoing collaboration, and unwavering dedication.`,
   },
 ]
 

@@ -9,20 +9,20 @@ const hero_slider = [
   {
     img: `/assets/img/hero_img_1.jpg`,
     sub_title: "Creative Agency",
-    title: "Expert Digital Services for Your Own Business",
-    des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`
+    title: "We Nourish Your Business with Technology",
+    des: `As your business supporting partner, we offer services from inception to deployment, including graphic design, development, marketing, and much more to nurture your business. So let's hike together to the peak of technology!`
   },
   {
     img: `/assets/img/hero_img_1.jpg`,
     sub_title: "Creative Agency",
-    title: "Expert Digital Services for Your Own Business",
-    des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`
+    title: "We Nourish Your Business with Technology",
+    des: `As your business supporting partner, we offer services from inception to deployment, including graphic design, development, marketing, and much more to nurture your business. So let's hike together to the peak of technology!`
   },
   {
     img: `/assets/img/hero_img_1.jpg`,
     sub_title: "Creative Agency",
-    title: "Expert Digital Services for Your Own Business",
-    des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`
+    title: "We Nourish Your Business with Technology",
+    des: `As your business supporting partner, we offer services from inception to deployment, including graphic design, development, marketing, and much more to nurture your business. So let's hike together to the peak of technology!`
   },
 ]
 

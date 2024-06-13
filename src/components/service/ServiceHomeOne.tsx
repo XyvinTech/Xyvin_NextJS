@@ -12,23 +12,23 @@ interface DataType {
 const service_data: DataType[] = [
   {
     id: 1,
-    title: `Application Development`,
-    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
+    title: `iOS & Android App Solutions`,
+    des: `Unlock the full potential of mobile with our iOS and Android app solutions. Our expert team crafts custom applications according to your business needs, delivering seamless experiences on Apple and Android devices. From elegant UI designs to robust development and App Store deployment, we provide end-to-end solutions that elevate your brand in the digital era.`
   },
   {
     id: 2,
-    title: `Web Development`,
-    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
+    title: `Ecommerce Solutions`,
+    des: `Boost your business with our extensive range of ecommerce solutions crafted to boost sales and enrich customer interactions. Our experts excel in developing scalable and secure online platforms that effortlessly align with your brand identity and business goals. From user-friendly interfaces to reliable payment gateways and efficient inventory management systems, we offer complete ecommerce solutions tailored for success in the modern digital market.`
   },
   {
     id: 3,
-    title: `Digital Services`,
-    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
+    title: `Futuristic Web Apps`,
+    des: `Crafting digital masterpieces that captivate, our web design solutions fuse creativity with functionality, ensuring your online presence stands out in a sea of competition. From pixel-perfect designs to intuitive user experiences, we customize every element to reflect your brand's essence and drive meaningful engagement.`
   },
   {
     id: 4,
-    title: `Digital Product Design`,
-    des: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency.`
+    title: `Custom Software  Solutions`,
+    des: `"Our custom software solutions are designed to keep users coming back for more. With a team of expert and passionate engineers, we craft experiences that resonate with your audience and drive engagement. From intuitive interfaces to robust functionalities, we ensure that your software delivers exceptional value and fosters long-lasting relationships with your users."`
   },
 
 ]
@@ -46,7 +46,7 @@ const ServiceHomeOne = () => {
                 Our Services
               </div>
               <h2 className="cs_section_title anim_heading_title">
-                Comprehensive Digital Strategy Transformation
+              Xyvin on Duty !
               </h2>
             </div>
             <div className="cs_section_heading_right cs_btn_anim">
