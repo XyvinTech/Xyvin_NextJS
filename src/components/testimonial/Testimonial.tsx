@@ -17,21 +17,21 @@ interface DataType {
 const testimonial_data: DataType[] = [
   {
     img: avatar_img,
-    name: `Delores Olivo`,
-    location: `From UK`,
-    des: `“Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency”`,
+    name: `PG Ramnath`,
+    location: `CEO at GOEC`,
+    des: `“we have built a strong equation with Acuteangle and continuously work with them for all our requirements”`,
   },
   {
     img: avatar_img,
-    name: `Delores Olivo`,
-    location: `From USA`,
-    des: `“Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency”`,
+    name: `Ragav Arora`,
+    location: `CEO at ZEON  Innovations`,
+    des: `“From product concept to UI/UX these guys have it all covered. A pleasure working with them.”`,
   },
   {
     img: avatar_img,
-    name: `Delores Olivo`,
-    location: `From Astrolia`,
-    des: `“Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency”`,
+    name: `Dr. Viukram Jayaprakash`,
+    location: `CS ATLANTIS MEDICALS, MELBOURNE`,
+    des: `“The team did an extraordinary job in bringing into life my dream website. Highly recommended their services.”`,
   },
 ];
 
