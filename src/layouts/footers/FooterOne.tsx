@@ -17,9 +17,9 @@ interface DataType {
 }
 
 const footer_data: DataType = {
-  email: `info@xyvin.com`,
+  email: `contact@xyvin.com`,
   phone: `+91 6282 822 971`,
-  location: `3RD Floor, Highway Square, NH 66, Padivattom, Ernakulam, Kerala 682024`,
+  location: `Xyvin Technologies Private Limited, dewSpace Business Center, Paramara Road, Near North Railway Station, Kochi, Kerala`,
   footer_info: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development.`,
   links: [
     { title: `HOME`, link: "/" },
@@ -44,7 +44,7 @@ const FooterOne = () => {
                 <Image src={footer_logo} alt="Logo" />
                 <p>{footer_info}</p>
                 <a href={`mailto:${email}`}
-                  className="cs_primary_font anim_text_upanddowns"><span>{email}</span></a>
+                  className=" anim_text_upanddowns">{email}</a>
               </div>
             </div>
             <div className="col-lg-6 offset-lg-1">

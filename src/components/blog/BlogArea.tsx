@@ -1,78 +1,71 @@
+"use client";
 
-
-import React from 'react';
-
-import blog_img_1 from "@/assets/img/post_1.jpg";
-import blog_img_2 from "@/assets/img/post_2.jpg";
-import blog_img_3 from "@/assets/img/post_3.jpg";
-import blog_img_4 from "@/assets/img/post_4.jpg";
-import blog_img_5 from "@/assets/img/post_5.jpg";
-import blog_img_6 from "@/assets/img/post_6.jpg";
-import blog_img_7 from "@/assets/img/post_7.jpg";
-import blog_img_8 from "@/assets/img/post_8.jpg";
-import blog_img_9 from "@/assets/img/post_9.jpg";
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const blog_data = [
-  {
-    id: 1,
-    img: blog_img_1,
-    title: `Reasons Business Needs a Agency`,
-    des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
-  },
-  {
-    id: 2,
-    img: blog_img_2,
-    title: `Reasons Business Needs a Agency`,
-    des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
-  },
-  {
-    id: 3,
-    img: blog_img_3,
-    title: `Reasons Business Needs a Agency`,
-    des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
-  },
-  {
-    id: 4,
-    img: blog_img_4,
-    title: `Reasons Business Needs a Agency`,
-    des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
-  },
-  {
-    id: 5,
-    img: blog_img_5,
-    title: `Reasons Business Needs a Agency`,
-    des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
-  },
-  {
-    id: 6,
-    img: blog_img_6,
-    title: `Reasons Business Needs a Agency`,
-    des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
-  },
-  {
-    id: 7,
-    img: blog_img_7,
-    title: `Reasons Business Needs a Agency`,
-    des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
-  },
-  {
-    id: 8,
-    img: blog_img_8,
-    title: `Reasons Business Needs a Agency`,
-    des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
-  },
-  {
-    id: 9,
-    img: blog_img_9,
-    title: `Reasons Business Needs a Agency`,
-    des: `The art of creative thinking could be a blog that explores the various ways in which people.`,
-  },
-]
+interface Blog {
+  id: number;
+  title: {
+    rendered: string;
+  };
+  excerpt: {
+    rendered: string;
+  };
+  featured_media: number;
+  mediaUrl: string; // Add the mediaUrl property
+}
 
+interface Media {
+  guid: {
+    rendered: string;
+  };
+}
 
-const BlogArea = () => {
+const BlogArea: React.FC = () => {
+  const [blogs, setBlogs] = useState<Blog[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      try {
+        const response = await fetch(`https://darkorange-albatross-944944.hostingersite.com/wp-json/wp/v2/posts?_=${new Date().getTime()}`);
+        const data: Blog[] = await response.json();
+
+        // Fetch media details for each post
+        const blogPostsWithMedia = await Promise.all(
+          data.map(async (blog) => {
+            if (blog.featured_media) {
+              const mediaResponse = await fetch(`/wp-json/wp/v2/media/${blog.featured_media}`);
+              const mediaData: Media = await mediaResponse.json();
+              return {
+                ...blog,
+                mediaUrl: mediaData.guid.rendered,
+              };
+            } else {
+              return {
+                ...blog,
+                mediaUrl: '/default-image.jpg',
+              };
+            }
+          })
+        );
+
+        setBlogs(blogPostsWithMedia);
+        setLoading(false);
+      } catch (error) {
+        console.error('Error fetching blogs:', error);
+        setLoading(false);
+      }
+    };
+
+    fetchBlogs();
+  }, []);
+
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+
   return (
     <>
       <div className="cs_height_219 cs_height_lg_120"></div>
@@ -95,26 +88,26 @@ const BlogArea = () => {
       <section>
         <div className="container">
           <div className="row">
-            {blog_data.map((item, i) => (
-              <div key={i} className={`col-md-4 ${item.id === 2  ? 'mt-0 mt-md-5' : ''} ${item.id === 5  ? 'mt-0 mt-md-5' : ''} ${item.id === 8  ? 'mt-0 mt-md-5' : ''}` }>
+            {blogs.map((item, i) => (
+              <div key={item.id} className={`col-md-4 ${i % 3 === 1 ? 'mt-0 mt-md-5' : ''} ${i % 3 === 2 ? 'mt-0 mt-md-5' : ''}`}>
                 <div className="anim_div_ShowDowns">
-                  <Link href="/blog-details" className="cs_blog cs_style_1">
+                  <Link href={`/blog-details/${item.id}`} className="cs_blog cs_style_1">
                     <div>
-                      <Image src={item.img} alt="post_1" />
+                      <Image
+                        src={item.mediaUrl}
+                        alt={item.title.rendered}
+                        width={300}
+                        height={200}
+                      />
                     </div>
                     <div className="cs_blog_info">
-                      <h6 className="cs_blog_title">
-                        {item.title}
-                      </h6>
-                      <p className="cs_blog_subtitle">
-                         {item.des}
-                      </p>
+                      <h6 className="cs_blog_title" dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
+                      <p className="cs_blog_subtitle" dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }} />
                     </div>
                   </Link>
                 </div>
               </div>
             ))}
-
           </div>
           <div className="cs_height_100 cs_height_lg_60"></div>
           <div>
