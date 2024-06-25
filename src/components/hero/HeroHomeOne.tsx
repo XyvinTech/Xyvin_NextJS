@@ -8,21 +8,21 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const hero_slider = [
   {
     img: `/assets/img/hero_img_1.jpg`,
-    sub_title: "Creative Agency",
-    title: "We Nourish Your Business with Technology",
-    des: `As your business supporting partner, we offer services from inception to deployment, including graphic design, development, marketing, and much more to nurture your business. So let's hike together to the peak of technology!`
+    sub_title: "",
+    title: "Innovate, create, and elevate.",
+    des: `Unleash your potential with our mantra: Innovate, create, and elevate. Transform your ideas into reality and reach new heights with us!`
   },
   {
     img: `/assets/img/hero_img_1.jpg`,
-    sub_title: "Creative Agency",
-    title: "We Nourish Your Business with Technology",
-    des: `As your business supporting partner, we offer services from inception to deployment, including graphic design, development, marketing, and much more to nurture your business. So let's hike together to the peak of technology!`
+    sub_title: "",
+    title: "Empowering innovation through visionary solutions",
+    des: ` Our goal is to offer businesses groundbreaking technological solutions that enhance productivity and foster growth.`
   },
   {
     img: `/assets/img/hero_img_1.jpg`,
-    sub_title: "Creative Agency",
-    title: "We Nourish Your Business with Technology",
-    des: `As your business supporting partner, we offer services from inception to deployment, including graphic design, development, marketing, and much more to nurture your business. So let's hike together to the peak of technology!`
+    sub_title: "",
+    title: "Top-notch SEO services and growth excellence",
+    des: `Our commitment is to devise effective strategies and foster business growth through data-driven insights and precise targeting.`
   },
 ]
 
