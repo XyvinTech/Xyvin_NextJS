@@ -13,6 +13,7 @@ import VideoHomeOne from '@/components/video/VideoHomeOne';
 import Wrapper from '@/layouts/Wrapper';
 import FooterOne from '@/layouts/footers/FooterOne';
 import HeaderOne from '@/layouts/headers/HeaderOne';
+import Sticky from '@/components/sticky/Sticky';
 
 export const metadata = {
   title: "About Vixan - Digital  Creative Agency Next js Template",
@@ -33,7 +34,7 @@ const index = () => {
         <Gellary />
         <BrandHomeOne  />
         <FooterOne />
-
+        <Sticky/>
       </div>
     </Wrapper>
   );

@@ -6,6 +6,7 @@ import Wrapper from '@/layouts/Wrapper';
 import FooterOne from '@/layouts/footers/FooterOne';
 import HeaderOne from '@/layouts/headers/HeaderOne';
 import React from 'react';
+import Sticky from '@/components/sticky/Sticky';
 
 
 export const metadata = {
@@ -22,6 +23,7 @@ const index = () => {
         <AboutHomeFour />
         <FooterOne />
       </div>
+      <Sticky />
     </Wrapper>
   );
 };

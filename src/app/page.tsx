@@ -16,6 +16,8 @@ import SubscribeHomeOne from '@/components/subscribe/SubscribeHomeOne';
 import BrandHomeOne from '@/components/brand/BrandHomeOne';
 import FooterOne from '@/layouts/footers/FooterOne';
 import Wrapper from '@/layouts/Wrapper';
+import Accordion from '@/components/accordion/Accordian';
+import Sticky from '@/components/sticky/Sticky';
 
 
 export const metadata = {
@@ -25,6 +27,7 @@ export const metadata = {
 
 const index = () => {
   return (
+    <>
     <Wrapper>      
       <HeaderOne />
       <div id="scrollsmoother-container">
@@ -40,9 +43,13 @@ const index = () => {
         <BlogHomeOne />
         <SubscribeHomeOne />
         <BrandHomeOne style_2={false}  />
+        <Accordion/>
+        
         <FooterOne />
       </div>
     </Wrapper>
+    <Sticky/>
+    </>
   );
 };
 

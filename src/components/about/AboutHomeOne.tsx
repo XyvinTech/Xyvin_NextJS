@@ -14,20 +14,20 @@ const about_slider: DataType[] = [
   {
     img: "/assets/img/about_img.jpg",
     sub_title: "Our Mission",
-    title: `Empowering innovation through visionary solutions.`,
-    des: `Our goal is to offer businesses, groundbreaking technological solutions that enhance productivity, foster growth, and increase competitiveness in today's rapidly evolving market. Through innovative strategies and advanced implementation, we empower our clients to lead the industry and achieve enduring success in an ever-changing digital environment.`,
+    title: `Innovative Solutions.`,
+    des: `To create cutting-edge, innovative software solutions that drive digital transformation for businesses across diverse industries, ensuring efficiency, scalability, and a competitive edge in the market.`,
   },
   {
     img: "/assets/img/about_img.jpg",
     sub_title: "Our Mission",
-    title: `Top-notch marketing and growth excellence`,
-    des: `Our commitment is to devise effective marketing strategies and foster business growth through data-driven insights and precise targeting. We strive to elevate brand visibility, engage audiences effectively, and support our clients in achieving sustainable success in today's competitive landscape.`,
+    title: `Customer-Centric Developmen`,
+    des: `To place our customers at the heart of our development process, delivering tailored software solutions that address their unique challenges, enhance user experience, and exceed expectations through continuous improvement and support.`,
   },
   {
     img: "/assets/img/about_img.jpg",
     sub_title: "Our Mission",
-    title: `Delivering world-class strategic partnerships`,
-    des: `We aim to be strategic partners to our clients, providing end-to-end support from concept to deployment, fostering long-term success through tailored solutions, ongoing collaboration, and unwavering dedication.`,
+    title: `Empowerment Through Technology`,
+    des: `To empower businesses and individuals by leveraging the latest technologies and best practices in software development, fostering growth, sustainability, and the ability to thrive in an ever-evolving digital landscape.`,
   },
 ]
 

@@ -16,7 +16,7 @@ interface DataType {
 const about_content: DataType = {
   subtitle: `Our Agency Story`,
   title: `How Our Agency is Pushing the Boundaries of Online Marketing and Design`,
-  des: `Digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital to drive growth and reach your goals.`,
+  des: `Xyvin technology is a Kerala based IT company that offers innovative solutions in the domain of Development and Growth. Our vision is to transform your dreams into realities, providing startups and businesses with the tools they need to succeed. Our team comprises a group of engineers turned designers, marketers, and developers, all dedicated to helping businesses and individuals grow. Since our founding, we have worked with numerous clients from both within and outside the country.`,
 }
 const { subtitle, title, des } = about_content
 
