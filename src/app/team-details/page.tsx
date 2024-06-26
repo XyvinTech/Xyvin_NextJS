@@ -6,6 +6,7 @@ import HeaderOne from '@/layouts/headers/HeaderOne';
 import ServiceTeam from '@/components/service/ServiceTeam';
 import AboutHomeFour from '@/components/about/AboutHomeFour';
 import TeamDetailsArea from '@/components/details/TeamDetailsArea';
+import Sticky from '@/components/sticky/Sticky';
 
 
 export const metadata = {
@@ -22,6 +23,7 @@ const index = () => {
         <AboutHomeFour />
         <FooterOne />
       </div>
+      <Sticky />
     </Wrapper>
   );
 };

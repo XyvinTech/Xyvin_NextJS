@@ -18,8 +18,8 @@ interface DataType {
 
 const footer_data: DataType = {
   email: `contact@xyvin.com`,
-  phone: `+91 6282 822 971`,
-  location: `Xyvin Technologies Private Limited, dewSpace Business Center, Paramara Road, Near North Railway Station, Kochi, Kerala`,
+  phone: `+91  813 891 6303`,
+  location: `Xyvin Technologies Private Limited, dewSpace Business Center, Paramara Road, Near North Railway Station, Kochi, Kerala - 682018`,
   footer_info: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development.`,
   links: [
     { title: `HOME`, link: "/" },

@@ -276,13 +276,13 @@ const HeaderOne = () => {
                       ></path>
                     </svg>
                     <span className="ms-2">
-                    3RD Floor, Highway Square, NH 66<br />
-                      &nbsp; &nbsp; &nbsp; &nbsp; Padivattom, Ernakulam, Kerala 682024
+                    Xyvin Technologies Private Limited, dewSpace Business Center, Paramara Road, Near North Railway Station, Kochi, Kerala - 682018<br />
+                      &nbsp; &nbsp; &nbsp; &nbsp;
                     </span>
                   </p>
 
                   <h4 className="cs_phone_number">
-                    <a href="tel:+916282822971">
+                    <a href="tel:+918138916303">
                       <svg
                         width="35"
                         height="35"
@@ -303,7 +303,7 @@ const HeaderOne = () => {
                           fill="white"
                         ></path>
                       </svg>
-                      <span className="ms-2">+91 6282 822 971</span>
+                      <span className="ms-2">+91 8138916303</span>
                     </a>
                   </h4>
 
