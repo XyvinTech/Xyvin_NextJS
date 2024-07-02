@@ -12,10 +12,11 @@ interface DataType {
 
 const about_slider: DataType[] = [
   {
-    img: "/assets/img/about_img.jpg",
+    img: "/assets/img/mission1.png",
     sub_title: "Our Mission",
-    title: `Innovative Solutions.`,
-    des: `To create cutting-edge, innovative software solutions that drive digital transformation for businesses across diverse industries, ensuring efficiency, scalability, and a competitive edge in the market.`,
+    title: `Unleashing Creativity to Transform Your Business.`,
+    // des: `To create cutting-edge, innovative software solutions that drive digital transformation for businesses across diverse industries, ensuring efficiency, scalability, and a competitive edge in the market.`,
+    des:`Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`,
   },
   {
     img: "/assets/img/about_img.jpg",

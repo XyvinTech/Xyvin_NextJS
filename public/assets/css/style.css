@@ -989,7 +989,8 @@ hr {
 
 .cs_primary_bg,
 .cs_primary_bg_hover:hover {
-    background-color: #101010;
+    /* background-color: #101010; */
+    background-color: #1E2251;
 }
 
 .cs_gradient_bg_1 {
@@ -1068,7 +1069,7 @@ hr {
     height: 65px;
     width: 65px;
     border-radius: 50%;
-    background-color: #ff6b00;
+    background-color: #8C2CF4;
     top: 50%;
     transform: translateY(-50%);
     left: 0px;
@@ -1774,7 +1775,7 @@ label {
     height: 14px;
     width: 14px;
     border-radius: 50%;
-    background-color: #ff6b00;
+    background-color:#8C2CF4;
     top: 6px;
     left: 0;
 }

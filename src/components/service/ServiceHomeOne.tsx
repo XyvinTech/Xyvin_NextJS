@@ -46,7 +46,7 @@ const ServiceHomeOne = () => {
                 Our Services
               </div>
               <h2 className="cs_section_title anim_heading_title">
-              Xyvin on Duty !
+              Comprehensive Digital Stratergy Transformation
               </h2>
             </div>
             <div className="cs_section_heading_right cs_btn_anim">

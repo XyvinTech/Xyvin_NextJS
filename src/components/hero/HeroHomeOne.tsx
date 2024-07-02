@@ -7,10 +7,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const hero_slider = [
   {
-    img: `/assets/img/hero_img_1.jpg`,
+    img: `/assets/img/new-home2.png`,
     sub_title: "",
-    title: "Innovate, create, and elevate.",
-    des: `Unleash your potential with our mantra: Innovate, create, and elevate. Transform your ideas into reality and reach new heights with us!`
+    title:"Expert Digital Services for Your Own Business",
+    des: `Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`
   },
   {
     img: `/assets/img/hero_img_1.jpg`,

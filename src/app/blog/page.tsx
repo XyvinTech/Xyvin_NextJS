@@ -6,6 +6,7 @@ import FooterOne from '@/layouts/footers/FooterOne';
 import HeaderOne from '@/layouts/headers/HeaderOne';
 import React from 'react';
 import Sticky from '@/components/sticky/Sticky';
+import BlogHomeOne from '@/components/blog/BlogHomeOne';
 
 
 export const metadata = {
@@ -19,6 +20,7 @@ const index = () => {
       <div id="scrollsmoother-container">
         <BlogArea />
         <AboutHomeFour />
+        {/* <BlogHomeOne/> */}
         <FooterOne />
       </div>
       <Sticky/>

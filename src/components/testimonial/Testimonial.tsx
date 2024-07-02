@@ -3,8 +3,8 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
-import avatar_img from "@/assets/img/avatar_1.jpg";
-import testimonial_thumb from "@/assets/img/testimonial_thumb_1.jpg";
+import avatar_img from "@/assets/img/xyvin_logo.png";
+import testimonial_thumb from "@/assets/img/Testimonial_thumb_1.png";
 import Image, { StaticImageData } from "next/image";
 
 interface DataType {
@@ -17,22 +17,23 @@ interface DataType {
 const testimonial_data: DataType[] = [
   {
     img: avatar_img,
-    name: `PG Ramnath`,
-    location: `CEO at GOEC`,
-    des: `“we have built a strong equation with Acuteangle and continuously work with them for all our requirements”`,
+    name: `Ashin Amanulla`,
+    location: `Founder`,
+    // des: `“we have built a strong equation with Acuteangle and continuously work with them for all our requirements”`,
+    des:`“Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency”`,
   },
-  {
-    img: avatar_img,
-    name: `Ragav Arora`,
-    location: `CEO at ZEON  Innovations`,
-    des: `“From product concept to UI/UX these guys have it all covered. A pleasure working with them.”`,
-  },
-  {
-    img: avatar_img,
-    name: `Dr. Viukram Jayaprakash`,
-    location: `CS ATLANTIS MEDICALS, MELBOURNE`,
-    des: `“The team did an extraordinary job in bringing into life my dream website. Highly recommended their services.”`,
-  },
+  // {
+  //   img: avatar_img,
+  //   name: `Ragav Arora`,
+  //   location: `CEO at ZEON  Innovations`,
+  //   des: `“From product concept to UI/UX these guys have it all covered. A pleasure working with them.”`,
+  // },
+  // {
+  //   img: avatar_img,
+  //   name: `Dr. Viukram Jayaprakash`,
+  //   location: `CS ATLANTIS MEDICALS, MELBOURNE`,
+  //   des: `“The team did an extraordinary job in bringing into life my dream website. Highly recommended their services.”`,
+  // },
 ];
 
 const Testimonial = ({ style_service }: any) => {
@@ -160,11 +161,11 @@ const Testimonial = ({ style_service }: any) => {
                           >
                             <path
                               d="M0.5 26.5003H13.4844L4.82807 43.6431H17.8125L26.4689 26.5003V0.786133H0.5V26.5003Z"
-                              fill="#2E5ACE"
+                              fill="#8C2CF4"
                             />
                             <path
                               d="M35.125 0.786133V26.5003H48.1094L39.4531 43.6431H52.4375L61.0939 26.5003V0.786133H35.125Z"
-                              fill="#2E5ACE"
+                              fill="#8C2CF4"
                             />
                           </svg>
                         </div>
