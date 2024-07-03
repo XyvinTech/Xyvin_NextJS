@@ -8,9 +8,9 @@ import Image, { StaticImageData } from 'next/image';
 import portfolio_img_6 from "@/assets/img/portfolio_1.jpg";
 import portfolio_img_7 from "@/assets/img/portfolio_2.jpg";
 import portfolio_img_8 from "@/assets/img/portfolio_3.jpg";
-import portfolio_img_9 from "@/assets/img/portfolio_5.jpg";
-import portfolio_img_10 from "@/assets/img/portfolio_6.jpg";
-import portfolio_img_11 from "@/assets/img/portfolio_7.jpg"; 
+import portfolio_img_9 from "@/assets/img/new_work_img.png";
+import portfolio_img_11 from "@/assets/img/portfolio_6.jpg";
+import portfolio_img_10 from "@/assets/img/portfolio_5.jpg"; 
 
 
 interface DataType {

@@ -1,7 +1,7 @@
 import portfolio_img_1 from "@/assets/img/project_successfull_1.jpg";
 import portfolio_img_2 from "@/assets/img/project_successfull_2.jpg";
 import portfolio_img_3 from "@/assets/img/project_successfull_3.jpg";
-import portfolio_img_4 from "@/assets/img/project_successfull_4.jpg";
+import portfolio_img_4 from "@/assets/img/new_work_img.png";
 import portfolio_img_5 from "@/assets/img/project_successfull_5.jpg";
 import { StaticImageData } from "next/image";
 
