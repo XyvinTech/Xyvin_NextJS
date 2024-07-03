@@ -22,18 +22,18 @@ const testimonial_data: DataType[] = [
     // des: `“we have built a strong equation with Acuteangle and continuously work with them for all our requirements”`,
     des:`“Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency”`,
   },
-  // {
-  //   img: avatar_img,
-  //   name: `Ragav Arora`,
-  //   location: `CEO at ZEON  Innovations`,
-  //   des: `“From product concept to UI/UX these guys have it all covered. A pleasure working with them.”`,
-  // },
-  // {
-  //   img: avatar_img,
-  //   name: `Dr. Viukram Jayaprakash`,
-  //   location: `CS ATLANTIS MEDICALS, MELBOURNE`,
-  //   des: `“The team did an extraordinary job in bringing into life my dream website. Highly recommended their services.”`,
-  // },
+  {
+    img: avatar_img,
+    name: `Ragav Arora`,
+    location: `CEO at ZEON  Innovations`,
+    des: `“From product concept to UI/UX these guys have it all covered. A pleasure working with them.”`,
+  },
+  {
+    img: avatar_img,
+    name: `Dr. Viukram Jayaprakash`,
+    location: `CS ATLANTIS MEDICALS, MELBOURNE`,
+    des: `“The team did an extraordinary job in bringing into life my dream website. Highly recommended their services.”`,
+  },
 ];
 
 const Testimonial = ({ style_service }: any) => {
