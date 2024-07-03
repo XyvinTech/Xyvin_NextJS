@@ -1,10 +1,10 @@
 
 
 import React from 'react';
-import agency_story_1 from "@/assets/img/agency_story_1.jpg"
-import agency_story_2 from "@/assets/img/agency_story_2.jpg"
-import agency_story_4 from "@/assets/img/agency_story_4.jpg"
-import agency_story_3 from "@/assets/img/agency_story_3.jpg"
+import agency_story_1 from "@/assets/img/agent_1.png"
+import agency_story_2 from "@/assets/img/agent_2.png"
+import agency_story_4 from "@/assets/img/agent_3.png"
+import agency_story_3 from "@/assets/img/agent_4.png"
 import Image from 'next/image';
 
 

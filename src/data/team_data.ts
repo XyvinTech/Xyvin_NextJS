@@ -1,5 +1,5 @@
-import team_avatar_1 from "@/assets/img/teamsimg1.jpeg";
-import team_avatar_2 from "@/assets/img/teamsimg2.jpg";
+import team_avatar_1 from "@/assets/img/team/teamsimg1.png";
+import team_avatar_2 from "@/assets/img/team/teamsimg2.png";
 import team_avatar_3 from "@/assets/img/teamsimg3.jpg";
 import team_avatar_4 from "@/assets/img/teamsimg4.jpg";
 import team_avatar_5 from "@/assets/img/teamsimg5.jpg";
@@ -21,14 +21,14 @@ const team_data: DataType[] = [
 	{
 		id: 1,
 		img: team_avatar_1,
-		avatar_name: "Ashin Amanulla",
-		designation: "CTO & Developer",
+		avatar_name: "Bruce Stewart",
+		designation: "PHP Developer",
 	},
 	{
 		id: 2,
 		img: team_avatar_2,
-		avatar_name: "Tijo T Joseph",
-		designation: "Software Developer",
+		avatar_name: "Joseph Whorton",
+		designation: "UI/UX Designer",
 	},
 	{
 		id: 3,
