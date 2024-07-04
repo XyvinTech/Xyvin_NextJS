@@ -7,7 +7,7 @@ import AboutHomeOne from '@/components/about/AboutHomeOne';
 import ServiceHomeOne from '@/components/service/ServiceHomeOne';
 import MarqueeAreaHomeOne from '@/components/brand/MarqueeAreaHomeOne';
 import PortfolioHomeOne from '@/components/portfolio/PortfolioHomeOne';
-import AwardsHomeOne from '@/components/awards/AwardsHomeOne';
+// import AwardsHomeOne from '@/components/awards/AwardsHomeOne';
 import Testimonial from '@/components/testimonial/Testimonial';
 import FunFactHomeOne from '@/components/funfact/FunFactHomeOne';
 import VideoHomeOne from '@/components/video/VideoHomeOne';
@@ -36,7 +36,7 @@ const index = () => {
         <AboutHomeOne />
         <ServiceHomeOne />
         <PortfolioHomeOne />
-        <AwardsHomeOne />
+        {/* <AwardsHomeOne /> */}
         <Testimonial />
         <FunFactHomeOne />
         <VideoHomeOne />
