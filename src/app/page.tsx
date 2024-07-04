@@ -44,7 +44,6 @@ const index = () => {
         <SubscribeHomeOne />
         <BrandHomeOne style_2={false}  />
         <Accordion/>
-        
         <FooterOne />
       </div>
     </Wrapper>

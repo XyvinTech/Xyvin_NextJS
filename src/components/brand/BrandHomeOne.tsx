@@ -4,15 +4,15 @@ import Image, { StaticImageData } from 'next/image';
 
 
 type DataType = StaticImageData[];
-import brand_img_1 from "@/assets/img/partner_1.svg"
-import brand_img_2 from "@/assets/img/partner_2.svg"
-import brand_img_3 from "@/assets/img/partner_3.svg"
-import brand_img_4 from "@/assets/img/partner_4.svg"
-import brand_img_5 from "@/assets/img/partner_5.svg"
-import brand_img_6 from "@/assets/img/partner_6.svg"
-import brand_img_7 from "@/assets/img/partner_7.svg"
-import brand_img_8 from "@/assets/img/partner_8.svg"
-import brand_img_9 from "@/assets/img/partner_11.svg"
+import brand_img_1 from "@/assets/img/new_brand1.svg"
+import brand_img_2 from "@/assets/img/new_brand2.svg"
+import brand_img_3 from "@/assets/img/new_brand3.svg"
+import brand_img_4 from "@/assets/img/new_brand4.svg"
+import brand_img_5 from "@/assets/img/new_brand5.svg"
+import brand_img_6 from "@/assets/img/new_brand6.svg"
+import brand_img_7 from "@/assets/img/new_brand7.svg"
+import brand_img_8 from "@/assets/img/new_brand8.svg"
+import brand_img_9 from "@/assets/img/new_brand9.svg"
 const brand_data: DataType = [
   brand_img_1,
   brand_img_2,
@@ -26,15 +26,15 @@ const brand_data: DataType = [
 
 ]
 
-import brand_thumb_1 from "@/assets/img/partner_9.svg"
-import brand_thumb_2 from "@/assets/img/partner_10.svg"
-import brand_thumb_3 from "@/assets/img/partner_11.svg"
-import brand_thumb_4 from "@/assets/img/partner_12.svg"
-import brand_thumb_5 from "@/assets/img/partner_13.svg"
-import brand_thumb_6 from "@/assets/img/partner_14.svg"
-import brand_thumb_7 from "@/assets/img/partner_15.svg"
-import brand_thumb_8 from "@/assets/img/partner_1.svg"
-import brand_thumb_9 from "@/assets/img/partner_3.svg"
+import brand_thumb_1 from "@/assets/img/new_brand10.svg"
+import brand_thumb_2 from "@/assets/img/new_brand1.svg"
+import brand_thumb_3 from "@/assets/img/new_brand2.svg"
+import brand_thumb_4 from "@/assets/img/new_brand3.svg"
+import brand_thumb_5 from "@/assets/img/new_brand4.svg"
+import brand_thumb_6 from "@/assets/img/new_brand5.svg"
+import brand_thumb_7 from "@/assets/img/new_brand6.svg"
+import brand_thumb_8 from "@/assets/img/new_brand7.svg"
+import brand_thumb_9 from "@/assets/img/new_brand8.svg"
 
 
 const brand_thumb_data: DataType = [
