@@ -17,7 +17,7 @@ import BrandHomeOne from '@/components/brand/BrandHomeOne';
 import FooterOne from '@/layouts/footers/FooterOne';
 import Wrapper from '@/layouts/Wrapper';
 import Accordion from '@/components/accordion/Accordian';
-import Sticky from '@/components/sticky/Sticky';
+// import Sticky from '@/components/sticky/Sticky';
 
 
 export const metadata = {
@@ -47,7 +47,7 @@ const index = () => {
         <FooterOne />
       </div>
     </Wrapper>
-    <Sticky/>
+    {/* <Sticky/> */}
     </>
   );
 };
