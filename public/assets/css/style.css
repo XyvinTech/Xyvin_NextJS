@@ -5480,10 +5480,14 @@ label {
 
 .cs_card.cs_style_1.cs_color_1 .cs_card_title {
     color: #fff;
+    font-weight: 700;
+    font-size: 26.03px;
 }
 
 .cs_card.cs_style_1.cs_color_1 .cs_card_subtitle {
     color: #c1c1c1;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .cs_card.cs_style_1.cs_color_1 .cs_card_subtitle_services {

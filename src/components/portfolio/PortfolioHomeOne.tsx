@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import portfolio_img_1 from '@/assets/img/portfolio_1.jpg';
 import portfolio_img_2 from '@/assets/img/portfolio_2.jpg';
 import portfolio_img_3 from '@/assets/img/portfolio_3.jpg';
-import portfolio_img_4 from '@/assets/img/new_work_img.png';
+import portfolio_img_4 from '@/assets/img/portfolio_4.jpg';
 import portfolio_img_5 from '@/assets/img/portfolio_5.jpg';
 import portfolio_img_6 from '@/assets/img/portfolio_6.jpg';
 import portfolio_img_7 from '@/assets/img/portfolio_7.jpg';
@@ -105,7 +105,7 @@ const PortfolioHomeOne = () => {
         <Swiper
           loop={true}
           speed={1000}
-          slidesPerView="auto" 
+          slidesPerView="auto"
           pagination={{
             el: ".cs_pagination",
             clickable: true,
@@ -130,7 +130,7 @@ const PortfolioHomeOne = () => {
                 </Link>
               </div>
             </SwiperSlide>
-          )} 
+          )}
 
         </Swiper>
       </div>
