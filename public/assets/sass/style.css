@@ -6223,7 +6223,7 @@ label {
   justify-content: space-between;
 }
 .cs_agency.agency_about_images_posation .cs_img_section_1 {
-  flex-basis: 363px;
+  flex-basis: 387px;
 }
 .cs_agency.agency_about_images_posation .cs_img_section_2 {
   flex-basis: 527px;
@@ -6234,6 +6234,7 @@ label {
 .cs_agency.agency_about_images_posation .cs_img_section_3 :nth-child(1) {
   margin-bottom: 30px;
 }
+
 
 @media screen and (max-width: 991px) {
   .cs_agency.agency_about_images_posation {

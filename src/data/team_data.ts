@@ -1,9 +1,9 @@
-import team_avatar_1 from "@/assets/img/team/teamsimg1.png";
-import team_avatar_2 from "@/assets/img/team/teamsimg2.png";
-import team_avatar_3 from "@/assets/img/teamsimg3.jpg";
-import team_avatar_4 from "@/assets/img/teamsimg4.jpg";
-import team_avatar_5 from "@/assets/img/teamsimg5.jpg";
-import team_avatar_6 from "@/assets/img/teamsimg6.jpg";
+import team_avatar_1 from "@/assets/img/team/team_1.png";
+import team_avatar_2 from "@/assets/img/team/team_2.png";
+import team_avatar_3 from "@/assets/img/team/team_3.png";
+import team_avatar_4 from "@/assets/img/team/team_4.png";
+import team_avatar_5 from "@/assets/img/team/team_5.png";
+import team_avatar_6 from "@/assets/img/team/teamsimg3.png";
 import team_avatar_7 from "@/assets/img/teamsimg7.jpg";
 import team_avatar_8 from "@/assets/img/teamsimg8.jpg";
 
@@ -21,34 +21,35 @@ const team_data: DataType[] = [
 	{
 		id: 1,
 		img: team_avatar_1,
-		avatar_name: "Bruce Stewart",
-		designation: "PHP Developer",
+		avatar_name: "Adithya Vishnu",
+		designation: "Chief Executive Officer",
 	},
 	{
 		id: 2,
 		img: team_avatar_2,
-		avatar_name: "Joseph Whorton",
-		designation: "UI/UX Designer",
+		avatar_name: "Ashin Amanulla",
+		designation: "Chief Technology Officer",
 	},
 	{
 		id: 3,
 		img: team_avatar_3,
-		avatar_name: "Gregory Terrell",
-		designation: "Web Developer",
+		avatar_name: "Afsal E",
+		designation: "Chief Business Officer",
 	},
 	{
 		id: 4,
 		img: team_avatar_4,
-		avatar_name: "Andrew Lopenza",
-		designation: "UX Sketch Designer",
+		avatar_name: "Ramees",
+		designation: "Chief Marketing Officer",
 	},
-	// team data
+	
 	{
 		id: 5,
 		img: team_avatar_5,
-		avatar_name: "Bruce Stewart",
-		designation: "PHP Developer",
+		avatar_name: "Dhilraj Soza",
+		designation: "Chief Stratagy Officer",
 	},
+	// team data
 	{
 		id: 6,
 		img: team_avatar_6,

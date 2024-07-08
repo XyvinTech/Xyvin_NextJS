@@ -68,8 +68,8 @@ const About = () => {
             </div>
             <div className="cs_height_385 cs_height_lg_120"></div>
           </div>
-        </div>
-        <div className="container">
+        {/* </div> */}
+        {/* <div className="container"> */}
           <div className="cs_agency agency_about_images_posation">
             <div className="cs_img_section_1">
               <Image src={agency_story_1} alt="image-here" className="w-100" />
@@ -85,6 +85,7 @@ const About = () => {
             </div>
           </div>
         </div>
+      
       </section>
     </>
   );
