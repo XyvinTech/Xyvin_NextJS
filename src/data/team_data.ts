@@ -1,9 +1,9 @@
-import team_avatar_1 from "@/assets/img/team/team_1.png";
-import team_avatar_2 from "@/assets/img/team/team_2.png";
-import team_avatar_3 from "@/assets/img/team/team_3.png";
-import team_avatar_4 from "@/assets/img/team/team_4.png";
-import team_avatar_5 from "@/assets/img/team/team_5.png";
-import team_avatar_6 from "@/assets/img/teamsimg3.png";
+import team_avatar_1 from "@/assets/img/team/Team_1.png";
+import team_avatar_2 from "@/assets/img/team/Team_2.png";
+import team_avatar_3 from "@/assets/img/team/Team_3.png";
+import team_avatar_4 from "@/assets/img/team/Team_4.png";
+import team_avatar_5 from "@/assets/img/team/Team_5.png";
+import team_avatar_6 from "@/assets/img/teamsimg2.jpg";
 import team_avatar_7 from "@/assets/img/teamsimg7.jpg";
 import team_avatar_8 from "@/assets/img/teamsimg8.jpg";
 
