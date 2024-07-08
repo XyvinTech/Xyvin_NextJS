@@ -13,23 +13,41 @@ const service_data: DataType[] = [
   {
     id: 1,
     title: `iOS & Android App Solutions`,
-    des: `Unlock the full potential of mobile with our iOS and Android app solutions. Our expert team crafts custom applications according to your business needs, delivering seamless experiences on Apple and Android devices. From elegant UI designs to robust development and App Store deployment, we provide end-to-end solutions that elevate your brand in the digital era.`
+    des: `iOS and android app solutions are revolutionizing the way millions live, work, and do business. At the forefront of this transformation is Xyvin, the most trusted  tech services providing company . We offer top-tier mobile app development services tailored for both startups and enterprise clients. Our team of skilled and professional developers creates smooth, seamless mobile applications designed to meet your specific needs that stand out in the market.`
   },
   {
     id: 2,
     title: `Ecommerce Solutions`,
-    des: `Boost your business with our extensive range of ecommerce solutions crafted to boost sales and enrich customer interactions. Our experts excel in developing scalable and secure online platforms that effortlessly align with your brand identity and business goals. From user-friendly interfaces to reliable payment gateways and efficient inventory management systems, we offer complete ecommerce solutions tailored for success in the modern digital market.`
+    des: `An eCommerce site is much more than a simple website that sells goods and services. . At Xyvin, we leverage the industry's best open-source solutions and web-based platforms to create visually appealing and high-converting eCommerce sites. If you're looking to enter the eCommerce market, you'll need a partner with the experience and professionalism to make it happen. Xyvin is a trusted expert in delivering high-performance eCommerce web solutions. Our team of skilled developers designs smooth and seamless sites customised to your needs, providing you with a robust platform for success.`
   },
   {
     id: 3,
-    title: `Futuristic Web Apps`,
-    des: `Crafting digital masterpieces that captivate, our web design solutions fuse creativity with functionality, ensuring your online presence stands out in a sea of competition. From pixel-perfect designs to intuitive user experiences, we customize every element to reflect your brand's essence and drive meaningful engagement.`
+    title: `Search Engine Optimisation `,
+    des: `Xyvin offers customized SEO solutions using the latest technologies and best practices. We approach each project by thoroughly researching your goals and target audience. Our team develops specialised SEO strategies that will significantly enhance your online presence and business growth. Understanding our clients' needs accurately has always been our greatest strength.
+`
   },
   {
     id: 4,
-    title: `Custom Software  Solutions`,
-    des: `"Our custom software solutions are designed to keep users coming back for more. With a team of expert and passionate engineers, we craft experiences that resonate with your audience and drive engagement. From intuitive interfaces to robust functionalities, we ensure that your software delivers exceptional value and fosters long-lasting relationships with your users."`
+    title: `Web Development`,
+    des: `Our web development services promise to provide a user friendly interface for your business. The right development foundation is what makes a website truly exceptional. At Xyvin, we combine specialized expertise in web development with the latest project management tools to create top-quality websites. Our dedicated team is committed to elevating your brand to the next level!.`
   },
+  {
+    id: 5,
+    title: `ERP Development `,
+    des: `An efficient ERP system is the backbone of your business operations. It integrates various processes across departments, ensuring smooth and seamless workflows. Therefore, developing a robust ERP solution is essential for the long-term success of your business. As a leading ERP development company we ensure our solutions meet international standards.`
+  },
+  {
+    id: 6,
+    title: `CRM`,
+    des: `At Xyvin, we combine the latest technology with our deep expertise to deliver CRM systems that are user-friendly, scalable, and packed with features.  Let us help you transform your customer management and take your business to new heights with Xyvin’s innovative CRM development services.`
+  },
+  {
+    id: 7,
+    title: `API Integration Services`,
+    des: `Our API integration services are your gateway to seamless connectivity and enhanced functionality. APIs are the backbone of modern software systems, allowing different applications to communicate and share data effortlessly. At Xyvin , we specialize in integrating APIs to unlock new capabilities, streamline processes, and improve overall performance.
+`
+  },
+
 
 ]
 
@@ -46,7 +64,7 @@ const ServiceHomeOne = () => {
                 Our Services
               </div>
               <h2 className="cs_section_title anim_heading_title">
-              Comprehensive Digital Stratergy Transformation
+                Comprehensive Digital Stratergy Transformation
               </h2>
             </div>
             <div className="cs_section_heading_right cs_btn_anim">
@@ -66,7 +84,7 @@ const ServiceHomeOne = () => {
             {service_data.map((item, i) => (
               <div key={i} className="cs_card cs_style_1 cs_color_1 anim_div_ShowDowns">
                 <div className="cs_card_left">
-                  <div className="cs_card_number cs_primary_font" style={{ backgroundImage: `url(/assets/img/hero_img_1.jpg)` }}>
+                  <div className="cs_card_number cs_primary_font" style={{ backgroundImage: `url(/assets/img / hero_img_1.jpg)` }}>
                     0{i + 1}
                   </div>
                 </div>

@@ -3,7 +3,15 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
-import avatar_img from "@/assets/img/xyvin_logo.png";
+import avatar_img1 from "@/assets/img/xyvin_logo.png";
+import avatar_img2 from "@/assets/img/testimonial_logo1.png";
+import avatar_img3 from "@/assets/img/testimonial_logo2.png";
+import avatar_img4 from "@/assets/img/testimonial_logo3.png";
+import avatar_img5 from "@/assets/img/testimonial_logo4.png";
+import avatar_img6 from "@/assets/img/testimonial_logo5.png";
+import avatar_img7 from "@/assets/img/testimonial_logo6.png";
+import avatar_img8 from "@/assets/img/testimonial_logo7.png";
+
 import testimonial_thumb from "@/assets/img/Testimonial_thumb_1.png";
 import Image, { StaticImageData } from "next/image";
 
@@ -16,23 +24,55 @@ interface DataType {
 [];
 const testimonial_data: DataType[] = [
   {
-    img: avatar_img,
+    img: avatar_img1,
     name: `Ashin Amanulla`,
     location: `Founder`,
-    // des: `“we have built a strong equation with Acuteangle and continuously work with them for all our requirements”`,
-    des:`“Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency”`,
+    des: `“Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development to digital marketing agency”`,
   },
   {
-    img: avatar_img,
-    name: `Ragav Arora`,
-    location: `CEO at ZEON  Innovations`,
-    des: `“From product concept to UI/UX these guys have it all covered. A pleasure working with them.”`,
+    img: avatar_img2,
+    name: `Pg Ramnath`,
+    location: `Founder of GOEC, India, UAE`,
+    des: `“We have build a strong and long term relationship 
+with Xyvin and AS a tech partner we continuously
+ with them for all our requirements.”`,
   },
   {
-    img: avatar_img,
-    name: `Dr. Viukram Jayaprakash`,
-    location: `CS ATLANTIS MEDICALS, MELBOURNE`,
-    des: `“The team did an extraordinary job in bringing into life my dream website. Highly recommended their services.”`,
+    img: avatar_img3,
+    name: `Mr Suresh`,
+    location: `Founder of Skyber tech`,
+    des: `“For years, Xyvin Tech has been a trusted partner, offering innovative solutions that enhance my products and exceed my clients' expectations.”`,
+  },
+  {
+    img: avatar_img4,
+    name: `Double Horse`,
+    location: `Chairman of Double horse , India`,
+    des: `“Xyvin Tech boosted our Doublehorse sales with a store revamp! Happy partnership continues.”`,
+  },
+  {
+    img: avatar_img5,
+    name: `JP Kujil`,
+    location: `Director at Azavista , UK, Netherland`,
+    des: `“The team has great skill for simplifying the Complex software solutions , They are doing great for my Event management tech software.”`,
+  },
+  {
+    img: avatar_img6,
+    name: `Dr. Vikram jayaprakash`,
+    location: `CS at Atlantis Medicals, Austrailia`,
+    des: `“The team did an extraordinary job in bringing life for my dream website. Highly recommend their service.”`,
+  },
+  {
+    img: avatar_img7,
+    name: `Raghav Arora`,
+    location: `CEO at Zeon, Delhi`,
+    des: `“From product concept to UI ? UX these guys have
+it all covered.Great pleasure working with them.”`,
+  },
+  {
+    img: avatar_img8,
+    name: `Kk Janardhana`,
+    location: `Founder`,
+    des: `“The team has strong and a long term vision and has vital growth of Thrissur It park Coworking in Thrissur. ”`,
   },
 ];
 
@@ -40,9 +80,8 @@ const Testimonial = ({ style_service }: any) => {
   return (
     <>
       <section
-        className={`${
-          style_service ? "cs_shape_wrap_3" : "cs_primary_bg cs_shape_wrap_2"
-        }`}
+        className={`${style_service ? "cs_shape_wrap_3" : "cs_primary_bg cs_shape_wrap_2"
+          } `}
       >
         {style_service ? null : (
           <>
@@ -130,9 +169,8 @@ const Testimonial = ({ style_service }: any) => {
             </div>
             <div className="col-lg-7 offset-lg-1">
               <div
-                className={`cs_testimonial ${
-                  style_service ? "cs_style_2" : "cs_style_1 cs_color_1"
-                }`}
+                className={`cs_testimonial ${style_service ? "cs_style_2" : "cs_style_1 cs_color_1"
+                  } `}
               >
                 <h2 className="cs_testimonial_title">
                   Some Of Our Respected Happy Clients Says
