@@ -26,7 +26,7 @@ const counter_data: DataType[] = [
   {
     id: 4,
     title: 'Client Satisfaction',
-    number: '98',
+    number: '100',
   },
 ];
 

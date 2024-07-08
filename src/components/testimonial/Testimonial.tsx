@@ -162,11 +162,11 @@ const Testimonial = ({ style_service }: any) => {
         <div className="cs_height_150 cs_height_lg_60"></div>
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-4">
+            {/* <div className="col-lg-4">
               <div>
                 <Image src={testimonial_thumb} alt="" className="w-100" />
               </div>
-            </div>
+            </div> */}
             <div className="col-lg-7 offset-lg-1">
               <div
                 className={`cs_testimonial ${style_service ? "cs_style_2" : "cs_style_1 cs_color_1"
