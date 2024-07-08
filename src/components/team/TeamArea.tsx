@@ -25,7 +25,7 @@ const TeamArea = () => {
       <section>
         <div className="container">
           <div className="cs_team_section anim_div_ShowDowns">
-            {team_data.slice(0, 4).map((item, i) =>
+            {team_data.slice(0, 5).map((item, i) =>
               <div key={i} className="cs_team_img">
                 <Link href="/team-details">
                   <Image src={item.img} alt="teamsimg1" />
@@ -44,7 +44,7 @@ const TeamArea = () => {
           </div>
           <div className="cs_height_20 cs_height_lg_20"></div>
           <div className="cs_team_section anim_div_ShowDowns">
-            {team_data.slice(4, 8).map((item, i) =>
+            {team_data.slice(5, 8).map((item, i) =>
               <div key={i} className="cs_team_img">
                 <Link href="/team-details">
                   <Image src={item.img} alt="teamsimg5" />
@@ -66,3 +66,6 @@ const TeamArea = () => {
 };
 
 export default TeamArea;
+
+
+
