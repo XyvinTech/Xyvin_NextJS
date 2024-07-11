@@ -24,7 +24,7 @@
 
   width: 50px; /* Adjust the icon size */
   height: 50px; /* Adjust the icon size */
-  background-color: #007bff; /* Adjust the background color */
+  background-color: #069a38; /* Adjust the background color */
 
   border-radius: 50%;
   text-align: center;
@@ -33,7 +33,7 @@
 }
 
 .circleMenu a:hover {
-  background-color: #0056b3;
+  background-color: #25D366;
 }
 
 .circleMenu .menuss-icon {

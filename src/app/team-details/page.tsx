@@ -23,7 +23,7 @@ const index = () => {
         <AboutHomeFour />
         <FooterOne />
       </div>
-      <Sticky />
+      {/* <Sticky /> */}
     </Wrapper>
   );
 };
