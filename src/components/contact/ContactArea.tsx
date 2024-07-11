@@ -23,7 +23,7 @@ const ContactArea = () => {
                 <p className="cs_contact_subtitle anim_text_upanddowns">
                   Xyvin Technologies Pvt Ltd offers innovative tech solutions,
                   specializing in Al, cloud computing, and software development
-                  for startups and enterprises.<br/> With a focus on agility and
+                  for startups and enterprises. With a focus on agility and
                   staying ahead of the curve, we ensure businesses thrive in the
                   digital landscape.
                 </p>
@@ -54,7 +54,8 @@ const ContactArea = () => {
                       <div className="cs_icon_text">
                         <h6 className="cs_icon_title">Address</h6>
                         <p className="cs_icon_subtitle">
-                        Xyvin Technologies Private Limited, dewSpace Business Center, Paramara Road, Near North Railway Station, Kochi, Kerala - 682018
+                        Xyvin Technologies Private Limited, dewSpace Business Center, Ernakulam North, Kochi, 
+India - 682018
                         </p>
                       </div>
                     </div>
