@@ -2216,7 +2216,7 @@ label {
 .cs_scrollup {
     position: fixed;
     bottom: -60px;
-    right: 40px;
+    left: 40px;
     color: #fff;
     padding: 5px;
     height: 50px;
@@ -2548,7 +2548,7 @@ label {
         overflow: hidden;
     }
     .cs_scrollup {
-        right: 15px;
+        left: 15px;
     }
     .cs_scrollup.cs_scrollup_show {
         bottom: 50px;
