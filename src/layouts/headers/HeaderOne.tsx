@@ -95,7 +95,7 @@ const menu_data: DataType[] = [
   {
     id: 7,
     title: "Contact",
-    link: "/contact",
+    link: "/Xyvin/contact",
     has_dropdown: false,
   },
 ];

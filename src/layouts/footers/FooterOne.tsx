@@ -24,11 +24,11 @@ India - 682018`,
   footer_info: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development.`,
   links: [
     { title: `HOME`, link: "/" },
-    { title: `ABOUT`, link: "/about" },
-    { title: `SERVICES`, link: "/service" },
-    { title: `PORTFOLIO`, link: "/portfolio" },
-    { title: `BLOG`, link: "/blog" },
-    { title: `CONTACT US`, link: "/contact" },
+    { title: `ABOUT`, link: "/Xyvin/about" },
+    { title: `SERVICES`, link: "/Xyvin/service" },
+    { title: `PORTFOLIO`, link: "/Xyvin/portfolio" },
+    { title: `BLOG`, link: "/Xyvin/blog" },
+    { title: `CONTACT US`, link: "/Xyvin/contact" },
   ]
 }
 const { footer_info, email, links, location, phone } = footer_data
