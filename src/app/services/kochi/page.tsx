@@ -1,4 +1,5 @@
 import AboutHomeFour from '@/components/about/AboutHomeFour';
+import NumberInput from '@/components/common/NumberInput';
 import HeroKochi from '@/components/hero/HeroKochi';
 import HeroService from '@/components/hero/HeroService';
 import Service from '@/components/service/Service';
@@ -19,6 +20,7 @@ const index = () => {
       <HeaderOne />
       <div id="scrollsmoother-container">
         <HeroKochi/>
+        <NumberInput/>
       </div>
     </Wrapper>
   );
