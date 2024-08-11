@@ -2,10 +2,13 @@ import Link from 'next/link'
 import React from 'react'
 import VideoPlayer from '../player/VideoPlayer'
 import { MdAddCall } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
+import { IoMdCall } from "react-icons/io";
+import { FaChevronRight } from "react-icons/fa6";
 
 const KochiProject = () => {
     return (
-        <div className=' w-full h-screen bg-[url("/assets/img/backgrounds/kochi_bg.png")] bg-no-repeat bg-cover'>
+        <div className=' w-full h-fit bg-[url("/assets/img/backgrounds/kochi_bg.png")] bg-no-repeat bg-cover'>
             <div className=' container'>
                 <h1 className='text-3xl font-inter font-black lg:text-4xl text-[#374046] lg:text-center lg:mb-9'>Get started with your Kochi city web design project</h1>
                 <div className=' flex flex-col lg:flex-row'>
@@ -47,6 +50,59 @@ const KochiProject = () => {
                     </div>
                 </div>
             </div>
+
+
+            <div className="container lg:mt-[200px]">
+                <div className=' shadow-lg rounded-lg flex flex-col-reverse my-10 lg:flex-row'>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7858.1365688917185!2d76.31053664151985!3d10.011218525890056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa61914d7e8b597b9%3A0xf409a763ef2bafc8!2sAcute%20Endeavors%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1717833369050!5m2!1sen!2sin"
+                        allowFullScreen={true}
+                        className=' flex-1 rounded-tr-none rounded-tl-none rounded-lg lg:rounded-lg lg:rounded-tr-none lg:rounded-tl-none'
+                    />
+                    <div className=' flex-1 h-[620px] py-6 px-2'>
+                        <div className=' h-full flex flex-col gap-4 lg:justify-center lg:px-10'>
+                            <h2 className='text-3xl font-inter font-black lg:text-5xl text-[#0B1720] m-0'>Local Success</h2>
+                            <p className=' m-0 font-inter text-lg mt-6 lg:text-xl'>
+                                Xyvin has partnered with numerous local
+                                businesses in Kochi to help them grow with web
+                                design. We’ve helped to implement many services
+                                like SEO, Web design, App development, and beyond.
+                            </p>
+                            <div className='bg-[#1E2251] w-full rounded-lg h-fit p-4'>
+                                <h3 className=' m-0 font-inter font-black text-xl text-white'>Xyvin Kochi</h3>
+                                <div className=' flex mt-2'>
+                                    <div className=' mt-1'>
+                                        <FaLocationDot size={20} color='#dadada' />
+                                    </div>
+                                    <div className='ml-1'>
+                                        <p className=' font-inter text-base lg:text-lg text-white m-0'>dewSpace Business Center, Paramara Road,
+                                            Near North Railway Station, Kochi, Kerala - 682018
+                                        </p>
+                                        <Link href="#" className=' flex h-fit items-center text-[#7C56FE] font-inter font-bold text-base lg:text-lg'>
+                                            Get Directions
+                                            <FaChevronRight size={15} color='#7C56FE' />
+                                        </Link>
+                                    </div>
+                                </div>
+
+                                <div className=' flex mt-4'>
+                                    <div className=' mt-1'>
+                                        <IoMdCall size={20} color='#dadada' />
+                                    </div>
+
+                                    <Link href="#" className=' flex h-fit items-center text-[#7C56FE] font-inter font-bold text-base lg:text-lg ml-1'>
+                                        +91 813 891 6303
+                                    </Link>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
     )
 }
