@@ -12,6 +12,8 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'kochi-bg': "url('/assets/img/backgrounds/kochi_bg.png')",
+        'kochi-call-icon': "url('/assets/img/kochi_call_icon.png')",
       },
       fontFamily: {
         inter: ['var(--font-inter)'],

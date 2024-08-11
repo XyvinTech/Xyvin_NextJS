@@ -1,4 +1,6 @@
+import KochiProject from '@/components/NewService/KochiProject';
 import AboutHomeFour from '@/components/about/AboutHomeFour';
+import BrandHomeOne from '@/components/brand/BrandHomeOne';
 import NumberInput from '@/components/common/NumberInput';
 import HeroKochi from '@/components/hero/HeroKochi';
 import HeroService from '@/components/hero/HeroService';
@@ -21,6 +23,9 @@ const index = () => {
       <div id="scrollsmoother-container">
         <HeroKochi/>
         <NumberInput/>
+        <KochiProject/>
+        {/* <BrandHomeOne  />
+        <FooterOne /> */}
       </div>
     </Wrapper>
   );

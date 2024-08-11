@@ -20,6 +20,7 @@
     "react-18-image-lightbox": "^5.1.4",
     "react-countup": "^6.5.0",
     "react-dom": "^18",
+    "react-icons": "^5.2.1",
     "react-intersection-observer": "^9.7.0",
     "react-modal-image": "^2.6.0",
     "react-modal-video": "^2.0.1",
