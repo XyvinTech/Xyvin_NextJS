@@ -7424,5 +7424,13 @@ label {
     }
 }
 
+.rotate-z {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .rotate-z:hover {
+    transform: rotateZ(360deg);
+  }
+
 
 /*# sourceMappingURL=style.css.map */

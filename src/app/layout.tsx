@@ -5,7 +5,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
-  variable:'--font-inter'
+  weight: ["100", "200", "300", "400", "500", "600", "700", "900"],
+  variable: '--font-inter'
 })
 
 
@@ -16,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.variable}>
-        <head>
+      <head>
         <link rel="icon" href="/assets/img/favicon.svg" />
         <link
           rel="stylesheet"
