@@ -1,5 +1,6 @@
 import KochiProject from '@/components/NewService/KochiProject';
 import AboutHomeFour from '@/components/about/AboutHomeFour';
+import AboutKochi from '@/components/about/AboutKochi';
 import BrandHomeOne from '@/components/brand/BrandHomeOne';
 import NumberInput from '@/components/common/NumberInput';
 import HeroKochi from '@/components/hero/HeroKochi';
@@ -24,6 +25,7 @@ const index = () => {
         <HeroKochi/>
         <NumberInput/>
         <KochiProject/>
+        <AboutKochi/>
         {/* <BrandHomeOne  />
         <FooterOne /> */}
       </div>

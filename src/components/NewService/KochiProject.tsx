@@ -8,7 +8,7 @@ import { FaChevronRight } from "react-icons/fa6";
 
 const KochiProject = () => {
     return (
-        <div className=' w-full h-fit bg-[url("/assets/img/backgrounds/kochi_bg.png")] bg-no-repeat bg-cover'>
+        <div className=' w-full h-fit bg-[url("/assets/img/backgrounds/kochi_bg.png")] bg-no-repeat bg-cover pb-[350px]'>
             <div className=' container'>
                 <h1 className='text-3xl font-inter font-black lg:text-4xl text-[#374046] lg:text-center lg:mb-9'>Get started with your Kochi city web design project</h1>
                 <div className=' flex flex-col lg:flex-row'>
