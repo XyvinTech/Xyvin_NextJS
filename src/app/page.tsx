@@ -18,7 +18,7 @@ import FooterOne from '@/layouts/footers/FooterOne';
 import Wrapper from '@/layouts/Wrapper';
 import Accordion from '@/components/accordion/Accordian';
 import Sticky from '@/components/sticky/Sticky';
-
+import ServiceX from '../components/NewService/Service3/four'
 
 export const metadata = {
   title: "Xyvin Tech",  
@@ -32,6 +32,7 @@ const index = () => {
       <HeaderOne />
       <div id="scrollsmoother-container">
         <HeroHomeOne />
+        <ServiceX/>
         <MarqueeAreaHomeOne />
         <AboutHomeOne />
         <ServiceHomeOne />

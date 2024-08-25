@@ -1,5 +1,5 @@
 import React from 'react'
-import './Service2.css'
+
 const Service2 = () => {
   return (
     <>
