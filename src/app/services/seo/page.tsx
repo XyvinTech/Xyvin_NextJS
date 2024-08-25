@@ -1,7 +1,10 @@
+import PricingTable from '@/components/Table/PricingTable';
 import Partners from '@/components/gellary/Partners';
 import SeoHero from '@/components/hero/SeoHero';
 import Pricing from '@/components/pricing/pricing';
+import SeoServiceOverview from '@/components/service/SeoServiceOverview';
 import SeoServices from '@/components/service/SeoServices';
+import TestimonialHighlight from '@/components/testimonial/TestimonialHighlight';
 import Wrapper from '@/layouts/Wrapper';
 import HeaderOne from '@/layouts/headers/HeaderOne';
 import React from 'react';
@@ -30,6 +33,9 @@ const index = () => {
         <SeoHero />
         <Partners images={images}/>
         <Pricing/>
+        <SeoServiceOverview/>
+        <PricingTable/>
+        <TestimonialHighlight/>
       </div>
     </Wrapper>
   );
