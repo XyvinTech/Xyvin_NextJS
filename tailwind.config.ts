@@ -16,6 +16,7 @@ const config: Config = {
         'kochi-call-icon': "url('/assets/img/kochi_call_icon.png')",
         'seo-bg': "url('/assets/img/seo_bg.svg')",
         'seo-bg_2': "url('/assets/img/seo_bg_2.svg')",
+        'testimonals_bg':"url('/assets/img/testimonals_bg.svg')",
       },
       fontFamily: {
         inter: ['var(--font-inter)'],

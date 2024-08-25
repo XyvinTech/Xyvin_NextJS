@@ -68,7 +68,6 @@ const SeoServices = () => {
                     <h2 className=' font-inter text-[#8C2CF4] font-extrabold text-3xl'>{selectedtab}</h2>
                 </div>
             </div>
-
         </div>
     )
 }
