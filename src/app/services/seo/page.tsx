@@ -1,4 +1,5 @@
 import PricingTable from '@/components/Table/PricingTable';
+import SeoFaq from '@/components/faq/SeoFaq';
 import Partners from '@/components/gellary/Partners';
 import SeoHero from '@/components/hero/SeoHero';
 import Pricing from '@/components/pricing/pricing';
@@ -6,6 +7,7 @@ import SeoServiceOverview from '@/components/service/SeoServiceOverview';
 import SeoServices from '@/components/service/SeoServices';
 import TestimonialHighlight from '@/components/testimonial/TestimonialHighlight';
 import Wrapper from '@/layouts/Wrapper';
+import FooterOne from '@/layouts/footers/FooterOne';
 import HeaderOne from '@/layouts/headers/HeaderOne';
 import React from 'react';
 
@@ -35,7 +37,9 @@ const index = () => {
         <Pricing/>
         <SeoServiceOverview/>
         <PricingTable/>
+        <SeoFaq/>
         <TestimonialHighlight/>
+        <FooterOne/>
       </div>
     </Wrapper>
   );

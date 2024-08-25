@@ -58,7 +58,10 @@ const PricingTable = () => {
 
   return (
     <div className="overflow-x-auto container">
-      <table className="min-w-full border-collapse border border-gray-200">
+      <h1 className=' text-center text-3xl text-[#222222] font-inter font-black m-0 lf:text-5xl'>
+        View all deliverables in our SEO offerings
+      </h1>
+      <table className="min-w-full border-collapse border border-gray-200 mt-8">
         <thead className="bg-gray-100">
           <tr>
             <TableHeader className=' lg:w-[25%] w-[20%]' highlight title="Features" />
