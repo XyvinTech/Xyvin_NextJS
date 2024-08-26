@@ -6,7 +6,7 @@ import { MdOutlineLocationOn } from 'react-icons/md'
 
 const LocationCardSmall = () => {
     return (
-        <div className=' w-full lg:w-fit border border-black p-6'>
+        <div className=' flex-1 w-full border border-black p-6 flex flex-col gap-2'>
             <div className='flex h-fit items-center bg-[#1E2251] w-fit p-1 rounded-sm '>
                 <MdOutlineLocationOn className="text-white text-xl" />
                 <p className=' text-white uppercase font-inter text-[10px] m-0'>
@@ -25,11 +25,11 @@ const LocationCardSmall = () => {
             </Link>
 
             <div className=' flex gap-2'>
-                <button className=" bg-[#1E2251] flex h-fit items-center justify-between font-inter text-white font-semibold py-1 px-2 text-[12px] rounded-sm shadow-md hover:bg-[#22265C] transition duration-300">
+                <button className=" flex-1 bg-[#1E2251] flex h-fit items-center justify-between font-inter text-white font-semibold py-1 px-2 text-[12px] rounded-sm shadow-md hover:bg-[#22265C] transition duration-300">
                     Get Directions
                     <IoChevronForward className=' text-white' />
                 </button>
-                <button className=" bg-[#1E2251] flex h-fit items-center justify-between font-inter text-white font-semibold py-1 px-2 text-[12px] rounded-sm shadow-md hover:bg-[#22265C] transition duration-300">
+                <button className=" flex-1 bg-[#1E2251] flex h-fit items-center justify-between font-inter text-white font-semibold py-1 px-2 text-[12px] rounded-sm shadow-md hover:bg-[#22265C] transition duration-300">
                     View Services
                     <IoChevronForward className=' text-white' />
                 </button>

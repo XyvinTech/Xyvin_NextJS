@@ -26,17 +26,37 @@ const index = () => {
                     <LocationCard />
                 </div>
 
-                <div className='container grid lg:grid-cols-3 gap-10 place-items-center	'>
-                    <LocationCardSmall/>
-                    <LocationCardSmall/>
-                    <LocationCardSmall/>
-                    <LocationCardSmall/>
-                    <LocationCardSmall/>
-                    <LocationCardSmall/>
-                    <LocationCardSmall/>
-                    <LocationCardSmall/>
-                    <LocationCardSmall/>
-                    <LocationCardSmall/>
+                <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 w-full my-10">
+                    <div className="w-full">
+                        <LocationCardSmall />
+                    </div>
+                    <div className="w-full">
+                        <LocationCardSmall />
+                    </div>
+                    <div className="w-full">
+                        <LocationCardSmall />
+                    </div>
+                    <div className="w-full">
+                        <LocationCardSmall />
+                    </div>
+                    <div className="w-full">
+                        <LocationCardSmall />
+                    </div>
+                    <div className="w-full">
+                        <LocationCardSmall />
+                    </div>
+                    <div className="w-full">
+                        <LocationCardSmall />
+                    </div>
+                    <div className="w-full">
+                        <LocationCardSmall />
+                    </div>
+                    <div className="w-full">
+                        <LocationCardSmall />
+                    </div>
+                    <div className="w-full">
+                        <LocationCardSmall />
+                    </div>
                 </div>
 
             </div>
