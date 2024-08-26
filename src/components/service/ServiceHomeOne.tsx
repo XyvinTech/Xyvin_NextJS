@@ -93,7 +93,7 @@ const ServiceHomeOne = () => {
                     <h2 className="cs_card_title">
                       <Link href="/service-details">{item.title}</Link>
                     </h2>
-                    <div className="cs_card_subtitle">
+                    <div className="cs_card_subtitle line-clamp-3">
                       {item.des}
                     </div>
                   </div>
