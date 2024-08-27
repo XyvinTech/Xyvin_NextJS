@@ -19,9 +19,9 @@ const SeoFaq = () => {
             <Accordion allowZeroExpanded>
                 {faqdata.map((faq, index) => {
                     return (
-                        <AccordionItem>
-                            <AccordionItemHeading>
-                                <AccordionItemButton className='py-2'>
+                        <AccordionItem className=' border-none outline-none'>
+                            <AccordionItemHeading className=' border-none outline-none'>
+                                <AccordionItemButton className='py-2 border-none outline-none'>
                                     <div className=" font-bold text-lg font-inter text-white py-2 h-fit flex items-center justify-between">
                                         {faq.question}
                                         <button>
