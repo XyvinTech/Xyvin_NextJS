@@ -5,6 +5,7 @@ import Wrapper from '@/layouts/Wrapper';
 import HeaderOne from '@/layouts/headers/HeaderOne';
 import Link from 'next/link';
 import React from 'react';
+import { MdDone, MdOutlineDone } from "react-icons/md";
 
 export const metadata = {
   title: "Service Vixan - Digital  Creative Agency Next js Template",
@@ -150,7 +151,6 @@ const index = () => {
 
 
         <div className='py-8 lg:py-16 bg-white'>
-
           <div className="container flex flex-col w-full">
             <h1 className=' text-center text-3xl text-[#222222] font-inter font-semibold my-4 lg:text-5xl'>Choose Your ERP Development Services Option</h1>
 
@@ -181,7 +181,6 @@ const index = () => {
                 Discuss Your Case with an Expert
               </button>
             </div>
-
 
           </div>
         </div>
@@ -229,6 +228,190 @@ const index = () => {
             </div>
           </div>
         </div>
+
+
+        <div className='py-8 lg:py-16 bg-white'>
+          <div className="container flex flex-col w-full">
+            <h1 className=' text-center text-3xl text-[#222222] font-inter font-semibold my-4 lg:text-5xl'>
+              Belitsoft's ERP Development Process
+            </h1>
+
+            <div className=' flex flex-col gap-4 lg:mt-2'>
+              <div className=' flex gap-2'>
+                <div>
+                  <MdDone className=' text-[#53AC60] text-3xl' />
+                </div>
+                <p className='font-inter text-lg text-black m-0'>
+                  Business analysis.
+                  Business needs analysis and ERP requirements engineering. The first stage of our ERP development services includes
+                  consulting, identification of project scope, number of modules needed, etc. We begin with thorough comprehension and close examination of your
+                  organization’s strategy and existing business processes, and then provide you with an ERP implementation plan based on your individual needs
+                  and requirements. We also consider the specifics of your industry building a
+                  <span className='underline text-[#8C2CF4]'>
+                    woodworking ERP
+                  </span>
+                  or an ERP for car service stations, as an example.
+                </p>
+              </div>
+
+              <div className=' flex gap-2'>
+                <div>
+                  <MdDone className=' text-[#53AC60] text-3xl' />
+                </div>
+                <p className='font-inter text-lg text-black m-0'>
+                  Business analysis.
+                  Business needs analysis and ERP requirements engineering. The first stage of our ERP development services includes
+                  consulting, identification of project scope, number of modules needed, etc. We begin with thorough comprehension and close examination of your
+                  organization’s strategy and existing business processes, and then provide you with an ERP implementation plan based on your individual needs
+                  and requirements. We also consider the specifics of your industry building a
+                  <span className='underline text-[#8C2CF4]'>
+                    woodworking ERP
+                  </span>
+                  or an ERP for car service stations, as an example.
+                </p>
+              </div>
+
+              <div className=' flex gap-2'>
+                <div>
+                  <MdDone className=' text-[#53AC60] text-3xl' />
+                </div>
+                <p className='font-inter text-lg text-black m-0'>
+                  Business analysis.
+                  Business needs analysis and ERP requirements engineering. The first stage of our ERP development services includes
+                  consulting, identification of project scope, number of modules needed, etc. We begin with thorough comprehension and close examination of your
+                  organization’s strategy and existing business processes, and then provide you with an ERP implementation plan based on your individual needs
+                  and requirements. We also consider the specifics of your industry building a
+                  <span className='underline text-[#8C2CF4]'>
+                    woodworking ERP
+                  </span>
+                  or an ERP for car service stations, as an example.
+                </p>
+              </div>
+
+              <div className=' flex gap-2'>
+                <div>
+                  <MdDone className=' text-[#53AC60] text-3xl' />
+                </div>
+                <p className='font-inter text-lg text-black m-0'>
+                  Business analysis.
+                  Business needs analysis and ERP requirements engineering. The first stage of our ERP development services includes
+                  consulting, identification of project scope, number of modules needed, etc. We begin with thorough comprehension and close examination of your
+                  organization’s strategy and existing business processes, and then provide you with an ERP implementation plan based on your individual needs
+                  and requirements. We also consider the specifics of your industry building a
+                  <span className='underline text-[#8C2CF4]'>
+                    woodworking ERP
+                  </span>
+                  or an ERP for car service stations, as an example.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div className=' w-full bg-white'>
+          <div className="container w-full py-14">
+            <h1 className=' text-center text-3xl text-[#222222] font-inter font-semibold m-0 lg:text-5xl'>
+              Benefits of Belitsoft's ERP Software Development Services
+            </h1>
+            <div className='w-full flex flex-col items-center justify-center gap-6 mt-5'>
+              <div className=' bg-white flex-1 flex flex-wrap items-center justify-center gap-6 lg:gap-8 py-4'>
+                <ServiceCard background='#F6F9FC' />
+                <ServiceCard background='#F6F9FC' />
+                <ServiceCard background='#F6F9FC' />
+                <ServiceCard background='#F6F9FC' />
+                <ServiceCard background='#F6F9FC' />
+              </div>
+              <button className='bg-[#8C2CF4] font-inter text-white text-md lg:px-32 w-full lg:w-fit py-2 rounded-sm'>
+                Get Advice from an Expert
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div className="container">
+          <div className=' w-full bg-[#F6F3FF] py-14'>
+            <h1 className=' text-center text-3xl text-[#222222] font-inter font-semibold m-0 lg:text-5xl'>
+              Custom ERP Solutions by Belitsoft
+            </h1>
+            <p className=' text-start font-inter text-md font-light text-black my-4'>
+              Belitsoft delivers comprehensive ERP software solutions for all business types.
+            </p>
+
+            <div className='container lg:flex w-full justify-between gap-10 mt-5'>
+
+              <div className=' bg-white lg:rounded-lg flex-1 flex flex-col items-start px-2 lg:px-5 gap-8 py-4'>
+                <div className=' flex h-fit items-center gap-6'>
+                  <div className=' lg:w-[30px] lg:h-[30px] w-[25px] h-[25px] rounded-full flex justify-center items-center bg-[#8C2CF4]'>
+                    <MdOutlineDone color='#fff' className=' text-sm lg:text-md' />
+                  </div>
+                  <p className=' font-inter text-base lg:text-xl text-black m-0'>ERP System (cloud, mobile, web, SaaS, multi-tenant)</p>
+                </div>
+                <div className=' flex h-fit items-center gap-6'>
+                  <div className=' lg:w-[30px] lg:h-[30px] w-[25px] h-[25px] rounded-full flex justify-center items-center bg-[#8C2CF4]'>
+                    <MdOutlineDone color='#fff' className=' text-sm lg:text-md' />
+                  </div>
+                  <p className=' font-inter text-base lg:text-xl text-black m-0'>CRM Software</p>
+                </div>
+                <div className=' flex h-fit items-center gap-6'>
+                  <div className=' lg:w-[30px] lg:h-[30px] w-[25px] h-[25px] rounded-full flex justify-center items-center bg-[#8C2CF4]'>
+                    <MdOutlineDone color='#fff' className=' text-sm lg:text-md' />
+                  </div>
+                  <p className=' font-inter text-base lg:text-xl text-black m-0'>Human Resources Software</p>
+                </div>
+                <div className=' flex h-fit items-center gap-6'>
+                  <div className=' lg:w-[30px] lg:h-[30px] w-[25px] h-[25px] rounded-full flex justify-center items-center bg-[#8C2CF4]'>
+                    <MdOutlineDone color='#fff' className=' text-sm lg:text-md' />
+                  </div>
+                  <p className=' font-inter text-base lg:text-xl text-black m-0'>Manufacturing Software</p>
+                </div>
+                <div className=' flex h-fit items-center gap-6'>
+                  <div className=' lg:w-[30px] lg:h-[30px] w-[25px] h-[25px] rounded-full flex justify-center items-center bg-[#8C2CF4]'>
+                    <MdOutlineDone color='#fff' className=' text-sm lg:text-md' />
+                  </div>
+                  <p className=' font-inter text-base lg:text-xl text-black m-0'>Inventory Management Software</p>
+                </div>
+              </div>
+
+              <div className=' bg-white lg:rounded-lg flex-1 flex flex-col items-start px-2 lg:px-5 gap-8 py-2 pb-4'>
+                <div className=' flex h-fit items-center gap-6'>
+                  <div className=' lg:w-[30px] lg:h-[30px] w-[25px] h-[25px] rounded-full flex justify-center items-center bg-[#8C2CF4]'>
+                    <MdOutlineDone color='#fff' className=' text-sm lg:text-md' />
+                  </div>
+                  <p className=' font-inter text-base lg:text-xl text-black m-0'>Supply Chain Management Software</p>
+                </div>
+                <div className=' flex h-fit items-center gap-6'>
+                  <div className=' lg:w-[30px] lg:h-[30px] w-[25px] h-[25px] rounded-full flex justify-center items-center bg-[#8C2CF4]'>
+                    <MdOutlineDone color='#fff' className=' text-sm lg:text-md' />
+                  </div>
+                  <p className=' font-inter text-base lg:text-xl text-black m-0'>Business Applications</p>
+                </div>
+                <div className=' flex h-fit items-center gap-6'>
+                  <div className=' lg:w-[30px] lg:h-[30px] w-[25px] h-[25px] rounded-full flex justify-center items-center bg-[#8C2CF4]'>
+                    <MdOutlineDone color='#fff' className=' text-sm lg:text-md' />
+                  </div>
+                  <p className=' font-inter text-base lg:text-xl text-black m-0'>Governmental Resource Planning Software</p>
+                </div>
+                <div className=' flex h-fit items-center gap-6'>
+                  <div className=' lg:w-[30px] lg:h-[30px] w-[25px] h-[25px] rounded-full flex justify-center items-center bg-[#8C2CF4]'>
+                    <MdOutlineDone color='#fff' className=' text-sm lg:text-md' />
+                  </div>
+                  <p className=' font-inter text-base lg:text-xl text-black m-0'>Enterprise Appliance Transaction Modules</p>
+                </div>
+                <div className=' flex h-fit items-center gap-6'>
+                  <div className=' lg:w-[30px] lg:h-[30px] w-[25px] h-[25px] rounded-full flex justify-center items-center bg-[#8C2CF4]'>
+                    <MdOutlineDone color='#fff' className=' text-sm lg:text-md' />
+                  </div>
+                  <p className=' font-inter text-base lg:text-xl text-black m-0'>Custom-integration Solutions</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
 
 
       </div>

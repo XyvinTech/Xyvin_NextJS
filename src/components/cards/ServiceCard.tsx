@@ -1,9 +1,13 @@
 import React from 'react'
 import { MdOutlineDone } from "react-icons/md";
 
-const ServiceCard = () => {
+type ServiceCardProps = {
+    background?: string,
+}
+
+const ServiceCard = ({ background }: ServiceCardProps) => {
     return (
-        <div className='flex lg:gap-4 gap-2'>
+        <div style={{ backgroundColor: background }} className='flex lg:gap-4 gap-2 p-4'>
             <div className=' lg:w-[30px] lg:h-[30px] w-[25px] h-[25px] rounded-full flex justify-center items-center bg-[#8C2CF4]'>
                 <MdOutlineDone color='#fff' className=' text-sm lg:text-md'/>
             </div>
