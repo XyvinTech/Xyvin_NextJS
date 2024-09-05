@@ -1,3 +1,4 @@
+import Service2 from '@/components/NewService/Service2/Service2';
 import Service from '@/components/NewService/Service4/hero';
 import ErpCard from '@/components/cards/ErpCard';
 import ServiceCard from '@/components/cards/ServiceCard';
@@ -412,6 +413,7 @@ const index = () => {
           </div>
         </div>
 
+        <Service2/>
 
 
       </div>
