@@ -4,6 +4,8 @@ import HeaderOne from '@/layouts/headers/HeaderOne';
 import Image from 'next/image';
 import React from 'react';
 import { MdOutlineDone } from "react-icons/md";
+import { api_service_details } from '@/data/api_services';
+import { cn } from '@/utils/twmerge';
 
 export const metadata = {
   title: "Service Vixan - Digital  Creative Agency Next js Template",
@@ -22,6 +24,29 @@ const index = () => {
         <p className=' font-inter text-md text-[#707070] m-0'>
           {text}
         </p>
+      </div>
+    )
+  }
+
+  const APIServices = ({ title, text, image, index }: {
+    title: string,
+    text: React.ReactElement,
+    image: string,
+    index: number
+  }) => {
+    return (
+      <div className={cn(
+        index % 2 === 0 ? 'lg:flex' : 'lg:flex lg:flex-row-reverse',
+      )}>
+        <div className=' flex-1 flex flex-col justify-center'>
+          <h2 className=' font-inter text-black font-extrabold text-2xl lg:text-3xl m-0'>
+            {title}
+          </h2>
+          {text}
+        </div>
+        <div className=''>
+          <Image src={image} width={435} height={260} alt='api_img' className=' object-contain' />
+        </div>
       </div>
     )
   }
@@ -213,7 +238,7 @@ const index = () => {
           </div>
 
           <div className=' container'>
-            <div className=' w-[1000px]'>
+            <div className=' lg:w-[1000px]'>
               <h2 className=' font-inter text-black font-extrabold text-2xl lg:text-3xl m-0'>Headless commerce with total API customization</h2>
               <p className=' font-inter text-md text-black'>
                 Headless ecommerce gives your brand the look and feel you want with an
@@ -232,9 +257,93 @@ const index = () => {
 
         <div className=' bg-[#1E2251] w-full py-14'>
           <h1 className=' text-center font-inter font-black text-3xl lg:text-5xl text-white m-0'>
-            API Integration for Ecommerce
+            API Services For You
           </h1>
         </div>
+
+
+        <div className=' container py-7 flex flex-col gap-20'>
+          {api_service_details.map((service, index) => {
+            return <APIServices key={index} index={index} image={service.image} text={service.content} title={service.title} />
+          })}
+        </div>
+
+
+
+        <div className=' bg-[#1E2251] w-full py-14'>
+          <h1 className=' text-center font-inter font-black text-3xl lg:text-5xl text-white m-0'>
+            Business API Needs
+          </h1>
+        </div>
+
+
+        <div className=' container py-14'>
+          <div className=' w-full flex justify-center'>
+            <p className=' font-inter font-bold text-md text-[#707070] lg:w-[900px] text-center'>
+              We design application programming interfaces (APIs) for client connections or services,
+              helping you extend your business and platform reach. Become the standard!
+            </p>
+          </div>
+
+          <div className=' lg:flex mt-5'>
+            <div className=' flex-1 flex flex-col justify-center lg:gap-5'>
+              <p className=' font-inter text-md text-[#707070]'>
+                Our experienced team <b> develops outward-facing API services
+                  for enterprise businesses.</b> We will develop a high-availability
+                API for your business or app so you can offer your services to
+                the world. Bring customers and clients directly to your platform
+                with your own custom API:
+              </p>
+              <p className=' font-inter text-md text-[#707070] px-4'>
+                Order management <br />
+                Machine learning API <br />
+                Reservation booking <br />
+                Search features <br />
+                Social media services <br />
+                Inventory and product details <br />
+                Customer service and chat <br />
+                Business intelligence <br />
+                Analytics and sales reporting <br />
+                Mobile and platform data <br />
+              </p>
+              <p className=' font-inter text-md text-[#707070]'>
+                Providing custom API services to your customers enhances
+                your growth, productivity and automation. Let us know what
+                your business needs and we'll develop an API to match.
+              </p>
+            </div>
+            <div className=' flex-1 flex justify-center items-center'>
+              <Image className='object-contain' src="/assets/img/services/api_4.png" width={467} height={670} alt='api' />
+            </div>
+          </div>
+
+          <div className=' flex w-full justify-center py-8 lg:py-12'>
+            <div className=' lg:w-[1200px]'>
+              <p className=' font-inter font-bold text-md text-[#707070] lg:px-4'>
+                Your Own App Store
+              </p>
+              <p className=' font-inter text-md text-[#707070] lg:px-4'>
+                Having a business API for third-party developers to create apps and services using your tech
+                opens the door to innovation and creativity. External developers can build a variety of
+                applications that enhance your core services. This kind of collaboration leads to new features,
+                improved customer options and expansion into new markets you might not have considered.
+                Start fostering a community of developers invested in your platform's success by enabling third-
+                party development via your own API. <b> We'll build this for you! </b>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div className=' bg-[#1E2251] w-full py-14'>
+          <h1 className=' text-center font-inter font-black text-3xl lg:text-5xl text-white m-0'>
+            API Consulting Services
+          </h1>
+        </div>
+
+
+
 
       </div>
     </Wrapper>
