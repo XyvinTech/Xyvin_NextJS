@@ -237,7 +237,7 @@ const index = () => {
             </div>
           </div>
 
-          <div className=' container'>
+          <div className=' container lg:py-6'>
             <div className=' lg:w-[1000px]'>
               <h2 className=' font-inter text-black font-extrabold text-2xl lg:text-3xl m-0'>Headless commerce with total API customization</h2>
               <p className=' font-inter text-md text-black'>
@@ -340,6 +340,60 @@ const index = () => {
           <h1 className=' text-center font-inter font-black text-3xl lg:text-5xl text-white m-0'>
             API Consulting Services
           </h1>
+        </div>
+
+
+        <div className=' container py-14'>
+
+          <div className=' lg:flex'>
+            <div className=' flex-1'>
+              <Image className=' object-contain' src="/assets/img/services/api_5.png" width={600} height={370} alt='api_img' />
+            </div>
+
+            <div className=' flex-1'>
+              <p className=' font-inter text-md text-[#707070] lg:px-4 font-bold'>
+                Our development experience and deep domain knowledge
+                makes us expert API consultants.
+              </p>
+              <p className=' font-inter text-md text-[#707070] lg:px-4'>
+                Discover unparalleled API consulting services where our team
+                of seasoned experts is dedicated to empowering your business <br />
+                through tailored API solutions. We focus on understanding your
+                unique requirements and delivering strategic guidance to help
+                you harness the capabilities of APIs for seamless system
+                integration, efficient data exchange, and improved operational
+                processes. Our consultants are committed to providing the
+                insights and support necessary to drive innovation and elevate
+                your business performance.
+              </p>
+              <p className=' font-inter text-md text-[#707070] lg:px-4'>
+                If you're looking for a partner to consult on your API needs,
+                then our consulting services are for you.
+              </p>
+            </div>
+
+          </div>
+
+          <div className=' flex w-full justify-center py-8 lg:py-12'>
+            <div className=' lg:w-[1200px]'>
+              <p className=' font-inter font-bold text-md text-[#707070] lg:px-4'>
+                Making APIs Make Sense
+              </p>
+              <p className=' font-inter text-md text-[#707070] lg:px-4'>
+                We understand that the world of APIs can be daunting, which is why we're here to help. Our team
+                of experts works closely with your unique business needs and the challenges. We tailor our
+                advice and solutions to leverage your full API potential. Whether you're looking to enhance
+                customer experience, streamline operations, or connect with other digital platforms, our
+                consulting service provides the clarity and direction you need.
+              </p>
+              <p className=' font-inter text-md text-[#707070] lg:px-4 mt-4'>
+                We focus on how an API can transform your business, making sure you feel confident and
+                informed every step of the way. With our support, you'll not only understand the value of API
+                integration but how it will drive your business forward.
+              </p>
+            </div>
+          </div>
+
         </div>
 
 
