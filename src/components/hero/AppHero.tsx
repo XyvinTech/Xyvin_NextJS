@@ -9,7 +9,7 @@ const Point = ({ content }: {
     return (
         <div className=' flex h-fit items-center'>
             <Image src="/assets/img/app/app_arrow.png" width={24} height={24} alt='arrow' />
-            <p className=' text-[#222222] font-inter font-medium text-base lg:text-xl m-0 gap-1'>
+            <p className=' text-[#222222] font-poppins font-medium text-base lg:text-xl m-0 gap-1'>
                 {content}
             </p>
         </div>
@@ -27,11 +27,11 @@ export default function AppHero() {
                 <div className=' container flex flex-col lg:flex-row justify-center h-full items-center'>
                     <div className=' lg:flex-1 flex flex-col gap-20 lg:gap-32'>
                         <div>
-                            <h3 className=' uppercase font-inter text-sm text-[#1E2251] mb-4 font-normal mt-4'>home / CRM Software Development</h3>
-                            <h1 className=' font-bold font-inter text-4xl m-0 lg:text-6xl'>
+                            <h3 className=' uppercase font-poppins text-sm text-[#1E2251] mb-4 font-normal mt-4'>home / CRM Software Development</h3>
+                            <h1 className=' font-bold font-poppins text-4xl m-0 lg:text-6xl'>
                                 App Developers New York
                             </h1>
-                            <p className=' font-inter text-lg lg:text-xl font-light text-[#222222] m-0 mt-4'>
+                            <p className=' font-poppins text-lg lg:text-xl font-light text-[#222222] m-0 mt-4'>
                                 iQlance is one of the Top mobile app development
                                 companies in New York. The apps and software
                                 developed by iQlance help deliver seamless experiences
@@ -49,8 +49,8 @@ export default function AppHero() {
                                 <Point content="Flexible engagement models" />
                             </div>
                             <div className=' flex flex-1 flex-col mt-5 lg:flex-row lg:gap-2'>
-                                <input type="text" className=' flex-1 border-2 rounded-sm p-2 placeholder:font-inter placeholder:font-medium placeholder:text-[#757575] lg:mt-2' placeholder='Enter your Phone Number' />
-                                <button className=' flex-1 bg-[#7C56FE] p-2 rounded-sm text-white font-inter font-medium mt-2 lg:mt-0'>Send Me a Proposal</button>
+                                <input type="text" className=' flex-1 border-2 rounded-sm p-2 placeholder:font-poppins placeholder:font-medium placeholder:text-[#757575] lg:mt-2' placeholder='Enter your Phone Number' />
+                                <button className=' flex-1 bg-[#7C56FE] p-2 rounded-sm text-white font-poppins font-medium mt-2 lg:mt-0'>Send Me a Proposal</button>
                             </div>
                         </div>
 
