@@ -63,7 +63,7 @@ const HeroHomeOne = () => {
                     <div className="cs_height_65 cs_height_lg_40"></div>
                     <div className="cs_hero_btn_wrap">
                       <div className="cs_round_btn_wrap">
-                        <Link href="/portfolio"
+                        <Link href="/Xyvin/portfolio"
                           className="cs_hero_btn cs_round_btn btn-item"><span></span>
                           Our
                           Projects</Link>

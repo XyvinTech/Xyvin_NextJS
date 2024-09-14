@@ -17,38 +17,24 @@ const service_data: DataType[] = [
   },
   {
     id: 2,
-    title: `Ecommerce Solutions`,
-    des: `An eCommerce site is much more than a simple website that sells goods and services. . At Xyvin, we leverage the industry's best open-source solutions and web-based platforms to create visually appealing and high-converting eCommerce sites. If you're looking to enter the eCommerce market, you'll need a partner with the experience and professionalism to make it happen. Xyvin is a trusted expert in delivering high-performance eCommerce web solutions. Our team of skilled developers designs smooth and seamless sites customised to your needs, providing you with a robust platform for success.`
-  },
-  {
-    id: 3,
-    title: `Search Engine Optimisation `,
-    des: `Xyvin offers customized SEO solutions using the latest technologies and best practices. We approach each project by thoroughly researching your goals and target audience. Our team develops specialised SEO strategies that will significantly enhance your online presence and business growth. Understanding our clients' needs accurately has always been our greatest strength.
-`
-  },
-  {
-    id: 4,
     title: `Web Development`,
     des: `Our web development services promise to provide a user friendly interface for your business. The right development foundation is what makes a website truly exceptional. At Xyvin, we combine specialized expertise in web development with the latest project management tools to create top-quality websites. Our dedicated team is committed to elevating your brand to the next level!.`
   },
   {
-    id: 5,
+    id: 3,
     title: `ERP Development `,
     des: `An efficient ERP system is the backbone of your business operations. It integrates various processes across departments, ensuring smooth and seamless workflows. Therefore, developing a robust ERP solution is essential for the long-term success of your business. As a leading ERP development company we ensure our solutions meet international standards.`
   },
   {
-    id: 6,
-    title: `CRM`,
-    des: `At Xyvin, we combine the latest technology with our deep expertise to deliver CRM systems that are user-friendly, scalable, and packed with features.  Let us help you transform your customer management and take your business to new heights with Xyvin’s innovative CRM development services.`
+    id: 4,
+    title: `API Integration Services`,
+    des: `Our API integration services are your gateway to seamless connectivity and enhanced functionality. APIs are the backbone of modern software systems, allowing different applications to communicate and share data effortlessly. At Xyvin , we specialize in integrating APIs to unlock new capabilities, streamline processes, and improve overall performance.`
   },
   {
-    id: 7,
-    title: `API Integration Services`,
-    des: `Our API integration services are your gateway to seamless connectivity and enhanced functionality. APIs are the backbone of modern software systems, allowing different applications to communicate and share data effortlessly. At Xyvin , we specialize in integrating APIs to unlock new capabilities, streamline processes, and improve overall performance.
-`
+    id: 5,
+    title: `Search Engine Optimisation `,
+    des: `Xyvin offers customized SEO solutions using the latest technologies and best practices. We approach each project by thoroughly researching your goals and target audience. Our team develops specialised SEO strategies that will significantly enhance your online presence and business growth. Understanding our clients' needs accurately has always been our greatest strength.`
   },
-
-
 ]
 
 const ServiceHomeOne = () => {
