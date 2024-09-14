@@ -83,9 +83,7 @@ const index = () => {
             <HeaderOne />
             <div id="scrollsmoother-container">
                 <AppHero />
-
-                <div className='container flex flex-col gap-5 py-36 items-center'>
-
+                <div className='container flex flex-col gap-5 pb-5 lg:py-36 items-center'>
                     <h2 className='text-[#181D45] font-poppins font-bold text-center text-3xl m-0 lg:text-4xl'>
                         Mobile App Development Company New York
                     </h2>
@@ -107,7 +105,7 @@ const index = () => {
                 </div>
 
 
-                <div className='container flex flex-col gap-5 items-center pb-36'>
+                <div className='container flex flex-col gap-5 items-center pb-5 lg:pb-36'>
 
                     <h2 className='text-[#181D45] font-poppins font-bold text-center text-3xl m-0 lg:text-4xl'>
                         iQlance – Where Innovation Meets Web App Mastery in New
@@ -144,7 +142,7 @@ const index = () => {
                     <Image className=' w-full object-cover' src="/assets/img/app/app_3.png" width={1300} height={325} alt='hero' />
                 </div>
 
-                <div className='container flex flex-col gap-5 items-center pb-36'>
+                <div className='container flex flex-col gap-5 items-center pb-5 lg:pb-36'>
                     <h2 className='text-[#181D45] font-poppins font-bold text-center text-3xl m-0 lg:text-4xl'>
                         App Development New York – Our Process
                     </h2>
@@ -157,7 +155,7 @@ const index = () => {
 
 
 
-                <div className='container flex flex-col gap-5 items-center pb-36'>
+                <div className='container flex flex-col gap-5 items-center pb-5 lg:pb-36'>
                     <h2 className='text-[#181D45] font-poppins font-bold text-center text-3xl m-0 lg:text-4xl'>
                         Our App Development NYC Services
                     </h2>
@@ -169,7 +167,7 @@ const index = () => {
                     </p>
                 </div>
 
-                <div className="container pb-36">
+                <div className="container pb-5 lg:pb-36">
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-5 place-items-center'>
                         <DevService />
                         <DevService />
@@ -189,7 +187,7 @@ const index = () => {
 
 
 
-                <div className=' container pb-36'>
+                <div className=' container pb-5 lg:pb-36'>
                     <div className=' w-full bg-[#F6F3FF] px-7 py-10 flex flex-col justify-center items-center gap-4'>
                         <Image src="/assets/img/app/app_icon_1.svg" width={80} height={80} alt='app_icon' />
                         <h2 className='text-[#181D45] font-poppins font-bold text-center text-3xl m-0 lg:text-4xl'>
@@ -234,7 +232,7 @@ const index = () => {
 
 
 
-                <div className='container flex flex-col gap-5 items-center pb-36'>
+                <div className='container flex flex-col gap-5 items-center pb-5 lg:pb-36'>
                     <h2 className='text-[#181D45] font-poppins font-bold text-center text-3xl m-0 lg:text-4xl'>
                         Industry Verticals We Cater To
                     </h2>
@@ -263,7 +261,7 @@ const index = () => {
                 </div>
 
 
-                <div className=' container pb-36'>
+                <div className=' container pb-5 lg:pb-36'>
                     <div className=' w-full bg-[#F6F3FF] px-7 py-10 flex flex-col justify-center items-center gap-4'>
                         <Image src="/assets/img/app/app_icon_1.svg" width={80} height={80} alt='app_icon' />
                         <h2 className='text-[#181D45] font-poppins font-bold text-center text-3xl m-0 lg:text-4xl'>
@@ -308,7 +306,7 @@ const index = () => {
                 </div>
 
 
-                <div className='container flex flex-col gap-5 items-center pb-36'>
+                <div className='container flex flex-col gap-5 items-center pb-5 lg:pb-36'>
                     <h2 className='text-[#181D45] font-poppins font-bold text-center text-3xl m-0 lg:text-4xl'>
                         Endeavors That Make Us Proud
                     </h2>
@@ -319,7 +317,7 @@ const index = () => {
                 </div>
 
 
-                <div className=' container pb-36'>
+                <div className=' container pb-3'>
                     <div className=' w-full bg-[rgb(30,34,81)] px-7 py-10 flex flex-col gap-4 lg:flex-row lg:items-center'>
                         <div className=' flex flex-col gap-4 lg:flex-1'>
                             <h3 className='text-white font-poppins font-bold text-3xl m-0 lg:text-4xl'>
@@ -344,7 +342,7 @@ const index = () => {
                 </div>
 
 
-                <div className=' container pb-36 lg:flex'>
+                <div className=' container pb-10 lg:pb-36 lg:flex'>
                     <div className=' flex-1'>
                         <Image src="/assets/img/app/app_5.png" className=' object-cover' width={622} height={622} alt='hero' />
                     </div>
@@ -383,7 +381,7 @@ const index = () => {
                     </div>
                 </div>
 
-                <div className=' container pb-36'>
+                <div className=' container lg:pb-36'>
                     <h3 className='text-[#222222] font-poppins font-bold text-3xl text-center m-0 lg:text-4xl mt-3 lg:mt-0'>
                         Why Choose iQlance for App Development in New York?
                     </h3>
