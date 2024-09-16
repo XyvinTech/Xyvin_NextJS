@@ -27,6 +27,14 @@ const industries = [
     { name: 'Oil & Gas', image: '/assets/img/app/app_4.jpg' },
 ];
 
+const heroPoints = [
+    'Industry Specific Dedicated Developers',
+    'Customized App with Affordable Price',
+    'Provide Risk-Free trial for 1 Week',
+    'Flexible engagement models',
+    'Flexible engagement models',
+]
+
 const Point = ({ content }: {
     content: React.ReactElement | string
 }) => {
@@ -82,7 +90,18 @@ const index = () => {
         <Wrapper>
             <HeaderOne />
             <div id="scrollsmoother-container">
-                <AppHero />
+            <AppHero 
+                    title='App Developers New York' 
+                    points={heroPoints}
+                    description='iQlance is one of the Top mobile app development
+                                companies in New York. The apps and software
+                                developed by iQlance help deliver seamless experiences
+                                across different devices and platforms. We develop
+                                software for different OS. Being a reputed mobile app
+                                development company New York as well as Canada, we
+                                are known to come up with something unique and out-
+                                of-the-box every time.'/>
+
                 <div className='container flex flex-col gap-5 pb-5 lg:py-36 items-center'>
                     <h2 className='text-[#181D45] font-poppins font-bold text-center text-3xl m-0 lg:text-4xl'>
                         Mobile App Development Company New York
