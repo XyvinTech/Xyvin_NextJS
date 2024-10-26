@@ -1,6 +1,5 @@
 'use client'
 import React from 'react';
-import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -114,7 +113,7 @@ const PortfolioHomeOne = () => {
           {portfolio_slider.map((item, i) =>
             <SwiperSlide key={i} className="swiper-slide">
               <div className="cs_horizontal_scroll">
-                <Link href="/portfolio-details" className="cs_portfolio cs_style_1">
+                <div className="cs_portfolio cs_style_1">
                   <div className="cs_portfolio_img">
                     <Image src={item.img} alt="Thumb" />
                   </div>
@@ -127,7 +126,7 @@ const PortfolioHomeOne = () => {
                       {item.category}
                     </div>
                   </div>
-                </Link>
+                </div>
               </div>
             </SwiperSlide>
           )}
