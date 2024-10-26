@@ -20,15 +20,13 @@
 }
 
 .circleMenu a {
-  display: block;
-
-  width: 50px; /* Adjust the icon size */
-  height: 50px; /* Adjust the icon size */
-  background-color: #000; /* Adjust the background color */
-
+  display: flex; /* Use flex display */
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
   border-radius: 50%;
-  text-align: center;
-  line-height: 40px;
   transition: background-color 0.3s ease;
 }
 
@@ -44,8 +42,8 @@
 .circleMenu svg {
 
   fill: #fff; /* Adjust icon color */
-  width: 60%;
-  height: 60%;
+  width: 80%;
+  height: 80%;
   justify-content: center;
   align-items: center;
 
