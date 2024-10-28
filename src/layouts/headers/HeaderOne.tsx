@@ -30,7 +30,7 @@ const menu_data: DataType[] = [
   {
     id: 2,
     title: "About",
-    link: "/about",
+    link: "/Xyvin/about",
     has_dropdown: false,
   },
   // {
@@ -74,21 +74,21 @@ const menu_data: DataType[] = [
   {
     id: 4,
     title: "Services",
-    link: "/service",
+    link: "/Xyvin/service",
     has_dropdown:false,
     
   },
   {
     id: 5,
     title: "Portfolio",
-    link: "/portfolio",
+    link: "/Xyvin/portfolio",
     has_dropdown: false,
    
   },
   {
     id: 6,
     title: "Blog",
-    link: "/blog",
+    link: "/Xyvin/blog",
     has_dropdown: false,
     
   },
