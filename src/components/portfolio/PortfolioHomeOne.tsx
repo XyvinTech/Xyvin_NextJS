@@ -56,19 +56,19 @@ const portfolio_slider: PortfolioItem[] = [
     img: portfolio_img_5,
     title: `Project Task Management`,
     category: `Digital Services / Web Design`,
-    link: `/portfolio/project-task-management-web-design-2`,
+    link: `https://www.special40.com/`,
   },
   {
     img: portfolio_img_6,
     title: `Project Task Management`,
     category: `Digital Services / Figma Design`,
-    link: `/portfolio/project-task-management-figma-design-2`,
+    link: `https://www.workoindia.com/`,
   },
   {
     img: portfolio_img_7,
     title: `Project Task Management`,
     category: `Digital Services / Web Design`,
-    link: `/portfolio/project-task-management-web-design-3`,
+    link: `https://www.azavista.com/`,
   },
   {
     img: portfolio_img_8,

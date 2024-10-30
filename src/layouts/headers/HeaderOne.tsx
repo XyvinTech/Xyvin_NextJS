@@ -85,13 +85,13 @@ const menu_data: DataType[] = [
     has_dropdown: false,
    
   },
-  // {
-  //   id: 6,
-  //   title: "Blog",
-  //   link: "/Xyvin/blog",
-  //   has_dropdown: false,
+  {
+    id: 6,
+    title: "Blog",
+    link: "/Xyvin/blog",
+    has_dropdown: false,
     
-  // },
+  },
   {
     id: 7,
     title: "Contact",
