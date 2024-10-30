@@ -9,7 +9,7 @@ import React from 'react';
 
 
 export const metadata = {
-  title: "Blog Vixan - Digital  Creative Agency Next js Template",
+  title: "Blog Xyvin - Digital  Creative Agency Next js Template",
 };
 
 const index = () => {

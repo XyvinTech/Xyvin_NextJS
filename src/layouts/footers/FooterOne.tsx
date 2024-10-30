@@ -27,7 +27,7 @@ India - 682018`,
     { title: `ABOUT`, link: "/Xyvin/about" },
     { title: `SERVICES`, link: "/Xyvin/service" },
     { title: `PORTFOLIO`, link: "/Xyvin/portfolio" },
-    { title: `BLOG`, link: "/Xyvin/blog" },
+    // { title: `BLOG`, link: "/Xyvin/blog" },
     { title: `CONTACT US`, link: "/Xyvin/contact" },
   ]
 }

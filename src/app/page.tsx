@@ -40,7 +40,7 @@ const index = () => {
         <Testimonial />
         <FunFactHomeOne />
         <VideoHomeOne />
-        <BlogHomeOne />
+        {/* <BlogHomeOne /> */}
         <SubscribeHomeOne />
         <BrandHomeOne style_2={false}  />
         <Accordion/>

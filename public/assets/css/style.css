@@ -1,6 +1,6 @@
 /* 
 |......................................................................
-| Template Name: Vixan
+| Template Name: Xyvin
 | Author: Thememarch
 | Version: 1.0.0
 |--------------------------------------------------------------------------
@@ -6320,11 +6320,11 @@ label {
 }
 
 .cs_portfolio.cs_style_1 .cs_portfolio_title:hover {
-    color: #ff6b00;
+    /* color: #ff6b00; */
 }
 
 .cs_portfolio.cs_style_1 .cs_portfolio_subtitle {
-    color: var(--accent-color);
+    color: #e0e0e0;
     font-size: 18px;
     line-height: 1.6em;
 }
@@ -6385,7 +6385,7 @@ label {
 }
 
 .cs_portfolio.cs_style_2 .cs_portfolio_title:hover {
-    color: #ff6b00;
+    /* color: #ff6b00; */
 }
 
 .cs_portfolio.cs_style_2 .cs_portfolio_subtitle {

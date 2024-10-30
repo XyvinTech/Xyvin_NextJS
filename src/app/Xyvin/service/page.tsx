@@ -9,7 +9,7 @@ import React from 'react';
 // import Service1 from '@/components/NewService/Service1/service'
 
 export const metadata = {
-  title: "Service Vixan - Digital  Creative Agency Next js Template",  
+  title: "Service Xyvin - Digital  Creative Agency Next js Template",  
 };
 
 const index = () => {

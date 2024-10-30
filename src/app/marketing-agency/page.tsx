@@ -19,7 +19,7 @@ import FooterOne from '@/layouts/footers/FooterOne';
 
 
 export const metadata = {
-  title: "Marketing Agency Vixan - Digital  Creative Agency Next js Template",
+  title: "Marketing Agency Xyvin - Digital  Creative Agency Next js Template",
 };
 
 

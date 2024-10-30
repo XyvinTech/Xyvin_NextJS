@@ -8,7 +8,7 @@ import React from 'react';
 
 
 export const metadata = {
-  title: "Portfolio Details Vixan - Digital  Creative Agency Next js Template",
+  title: "Portfolio Details Xyvin - Digital  Creative Agency Next js Template",
 };
 
 

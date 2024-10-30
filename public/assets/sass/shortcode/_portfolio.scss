@@ -215,11 +215,11 @@
         color: $white;
         margin-bottom: 8px;
         &:hover {
-            color: $accent;
+            // color: $accent;
         }
     }
     .cs_portfolio_subtitle {
-        color: var(--accent-color);
+        color: #e0e0e0;
         font-size: 18px;
         line-height: 1.6em;
         &.cs_color_1 {
@@ -273,11 +273,11 @@
         font-size: 22px;
         line-height: 27px;
         &:hover {
-            color: $accent;
+            // color: $accent;
         }
     }
     .cs_portfolio_subtitle {
-        color: $secondary;
+        color: #bababa;
         font-size: 18px;
         font-weight: 400;
     }

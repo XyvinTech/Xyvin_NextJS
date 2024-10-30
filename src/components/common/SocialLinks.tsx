@@ -10,29 +10,24 @@ interface HDataType {
 const hero_link_home_three: HDataType[] = [
   {
     id: 1,
-    link: "https://www.facebook.com",
+    link: "https://www.facebook.com/profile.php?id=61559679521641",
     title: "Facebook",
   },
   {
     id: 2,
-    link: "https://www.linkedin.com",
+    link: "https://www.linkedin.com/company/xyvin-technologies-pvt-ltd/mycompany/",
     title: "Linkedin",
   },
   {
     id: 3,
-    link: "https://www.instagram.com",
+    link: "https://www.instagram.com/xyvintech/",
     title: "Instagram",
   },
   {
     id: 4,
-    link: "https://www.twitter.com",
+    link: "https://x.com/Xyvintech",
     title: "Twitter",
   },
-  {
-    id: 4,
-    link: "https://www.dribbble.com",
-    title: "Dribbble",
-  }
 ]
 export const SocialLinks = () => {
   return (

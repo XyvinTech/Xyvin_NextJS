@@ -131,7 +131,7 @@ const PortfolioHomeOne = () => {
                   <Image src={item.img} alt={item.title} />
                 </div>
                 <div className="cs_portfolio_overlay"></div>
-                <div className="cs_portfolio_info">
+                <div className="cs_portfolio_info bg-[#3131316e]">
                   <h2 className="cs_portfolio_title">{item.title}</h2>
                   <div className="cs_portfolio_subtitle">{item.category}</div>
                 </div>

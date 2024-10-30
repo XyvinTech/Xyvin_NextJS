@@ -6,7 +6,7 @@ import Wrapper from '@/layouts/Wrapper';
 import Error from '@/components/error';
 
 // export const metadata = {
-//   title: "404 error || Vixan - Digital  Creative Agency Next js Template",
+//   title: "404 error || Xyvin - Digital  Creative Agency Next js Template",
 // };
 
 

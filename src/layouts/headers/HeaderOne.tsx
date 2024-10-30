@@ -85,13 +85,13 @@ const menu_data: DataType[] = [
     has_dropdown: false,
    
   },
-  {
-    id: 6,
-    title: "Blog",
-    link: "/Xyvin/blog",
-    has_dropdown: false,
+  // {
+  //   id: 6,
+  //   title: "Blog",
+  //   link: "/Xyvin/blog",
+  //   has_dropdown: false,
     
-  },
+  // },
   {
     id: 7,
     title: "Contact",
@@ -309,23 +309,23 @@ const HeaderOne = () => {
 
                   <ul className="cs_social_link">
                     <li>
-                      <a target="_blank" href="https://www.facebook.com/">
+                      <a target="_blank" href="https://www.facebook.com/profile.php?id=61559679521641">
                         Facebook
                       </a>
                     </li>
                     <li>
-                      <a target="_blank" href="https://www.linkedin.com/">
+                      <a target="_blank" href="https://www.linkedin.com/company/xyvin-technologies-pvt-ltd/mycompany/">
                         Linkedin
                       </a>
                     </li>
                     <li>
-                      <a target="_blank" href="https://www.instagram.com/">
+                      <a target="_blank" href="https://www.instagram.com/xyvintech/">
                         Instagram
                       </a>
                     </li>
                     <li>
-                      <a target="_blank" href="https://dribbble.com/">
-                        Dribbble
+                      <a target="_blank" href="https://x.com/Xyvintech">
+                      Twitter
                       </a>
                     </li>
                   </ul>
