@@ -25,7 +25,24 @@ const BlogArea: React.FC = () => {
   const [blogs, setBlogs] = useState<Blog[]>([]);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
-  const [blogsPerPage] = useState(3); // Adjust this value to change how many blogs are fetched per load
+  const [blogsPerPage] = useState(3); 
+  const [totalPosts, setTotalPosts] = useState(3);
+
+  useEffect(() => {
+    const fetchTotalPosts = async () => {
+      try {
+        const response = await fetch(
+          "https://dev.to/api/articles?username=admin_xyvin_ba2f4f68096"
+        );
+        const data: Blog[] = await response.json();
+        setTotalPosts(data.length); 
+      } catch (error) {
+        console.error("Error fetching total posts:", error);
+      }
+    };
+
+    fetchTotalPosts();
+  }, []);
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -65,6 +82,7 @@ const BlogArea: React.FC = () => {
                 <h2 className="cs_section_title anim_heading_title">
                   New Day <br /> New Inspiration
                 </h2>
+                {totalPosts !== null && <p>Total Posts: {totalPosts}</p>}
               </div>
             </div>
           </div>
@@ -120,12 +138,14 @@ const BlogArea: React.FC = () => {
           <div>
             <div className="cs_hero_btn_wrap text-center">
               <div className="cs_round_btn_wrap">
-                <button
-                  onClick={loadMoreBlogs}
-                  className="cs_hero_btn cs_round_btn btn-item"
-                >
-                  <span></span> Load More
-                </button>
+                {blogs.length < totalPosts && (
+                  <button
+                    onClick={loadMoreBlogs}
+                    className="cs_hero_btn cs_round_btn btn-item"
+                  >
+                    <span></span> Load More
+                  </button>
+                )}
               </div>
             </div>
           </div>
