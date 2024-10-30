@@ -97,7 +97,7 @@ const ServiceDetailsFaq = () => {
               </div>
             </div>
             <div className="cs_back_to_services_btn">
-              <a href="#" className="cs_style_1">
+              <a href="Xyvin/service" className="cs_style_1">
                 <span>Back To Services Page</span>
                 <svg width="19" height="13" viewBox="0 0 19 13" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
