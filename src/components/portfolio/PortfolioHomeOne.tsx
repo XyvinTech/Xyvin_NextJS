@@ -50,7 +50,7 @@ const portfolio_slider: PortfolioItem[] = [
     img: portfolio_img_4,
     title: `Project Task Management`,
     category: `Digital Services / App Design`,
-    link: `/portfolio/project-task-management-app-design-2`,
+    link: `https://buzinessconnect.com/`,
   },
   {
     img: portfolio_img_5,
@@ -74,13 +74,13 @@ const portfolio_slider: PortfolioItem[] = [
     img: portfolio_img_8,
     title: `Project Task Management`,
     category: `Digital Services / Figma Design`,
-    link: `/portfolio/project-task-management-figma-design-3`,
+    link: `https://thegaiasanctuary.com/`,
   },
   {
     img: portfolio_img_9,
     title: `Project Task Management`,
     category: `Digital Services / App Design`,
-    link: `/portfolio/project-task-management-app-design-3`,
+    link: `https://atlantismedical.com.au/`,
   },
   {
     img: portfolio_img_10,
