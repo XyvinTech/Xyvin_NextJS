@@ -3,7 +3,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
-import avatar_img1 from "@/assets/img/xyvin_logo.png";
+import avatar_img1 from "@/assets/img/teamsimg1.jpeg";
 import avatar_img2 from "@/assets/img/testimonial_logo1.png";
 import avatar_img3 from "@/assets/img/testimonial_logo2.png";
 import avatar_img4 from "@/assets/img/testimonial_logo3.png";

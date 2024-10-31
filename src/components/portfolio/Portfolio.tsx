@@ -11,7 +11,8 @@ import portfolio_img_8 from "@/assets/img/portfolio_3.jpg";
 import portfolio_img_9 from "@/assets/img/portfolio_4.jpg";
 import portfolio_img_10 from "@/assets/img/portfolio_6.jpg";
 import portfolio_img_11 from "@/assets/img/portfolio_7.jpg"; 
-
+import portfolio_img_12 from "@/assets/img/portfolio_8.jpg";
+import portfolio_img_13 from "@/assets/img/portfolio_9.jpg";
 
 interface DataType {
   id: number;
@@ -19,6 +20,7 @@ interface DataType {
   img: StaticImageData;
   title: string;
   des: string;
+  link: string;
 }
 
 const portfolio_data: DataType[] = [
@@ -29,6 +31,7 @@ const portfolio_data: DataType[] = [
 		img: portfolio_img_6,
 		title: "Project Task Management",
 		des: "Digital Services / App Design",
+    link: "https://doublehorse.in/",
 	},
 	{
 		id: 2,
@@ -36,6 +39,7 @@ const portfolio_data: DataType[] = [
 		img: portfolio_img_7,
 		title: "Project Task Management",
 		des: "Digital Services / App Design",
+    link: `https://www.goecworld.com/`,
 	},
 	{
 		id: 3,
@@ -43,6 +47,7 @@ const portfolio_data: DataType[] = [
 		img: portfolio_img_8,
 		title: "Project Task Management",
 		des: "Digital Services / App Design",
+    link: `https://basariopticals.com/`,
 	},
 	{
 		id: 4,
@@ -50,6 +55,7 @@ const portfolio_data: DataType[] = [
 		img: portfolio_img_9,
 		title: "Project Task Management",
 		des: "Digital Services / App Design",
+    link: `https://buzinessconnect.com/`,
 	},
 	{
 		id: 5,
@@ -57,6 +63,7 @@ const portfolio_data: DataType[] = [
 		img: portfolio_img_10,
 		title: "Project Task Management",
 		des: "Digital Services / App Design",
+    link: `https://www.workoindia.com/`,
 	},
 	{
 		id: 6,
@@ -64,7 +71,24 @@ const portfolio_data: DataType[] = [
 		img: portfolio_img_11,
 		title: "Project Task Management",
 		des: "Digital Services / App Design",
+    link: `https://www.azavista.com/`,
 	},
+  {
+    id: 7,
+    category: 'UI Design',
+    img: portfolio_img_12,
+    title: "Project Task Management",
+    des: "Digital Services / App Design",
+    link: `https://atlantismedical.com.au/`,
+  },
+  {
+    id: 8,
+    category: 'UX Design',
+    img: portfolio_img_13,
+    title: "Project Task Management",
+    des: "Digital Services / App Design",
+    link: `https://www.special40.com/`,
+  }
 ]
 
 // data
@@ -128,7 +152,7 @@ const Portfolio = () => {
             <div className="cs_isotop_items_details row">
               {items.map((item, i) => (
                 <div key={i} className="col-md-4 cs_item cs_ui_design cs_development">
-                  <Link href="/portfolio-details" className="cs_portfolio cs_style_1">
+                  <Link href={item.link} className="cs_portfolio cs_style_1">
                     <div className="cs_portfolio_img">
                       <Image src={item.img} className="img-fluid" alt="Thumb" />
                     </div>
