@@ -212,7 +212,7 @@ const Testimonial = ({ style_service }: any) => {
                         </blockquote>
                         <div className="cs_testimonial_meta">
                           <div className="cs_testimonial_avatar">
-                            <Image src={item.img} alt="Avatar" />
+                            <Image src={item.img} alt="Avatar" width={80} height={80}/>
                           </div>
                           <div className="cs_testimonial_meta_right">
                             <h3 className="cs_testimonial_avatar_name">
