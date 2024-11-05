@@ -67,7 +67,7 @@ const Accordion = () => {
 const styles: { [key: string]: React.CSSProperties } = {
   container: {
     maxWidth: "600px",
-    margin: "0 auto",
+    margin: "30px auto",
     padding: "20px",
     fontFamily: "Arial, sans-serif",
     color: "#444",
