@@ -21,7 +21,7 @@ const about_slider: DataType[] = [
   {
     img: "/assets/img/about_img.jpg",
     sub_title: "Our Mission",
-    title: `Customer-Centric Developmen`,
+    title: `Customer-Centric Development`,
     des: `To place our customers at the heart of our development process, delivering tailored software solutions that address their unique challenges, enhance user experience, and exceed expectations through continuous improvement and support.`,
   },
   {
