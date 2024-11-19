@@ -39,7 +39,7 @@ const index = () => {
         {/* <AwardsHomeOne /> */}
         <Testimonial />
         <FunFactHomeOne />
-        <VideoHomeOne />
+        {/* <VideoHomeOne /> */}
         <BlogHomeOne />
         <SubscribeHomeOne />
         <BrandHomeOne style_2={false}  />
