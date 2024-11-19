@@ -31,7 +31,7 @@ const index = () => {
         <MarqueeAreaHomeThree />
         <ServiceHomeThree />
         <PortfolioHomeThree />
-        <AwardsHomeOne />
+        {/* <AwardsHomeOne /> */}
         <Testimonial />
         <TeamHomeTwo />
         <AboutUs />
