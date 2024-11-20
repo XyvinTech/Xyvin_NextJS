@@ -25,7 +25,7 @@ const about_slider: DataType[] = [
     des: `To place our customers at the heart of our development process, delivering tailored software solutions that address their unique challenges, enhance user experience, and exceed expectations through continuous improvement and support.`,
   },
   {
-    img: "/assets/img/about_img.jpg",
+    img: "/assets/img/about_gallery_3.jpg",
     sub_title: "Our Mission",
     title: `Empowerment Through Technology`,
     des: `To empower businesses and individuals by leveraging the latest technologies and best practices in software development, fostering growth, sustainability, and the ability to thrive in an ever-evolving digital landscape.`,
