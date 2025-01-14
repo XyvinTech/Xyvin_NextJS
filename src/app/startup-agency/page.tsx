@@ -36,7 +36,7 @@ const index = () => {
         <FeatureHomeTwo />
         <ServiceHomeTwo />
         <PortfolioHomeOne />
-        <AwardsHomeOne />
+        {/* <AwardsHomeOne /> */}
         <Testimonial />
         <TeamHomeTwo />
         <BrandHomeOne style_2={true} />

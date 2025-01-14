@@ -80,8 +80,9 @@ const Testimonial = ({ style_service }: any) => {
   return (
     <>
       <section
-        className={`${style_service ? "cs_shape_wrap_3" : "cs_primary_bg cs_shape_wrap_2"
-          } `}
+        className={`${
+          style_service ? "cs_shape_wrap_3" : "cs_primary_bg cs_shape_wrap_2"
+        } `}
       >
         {style_service ? null : (
           <>
@@ -169,8 +170,9 @@ const Testimonial = ({ style_service }: any) => {
             </div> */}
             <div className="col-lg-7 offset-lg-1">
               <div
-                className={`cs_testimonial ${style_service ? "cs_style_2" : "cs_style_1 cs_color_1"
-                  } `}
+                className={`cs_testimonial ${
+                  style_service ? "cs_style_2" : "cs_style_1 cs_color_1"
+                } `}
               >
                 <h2 className="cs_testimonial_title">
                   Some Of Our Respected Happy Clients Says
@@ -210,9 +212,20 @@ const Testimonial = ({ style_service }: any) => {
                         <blockquote className="cs_testimonial_text">
                           {item.des}
                         </blockquote>
-                        <div className="cs_testimonial_meta">
-                          <div className="cs_testimonial_avatar">
-                            <Image src={item.img} alt="Avatar" width={80} height={80}/>
+                        <div
+                          className="cs_testimonial_meta"
+                          style={{ display: "flex", alignItems: "center" }}
+                        >
+                          <div
+                            className="cs_testimonial_avatar"
+                            style={{ marginRight: "10px" }}
+                          >
+                            <Image
+                              src={item.img}
+                              alt="Avatar"
+                              width={80}
+                              height={80}
+                            />
                           </div>
                           <div className="cs_testimonial_meta_right">
                             <h3 className="cs_testimonial_avatar_name">

@@ -77,14 +77,14 @@ const ServiceHomeOne = () => {
                 <div className="cs_card_right">
                   <div className="cs_card_right_in">
                     <h2 className="cs_card_title">
-                      <Link href="/service-details">{item.title}</Link>
+                    {item.title}
                     </h2>
                     <div className="cs_card_subtitle">
                       {item.des}
                     </div>
                   </div>
                 </div>
-                <div className="cs_card_link_wrap">
+                {/* <div className="cs_card_link_wrap">
                   <Link href="/service-details" className="cs_card_link">
                     <span>
                       <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
@@ -109,7 +109,7 @@ const ServiceHomeOne = () => {
                       </svg>
                     </span>
                   </Link>
-                </div>
+                </div> */}
               </div>
             ))}
 

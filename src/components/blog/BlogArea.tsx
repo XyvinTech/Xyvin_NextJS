@@ -25,7 +25,7 @@ const BlogArea: React.FC = () => {
   const [blogs, setBlogs] = useState<Blog[]>([]);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
-  const [blogsPerPage] = useState(3); 
+  const [blogsPerPage] = useState(3);
   const [totalPosts, setTotalPosts] = useState(3);
 
   useEffect(() => {
@@ -35,7 +35,7 @@ const BlogArea: React.FC = () => {
           "https://dev.to/api/articles?username=admin_xyvin_ba2f4f68096"
         );
         const data: Blog[] = await response.json();
-        setTotalPosts(data.length); 
+        setTotalPosts(data.length);
       } catch (error) {
         console.error("Error fetching total posts:", error);
       }
@@ -94,12 +94,7 @@ const BlogArea: React.FC = () => {
         <div className="container">
           <div className="row">
             {blogs.map((item, i) => (
-              <div
-                key={item.id}
-                className={`col-md-4 ${i % 3 === 1 ? "mt-0 mt-md-5" : ""} ${
-                  i % 3 === 2 ? "mt-0 mt-md-5" : ""
-                }`}
-              >
+              <div key={item.id} className={`col-md-4 mt-0 mt-md-5`}>
                 <div className="anim_div_ShowDowns">
                   <Link
                     href={`/blog-details/${item.slug}`}

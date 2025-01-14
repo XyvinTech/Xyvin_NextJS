@@ -25,11 +25,11 @@ const index = () => {
       <HeaderOne />
       <div id="scrollsmoother-container">
         <BannerAbout />
-        <VideoHomeOne style_2={true} />
+        {/* <VideoHomeOne style_2={true} /> */}
         <FunFactHomeOne style_3={true} />
         <About />
         <TeamHomeTwo style_2={true} style_3={true} />
-        <AwardsHomeOne style_2={true} />
+        {/* <AwardsHomeOne style_2={true} /> */}
         <Testimonial />
         <Gellary />
         <BrandHomeOne  />

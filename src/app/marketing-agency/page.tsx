@@ -35,7 +35,7 @@ const index = () => {
         <FeatureHomeTwo style_2={true} />
         <PortfolioHomeFive />
         <FunFactHomeOne style_2={true} />
-        <AwardsHomeOne />
+        {/* <AwardsHomeOne /> */}
         <Testimonial />
         <TeamHomeTwo style_2={true} />
         <BrandHomeOne style_2={true}  />
