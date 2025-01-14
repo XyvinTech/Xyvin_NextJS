@@ -10,7 +10,7 @@ import React from 'react';
 
 
 export const metadata = {
-  title: "Blog Details Xyvin - Digital  Creative Agency Next js Template",
+  title: "Blog Details Xyvin",
 };
 
 

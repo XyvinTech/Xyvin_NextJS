@@ -13,7 +13,7 @@ import FooterOne from '@/layouts/footers/FooterOne';
 
 
 export const metadata = {
-  title: "Creative Protfolio Xyvin - Digital  Creative Agency Next js Template",
+  title: "Creative Protfolio Xyvin",
 };
 
 

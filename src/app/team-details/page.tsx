@@ -10,7 +10,7 @@ import Sticky from '@/components/sticky/Sticky';
 
 
 export const metadata = {
-  title: "Team Details Xyvin - Digital  Creative Agency Next js Template",
+  title: "Team Details Xyvin",
 };
 
 const index = () => {

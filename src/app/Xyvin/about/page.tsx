@@ -16,7 +16,7 @@ import HeaderOne from '@/layouts/headers/HeaderOne';
 // import Sticky from '@/components/sticky/Sticky';
 
 export const metadata = {
-  title: "About Xyvin - Digital  Creative Agency Next js Template",
+  title: "About Xyvin",
 };
 
 const index = () => {
