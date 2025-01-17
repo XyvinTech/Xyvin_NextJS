@@ -119,7 +119,7 @@ India - 682018
                       </a>
                       <div className="cs_icon_text">
                         <h6 className="cs_icon_title">Email</h6>
-                        <p className="cs_icon_subtitle">contact@xyvin.com</p>
+                        <p className="cs_icon_subtitle">info@xyvin.com</p>
                       </div>
                     </div>
                   </div>
