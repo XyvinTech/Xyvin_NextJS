@@ -30,10 +30,14 @@
   transition: background-color 0.3s ease;
 }
 
+
 .circleMenu a:hover {
   background-color: #25D366;
 }
 
+.circleMenu li:last-child a {
+  background-color: #25D366;
+}
 .circleMenu .menuss-icon {
   display: inline-block;
   vertical-align: middle;
@@ -42,8 +46,8 @@
 .circleMenu svg {
 
   fill: #fff; /* Adjust icon color */
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   justify-content: center;
   align-items: center;
 
