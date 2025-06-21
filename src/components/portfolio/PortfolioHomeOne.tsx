@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; // Import Swiper styles
-
+import { Autoplay } from "swiper/modules";
 // Import Images
 import portfolio_img_1 from "@/assets/img/portfolio_1.jpg";
 import portfolio_img_2 from "@/assets/img/portfolio_2.jpg";
@@ -17,6 +17,15 @@ import portfolio_img_8 from "@/assets/img/portfolio_8.jpg";
 import portfolio_img_9 from "@/assets/img/portfolio_9.jpg";
 import portfolio_img_10 from "@/assets/img/portfolio_10.jpg";
 import portfolio_img_11 from "@/assets/img/portfolio_11.jpg";
+import portfolio_img_14 from "@/assets/img/familytree.png";
+import portfolio_img_15 from "@/assets/img/Frame 1171276651.png";
+import portfolio_img_16 from "@/assets/img/HEF 1.png";
+import portfolio_img_17 from "@/assets/img/ipa.png";
+import portfolio_img_18 from "@/assets/img/ITCC.png";
+import portfolio_img_19 from "@/assets/img/kssia 1.png";
+import portfolio_img_20 from "@/assets/img/stoppick.png";
+import portfolio_img_21 from "@/assets/img/AIITS.png";
+import portfolio_img_22 from "@/assets/img/khedmah.png";
 
 // Define the data type correctly
 interface PortfolioItem {
@@ -94,6 +103,61 @@ const portfolio_slider: PortfolioItem[] = [
     category: `Digital Services / Figma Design`,
     link: `/portfolio/project-task-management-figma-design-4`,
   },
+  {
+    category: 'Development',
+    img: portfolio_img_14,
+    title: "Project Task Management",
+    link: ``,
+  },
+  {
+    category: 'Finance',
+    img: portfolio_img_15,
+    title: "Project Task Management",
+    link: ``,
+  },
+  {
+    category: 'UX Design',
+    img: portfolio_img_16,
+    title: "Project Task Management",
+    link: ``,
+  },
+  {
+    category: 'UI Design',
+    img: portfolio_img_17,
+    title: "Project Task Management",
+    link: ``,
+  },
+  {
+    category: 'UI Design',
+    img: portfolio_img_18,
+    title: "Project Task Management",
+    link: ``,
+  },
+  {
+   
+    category: 'UX Design',
+    img: portfolio_img_19,
+    title: "Project Task Management",
+    link: ``,
+  },  
+  {
+    category: 'UX Design',
+    img: portfolio_img_20,
+    title: "Project Task Management",
+    link: ``,
+  },
+  {
+    category: 'UX Design',
+    img: portfolio_img_21,
+    title: "Project Task Management",
+    link: ``,
+  },
+  {
+    category: 'UX Design',
+    img: portfolio_img_22,
+    title: "Project Task Management",
+    link: ``,
+  },
 ];
 
 const PortfolioHomeOne = () => {
@@ -114,9 +178,15 @@ const PortfolioHomeOne = () => {
         <div className="cs_height_100 cs_height_lg_60"></div>
       </div>
       <Swiper
+        modules={[Autoplay]} // Add Autoplay module
         loop={true}
         speed={1000}
         slidesPerView="auto"
+        autoplay={{
+          delay: 3000, // 3 seconds delay between slides
+          disableOnInteraction: false, // Continue autoplay after user interaction
+          pauseOnMouseEnter: true, // Pause autoplay when mouse enters
+        }}
         pagination={{
           el: ".cs_pagination",
           clickable: true,

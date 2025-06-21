@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules'; // Import Autoplay module
 
 interface DataType {
   img: string;
@@ -39,7 +39,12 @@ const AboutHomeOne = () => {
       <Swiper
         loop={true}
         speed={1000}
-        modules={[Navigation, Pagination]}
+        modules={[Navigation, Pagination, Autoplay]} // Add Autoplay module
+        autoplay={{
+          delay: 4000, // 4 seconds delay between slides
+          disableOnInteraction: false, // Continue autoplay after user interaction
+          pauseOnMouseEnter: true, // Pause autoplay when mouse enters
+        }}
         navigation={{
           nextEl: ".cs_swiper_button_next",
           prevEl: ".cs_swiper_button_prev",
