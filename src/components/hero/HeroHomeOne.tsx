@@ -1,15 +1,19 @@
-
 'use client'
 import React from 'react';
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
 
 const hero_slider = [
   {
     img: `/assets/img/new-home2.png`,
     sub_title: "",
-    title:"“Step into the future of technology with us”",
+    title: "Step into the future of technology with us",
     des: `Unleash your potential with our mantra: Innovate, create, and elevate. Transform your ideas into reality and reach new heights with us!`
   },
   {
@@ -26,15 +30,27 @@ const hero_slider = [
   },
 ]
 
-
 const HeroHomeOne = () => {
   return (
     <>
       <Swiper
+        modules={[Autoplay, Pagination, EffectFade]}
         loop={true}
         slidesPerView={1}
-        autoplay={{ delay: 3000 }}
-        pagination={{ clickable: true }} 
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
+        pagination={{ 
+          clickable: true,
+          dynamicBullets: true,
+        }}
+        effect="fade"
+        fadeEffect={{
+          crossFade: true
+        }}
+        speed={1000}
         className="cs_slider cs_slider_1">
         {hero_slider.map((item, index) =>
           <SwiperSlide key={index} className="swiper-slide">

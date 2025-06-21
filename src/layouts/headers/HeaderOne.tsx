@@ -333,10 +333,10 @@ const HeaderOne = () => {
                   <hr className="mt-2 me-5 mb-2" />
                   <h2>
                     <a
-                      href="mailto:info@xyvin.com"
+                      href="mailto:admin@xyvin.com"
                       className="cs_primary_font cs_text_btn"
                     >
-                      <span className="cs_black">info@xyvin.com</span>
+                      <span className="cs_black">admin@xyvin.com</span>
                     </a>
                   </h2>
                 </div>

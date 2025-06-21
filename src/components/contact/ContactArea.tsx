@@ -95,7 +95,7 @@ India - 682018
                   <div className="col-md-6">
                     <div className="cs_icon">
                       <a
-                        href="mailto:info@xyvin.com"
+                        href="mailto:admin@xyvin.com"
                         className="cs_icon_style"
                       >
                         <i>
@@ -119,7 +119,7 @@ India - 682018
                       </a>
                       <div className="cs_icon_text">
                         <h6 className="cs_icon_title">Email</h6>
-                        <p className="cs_icon_subtitle">info@xyvin.com</p>
+                        <p className="cs_icon_subtitle">admin@xyvin.com</p>
                       </div>
                     </div>
                   </div>
