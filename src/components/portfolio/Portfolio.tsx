@@ -13,6 +13,15 @@ import portfolio_img_10 from "@/assets/img/portfolio_6.jpg";
 import portfolio_img_11 from "@/assets/img/portfolio_7.jpg"; 
 import portfolio_img_12 from "@/assets/img/portfolio_8.jpg";
 import portfolio_img_13 from "@/assets/img/portfolio_9.jpg";
+import portfolio_img_14 from "@/assets/img/familytree.png";
+import portfolio_img_15 from "@/assets/img/Frame 1171276651.png";
+import portfolio_img_16 from "@/assets/img/HEF 1.png";
+import portfolio_img_17 from "@/assets/img/ipa.png";
+import portfolio_img_18 from "@/assets/img/ITCC.png";
+import portfolio_img_19 from "@/assets/img/kssia 1.png";
+import portfolio_img_20 from "@/assets/img/stoppick.png";
+import portfolio_img_21 from "@/assets/img/AIITS.png";
+import portfolio_img_22 from "@/assets/img/khedmah.png";
 
 interface DataType {
   id: number;
@@ -88,7 +97,80 @@ const portfolio_data: DataType[] = [
     title: "Project Task Management",
     des: "Digital Services / App Design",
     link: `https://www.special40.com/`,
-  }
+  },
+  {
+    id: 9,
+    category: 'Development',
+    img: portfolio_img_14,
+    title: "Project Task Management",
+    des: "Digital Services / App Design",
+    link: ``,
+  },
+  {
+    id: 10,
+    category: 'Finance',
+    img: portfolio_img_15,
+    title: "Project Task Management",
+    des: "Digital Services / App Design",
+    link: ``,
+  },
+  {
+    id: 11,
+    category: 'UX Design',
+    img: portfolio_img_16,
+    title: "Project Task Management",
+    des: "Digital Services / App Design",
+    link: ``,
+  },
+  {
+    id: 12,
+    category: 'UI Design',
+    img: portfolio_img_17,
+    title: "Project Task Management",
+    des: "Digital Services / App Design",
+    link: ``,
+  },
+  {
+    id: 13,
+    category: 'UI Design',
+    img: portfolio_img_18,
+    title: "Project Task Management",
+    des: "Digital Services / App Design",
+    link: ``,
+  },
+  {
+    id: 14,
+    category: 'UX Design',
+    img: portfolio_img_19,
+    title: "Project Task Management",
+    des: "Digital Services / App Design",
+    link: ``,
+  },  
+  {
+    id: 15,
+    category: 'UX Design',
+    img: portfolio_img_20,
+    title: "Project Task Management",
+    des: "Digital Services / App Design",
+    link: ``,
+  },
+  {
+    id: 16,
+    category: 'UX Design',
+    img: portfolio_img_21,
+    title: "Project Task Management",
+    des: "Digital Services / App Design",
+    link: ``,
+  },
+  {
+    id: 17,
+    category: 'UX Design',
+    img: portfolio_img_22,
+    title: "Project Task Management",
+    des: "Digital Services / App Design",
+    link: ``,
+  },
+
 ]
 
 // data
