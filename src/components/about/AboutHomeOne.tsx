@@ -41,7 +41,7 @@ const AboutHomeOne = () => {
         speed={1000}
         modules={[Navigation, Pagination, Autoplay]} // Add Autoplay module
         autoplay={{
-          delay: 4000, // 4 seconds delay between slides
+          delay: 3000, // 4 seconds delay between slides
           disableOnInteraction: false, // Continue autoplay after user interaction
           pauseOnMouseEnter: true, // Pause autoplay when mouse enters
         }}
