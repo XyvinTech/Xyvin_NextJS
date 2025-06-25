@@ -14,7 +14,7 @@ import brand_img_7 from "@/assets/img/new_brand7.svg"
 import brand_img_8 from "@/assets/img/new_brand8.svg"
 import brand_img_9 from "@/assets/img/new_brand9.svg"
 import brand_img_10 from "@/assets/img/ACKAF.png"
-import brand_img_11 from "@/assets/img/HEF.png"
+// import brand_img_11 from "@/assets/img/HEF.png"
 import brand_img_12 from "@/assets/img/ITCC (1).png"
 import brand_img_13 from "@/assets/img/IPA (1).png"
 import brand_img_14 from "@/assets/img/Khedmah (1).png"
@@ -31,7 +31,7 @@ const brand_data: DataType = [
   brand_img_8,
   brand_img_9,
   brand_img_10,
-  brand_img_11,
+  // brand_img_11,
   brand_img_12,
   brand_img_13,
   brand_img_14,
@@ -50,7 +50,7 @@ import brand_thumb_7 from "@/assets/img/new_brand6.svg"
 import brand_thumb_8 from "@/assets/img/new_brand7.svg"
 import brand_thumb_9 from "@/assets/img/new_brand8.svg"
 import brand_thumb_10 from "@/assets/img/ACKAF.png"
-import brand_thumb_11 from "@/assets/img/HEF.png"
+// import brand_thumb_11 from "@/assets/img/HEF.png"
 import brand_thumb_12 from "@/assets/img/ITCC (1).png"
 import brand_thumb_13 from "@/assets/img/IPA (1).png"
 import  brand_thumb_14 from "@/assets/img/Khedmah (1).png"
@@ -69,7 +69,7 @@ const brand_thumb_data: DataType = [
   brand_thumb_8,
   brand_thumb_9,
   brand_thumb_10,
-  brand_thumb_11,
+  // brand_thumb_11,
   brand_thumb_12,
   brand_thumb_13,
   brand_thumb_14,
