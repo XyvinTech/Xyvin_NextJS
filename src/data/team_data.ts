@@ -19,17 +19,18 @@ interface DataType {
 
 const team_data: DataType[] = [
 	{
-		id: 1,
-		img: team_avatar_1,
-		avatar_name: "Adithya Vishnu",
-		designation: "Chief Executive Officer",
-	},
-	{
 		id: 2,
 		img: team_avatar_2,
 		avatar_name: "Ashin Amanulla",
-		designation: "Chief Technology Officer",
+		designation: " Chief Executive Officer",
 	},
+	{
+		id: 1,
+		img: team_avatar_1,
+		avatar_name: "Adithya Vishnu",
+		designation: "Chief Product Officer",
+	},
+	
 	{
 		id: 3,
 		img: team_avatar_3,

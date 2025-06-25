@@ -2,9 +2,10 @@
 'use client'
 
 import React from 'react';
-import gellary_img_1 from "@/assets/img/about_gallery_1.jpg";
-import gellary_img_2 from "@/assets/img/about_gallery_2.jpg";
-import gellary_img_3 from "@/assets/img/about_gallery_3.jpg";
+import gellary_img_1 from "@/assets/img/2024-10-14 (1).webp";
+import gellary_img_2 from "@/assets/img/2024-10-14 (2).webp";
+import gellary_img_3 from "@/assets/img/2024-10-14.webp";
+import gellary_img_4 from "@/assets/img/2025-03-06.webp";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
 
@@ -13,9 +14,11 @@ const gellary_data = [
   gellary_img_1,
   gellary_img_2,
   gellary_img_3,
+  gellary_img_4,
   gellary_img_1,
   gellary_img_2,
   gellary_img_3,
+  gellary_img_4,
 ]
 
 
