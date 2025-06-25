@@ -1,53 +1,35 @@
-
-
-import React from 'react';
-import HeaderOne from '@/layouts/headers/HeaderOne';
-import HeroHomeOne from '@/components/hero/HeroHomeOne';
-import AboutHomeOne from '@/components/about/AboutHomeOne';
-import ServiceHomeOne from '@/components/service/ServiceHomeOne';
-import MarqueeAreaHomeOne from '@/components/brand/MarqueeAreaHomeOne';
-import PortfolioHomeOne from '@/components/portfolio/PortfolioHomeOne';
-// import AwardsHomeOne from '@/components/awards/AwardsHomeOne';
-import Testimonial from '@/components/testimonial/Testimonial';
-import FunFactHomeOne from '@/components/funfact/FunFactHomeOne';
-import VideoHomeOne from '@/components/video/VideoHomeOne';
-import BlogHomeOne from '@/components/blog/BlogHomeOne';
-import SubscribeHomeOne from '@/components/subscribe/SubscribeHomeOne';
-import BrandHomeOne from '@/components/brand/BrandHomeOne';
-import FooterOne from '@/layouts/footers/FooterOne';
-import Wrapper from '@/layouts/Wrapper';
-import Accordion from '@/components/accordion/Accordian';
-import Sticky from '@/components/sticky/Sticky';
-
+import React from "react";
+import HeaderOne from "@/layouts/headers/HeaderOne";
+import HeroHomeOne from "@/components/hero/HeroHomeOne";
+import CompanyOverview from "@/components/company/CompanyOverview";
+import ServicesGrid from "@/components/services/ServicesGrid";
+import ProjectShowcase from "@/components/projects/ProjectShowcase";
+import ContactCTA from "@/components/contact/ContactCTA";
+import ModernFooter from "@/layouts/footers/ModernFooter";
+import Wrapper from "@/layouts/Wrapper";
+import Sticky from "@/components/sticky/Sticky";
 
 export const metadata = {
-  title: "Xyvin Tech",  
+  title: "Xyvin Tech - Leading IT Solutions & Software Development",
+  description:
+    "Transform your business with Xyvin's cutting-edge IT solutions, web development, and AI-powered software engineering services.",
 };
-
 
 const index = () => {
   return (
     <>
-    <Wrapper>      
-      <HeaderOne />
-      <div id="scrollsmoother-container">
-        <HeroHomeOne />
-        <MarqueeAreaHomeOne />
-        <AboutHomeOne />
-        <ServiceHomeOne />
-        <PortfolioHomeOne />
-        {/* <AwardsHomeOne /> */}
-        <Testimonial />
-        <FunFactHomeOne />
-        {/* <VideoHomeOne /> */}
-        <BlogHomeOne />
-        <SubscribeHomeOne />
-        <BrandHomeOne style_2={false}  />
-        <Accordion/>
-        <FooterOne />
-      </div>
-    </Wrapper>
-    <Sticky/>
+      <Wrapper>
+        <HeaderOne />
+        <div id="scrollsmoother-container">
+          <HeroHomeOne />
+          <CompanyOverview />
+          <ServicesGrid />
+          <ProjectShowcase />
+          <ContactCTA />
+          <ModernFooter />
+        </div>
+      </Wrapper>
+      <Sticky />
     </>
   );
 };

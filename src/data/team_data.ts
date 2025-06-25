@@ -1,18 +1,6 @@
-import team_avatar_1 from "@/assets/img/team/Team_1.png";
-import team_avatar_2 from "@/assets/img/team/Team_2.png";
-import team_avatar_3 from "@/assets/img//team/Team_3.png";
-import team_avatar_4 from "@/assets/img/team/Team_4.png";
-import team_avatar_5 from "@/assets/img/team/Team_5.png";
-import team_avatar_6 from "@/assets/img/teamsimg6.jpg";
-import team_avatar_7 from "@/assets/img/teamsimg7.jpg";
-import team_avatar_8 from "@/assets/img/teamsimg8.jpg";
-
-import { StaticImageData } from "next/image";
-
-
 interface DataType {
 	id: number;
-	img: StaticImageData;
+	img: string;
 	avatar_name: string;
 	designation: string;
 }
@@ -20,37 +8,37 @@ interface DataType {
 const team_data: DataType[] = [
 	{
 		id: 2,
-		img: team_avatar_2,
+		img: "/assets/img/team/Team_2.png",
 		avatar_name: "Ashin Amanulla",
-		designation: " Chief Executive Officer",
+		designation: "Chief Executive Officer",
 	},
 	{
 		id: 1,
-		img: team_avatar_1,
+		img: "/assets/img/team/Team_1.png",
 		avatar_name: "Adithya Vishnu",
 		designation: "Chief Product Officer",
 	},
-	
+
 	{
 		id: 3,
-		img: team_avatar_3,
+		img: "/assets/img/team/Team_3.png",
 		avatar_name: "Afsal E",
 		designation: "Chief Business Officer",
 	},
 	{
 		id: 4,
-		img: team_avatar_4,
+		img: "/assets/img/team/Team_4.png",
 		avatar_name: "Ramees",
 		designation: "Chief Marketing Officer",
 	},
 	{
 		id: 5,
-		img: team_avatar_5,
+		img: "/assets/img/team/Team_5.png",
 		avatar_name: "Dhilraj Soza",
-		designation: "Chief Stratagy Officer",
+		designation: "Chief Strategy Officer",
 	},
 	// team data
-	
+
 ];
 
 export default team_data;

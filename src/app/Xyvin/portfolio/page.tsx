@@ -1,26 +1,28 @@
-
-import AboutHomeFour from '@/components/about/AboutHomeFour';
-import Portfolio from '@/components/portfolio/Portfolio';
-import Wrapper from '@/layouts/Wrapper';
-import FooterOne from '@/layouts/footers/FooterOne';
-import HeaderOne from '@/layouts/headers/HeaderOne';
-import React from 'react';
-
-
+import React from "react";
+import PortfolioHero from "@/components/hero/PortfolioHero";
+import ProjectShowcase from "@/components/projects/ProjectShowcase";
+import TechStack from "@/components/tech/TechStack";
+import ContactCTA from "@/components/contact/ContactCTA";
+import Wrapper from "@/layouts/Wrapper";
+import ModernFooter from "@/layouts/footers/ModernFooter";
+import HeaderOne from "@/layouts/headers/HeaderOne";
 
 export const metadata = {
-  title: "Portfolio Xyvin",  
+  title: "Portfolio - Xyvin Technologies | Our Projects & Case Studies",
+  description:
+    "Explore our portfolio of successful IT projects including web development, mobile apps, ERP solutions, and AI/ML implementations.",
 };
-
 
 const index = () => {
   return (
     <Wrapper>
       <HeaderOne />
       <div id="scrollsmoother-container">
-        <Portfolio /> 
-        <AboutHomeFour />
-        <FooterOne />
+        <PortfolioHero />
+        <ProjectShowcase />
+        <TechStack />
+        <ContactCTA />
+        <ModernFooter />
       </div>
     </Wrapper>
   );
