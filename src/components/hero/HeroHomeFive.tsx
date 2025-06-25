@@ -6,7 +6,7 @@ import Image, { StaticImageData } from 'next/image';
 
 import facebook from "@/assets/img/fb_1.png"
 import linedin from "@/assets/img/linedin_1.png"
-import twitter from "@/assets/img/twitter_1.png"
+// import twitter from "@/assets/img/twitter_1.png"
 import dm_banner from "@/assets/img/dm_banner.png"
 
 interface DataType {
@@ -37,11 +37,11 @@ const hero_data: DataType = {
       img: linedin,
       link: "http://www.linedin.com"
     },
-    {
-      id: 3,
-      img: twitter,
-      link: "http://www.twitter.com"
-    },
+    // {
+    //   id: 3,
+    //   img: twitter,
+    //   link: "http://www.twitter.com"
+    // },
   ]
 }
 

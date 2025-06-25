@@ -171,7 +171,7 @@ const PortfolioHomeOne = () => {
               Portfolio
             </div>
             <h2 className="cs_section_title anim_heading_title">
-              Some Recent Projects We Successfully Completed
+               Experience the Power of AI in Every Pixel
             </h2>
           </div>
         </div>

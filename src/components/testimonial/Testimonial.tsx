@@ -175,7 +175,7 @@ const Testimonial = ({ style_service }: any) => {
                 } `}
               >
                 <h2 className="cs_testimonial_title">
-                  Some Of Our Respected Happy Clients Says
+                  See Why Businesses Trust Xyvin for Tech Excellence
                 </h2>
                 <Swiper
                   loop={true}

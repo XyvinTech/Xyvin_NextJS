@@ -13,20 +13,20 @@ const hero_slider = [
   {
     img: `/assets/img/new-home2.png`,
     sub_title: "",
-    title: "Step into the future of technology with us",
-    des: `Unleash your potential with our mantra: Innovate, create, and elevate. Transform your ideas into reality and reach new heights with us!`
+    title: "AI-Powered Solutions Designed for You ",
+    des: `From automation to prediction — we build intelligent software that adapts, learns, and delivers unmatched performance for your business needs.`
   },
   {
     img: `/assets/img/hero_img_1.jpg`,
     sub_title: "",
-    title: "Empowering innovation through visionary solutions",
-    des: ` Our goal is to offer businesses groundbreaking technological solutions that enhance productivity and foster growth.`
+    title: "Smarter Web & ERP Platforms with AI at the Core",
+    des: ` Empower your operations with intelligent web systems and AI-enabled ERP platforms designed to streamline processes and boost decision-making.`
   },
   {
     img: `/assets/img/hero_img_1.jpg`,
     sub_title: "",
-    title: "Top-notch SEO services and growth excellence",
-    des: `Our commitment is to devise effective strategies and foster business growth through data-driven insights and precise targeting.`
+    title: "Connected by APIs. Driven by AI Agents.",
+    des: `Seamlessly integrate smart APIs and deploy AI-powered agents to automate workflows, deliver insights, and enhance customer interactions.`
   },
 ]
 
@@ -55,7 +55,21 @@ const HeroHomeOne = () => {
         {hero_slider.map((item, index) =>
           <SwiperSlide key={index} className="swiper-slide">
             <div className="cs_hero cs_style1 cs_center cs_parallax">
-              <div className="cs_hero_bg cs_bg cs_parallax_bg" style={{ backgroundImage: `url(${item.img})` }}></div>
+              <div 
+                className="cs_hero_bg cs_bg cs_parallax_bg" 
+                style={{ 
+                  backgroundImage: `url(${item.img})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center center',
+                  backgroundRepeat: 'no-repeat',
+                  width: '100%',
+                  height: '100vh',
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  zIndex: -1
+                }}
+              ></div>
               <div className="container">
                 <div className="cs_hero_text">
                   <div className="cs_hero_mini_title">

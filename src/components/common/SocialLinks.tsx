@@ -23,11 +23,11 @@ const hero_link_home_three: HDataType[] = [
     link: "https://www.instagram.com/xyvintech/",
     title: "Instagram",
   },
-  {
-    id: 4,
-    link: "https://x.com/Xyvintech",
-    title: "Twitter",
-  },
+  // {
+  //   id: 4,
+  //   link: "https://x.com/Xyvintech",
+  //   title: "Twitter",
+  // },
 ]
 export const SocialLinks = () => {
   return (

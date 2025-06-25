@@ -14,21 +14,21 @@ const about_slider: DataType[] = [
   {
     img: "/assets/img/mission1.png",
     sub_title: "Our Mission",
-    title: `Unleashing Creativity to Transform Your Business.`,
+    title: `Transforming Ideas with AI and Creativity`,
     // des: `To create cutting-edge, innovative software solutions that drive digital transformation for businesses across diverse industries, ensuring efficiency, scalability, and a competitive edge in the market.`,
-    des:`Welcome to our digital agency! We specialize in helping businesses like yours succeed online. From website design and development to digital marketing and advertising, we have the tools and expertise to elevate your online presence. Let us help you lione evolving world of digital.`,
+    des:`At Xyvin, we blend creativity and AI to build smarter websites, apps, and digital solutions. Whether it’s design, development, or marketing — we use smart tools to help your business grow online, faster and better.`,
   },
   {
     img: "/assets/img/about_img.jpg",
     sub_title: "Our Mission",
-    title: `Customer-Centric Development`,
-    des: `To place our customers at the heart of our development process, delivering tailored software solutions that address their unique challenges, enhance user experience, and exceed expectations through continuous improvement and support.`,
+    title: `Building Smart Solutions Around You `,
+    des: `We focus on your business needs and use AI to create better, faster, and more efficient software. Our smart systems help you solve real problems, improve user experience, and keep growing with ease.`,
   },
   {
     img: "/assets/img/about_gallery_3.jpg",
     sub_title: "Our Mission",
-    title: `Empowerment Through Technology`,
-    des: `To empower businesses and individuals by leveraging the latest technologies and best practices in software development, fostering growth, sustainability, and the ability to thrive in an ever-evolving digital landscape.`,
+    title: `Empowering Growth with AI Technology`,
+    des: `We use the power of AI to make your business stronger. From automating daily tasks to creating smart tools that adapt and learn, we help you stay ahead in the digital world — with confidence and clarity.`,
   },
 ]
 

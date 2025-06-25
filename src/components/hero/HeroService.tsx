@@ -12,33 +12,28 @@ interface DataType {
 const banner_data:DataType[] = [
   {
     id: 1,
-    title: "Application Development",
-    description: "Welcome to our digital agency We specialize in helping businesses like yours succeed online. From website design and development to digital marketing agency.",
+    title: "Custom Software Solutions",
+    description: "At Xyvin, we build custom software solutions that solve real business problems. Whether you need a tool to manage operations, automate tasks, or improve user experience, our solutions are crafted to fit your goals. With smart technology and AI support, we help you work faster, smarter, and more efficiently.",
   },
   {
     id: 2,
     title: "Web Development",
-    description: "Welcome to our digital agency We specialize in helping businesses like yours succeed online. From website design and development to digital marketing agency.",
+    description: "Your website is your digital face — and we make it intelligent. Our web development services focus on performance, design, and user engagement. At Xyvin, we create responsive, secure, and scalable websites that reflect your brand and are powered to grow with AI-backed insights and modern web standards.",
   },
   {
     id: 3,
-    title: "Digital Services",
-    description: "Welcome to our digital agency We specialize in helping businesses like yours succeed online. From website design and development to digital marketing agency.",
+    title: "ERP Development ",
+    description: "Xyvin delivers efficient ERP systems to simplify and streamline business processes. From managing inventory to handling finances and HR, our ERP solutions bring everything under one smart dashboard. With AI-powered automation and analytics, we help you save time and make better business decisions.",
   },
   {
     id: 4,
-    title: "Digital Product Design",
-    description: "Welcome to our digital agency We specialize in helping businesses like yours succeed online. From website design and development to digital marketing agency.",
+    title: "API Integration Services",
+    description: "Connect your tools, apps, and systems effortlessly. Our API integration services enable smooth data flow and automation across platforms. Whether it’s third-party apps or internal systems, Xyvin ensures secure, fast, and AI-compatible integrations that help you run smarter operations with less manual effort.",
   },
   {
     id: 5,
-    title: "Digital Marketing",
-    description: "Welcome to our digital agency We specialize in helping businesses like yours succeed online. From website design and development to digital marketing agency.",
-  },
-  {
-    id: 6,
-    title: "IOS App Development",
-    description: "Welcome to our digital agency We specialize in helping businesses like yours succeed online. From website design and development to digital marketing agency.",
+    title: "AI Agent Service ",
+    description: "Boost productivity and customer engagement with Xyvin’s AI Agent Services. We build smart virtual agents and chatbots that can interact, assist, and learn — 24/7. From handling customer support to automating internal tasks, our AI agents adapt to your needs and deliver faster, more accurate service.",
   },
 
 ]
@@ -52,7 +47,7 @@ const HeroService = () => {
           <div className="cs_section_heading cs_style_1">
             <div className="cs_section_heading_text">
               <h2 className="cs_section_title anim_word_writting">
-                Transform Your Online Presence with Our Digital Agency Services
+                 Next-Gen Digital Services Backed by the Power of AI
               </h2>
             </div>
           </div>

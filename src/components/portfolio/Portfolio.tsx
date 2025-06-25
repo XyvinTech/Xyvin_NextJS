@@ -255,11 +255,11 @@ const Portfolio = () => {
           </div>
           <div className="cs_height_70 cs_height_lg_30"></div>
           <div>
-            <div className="cs_hero_btn_wrap text-center">
+            {/* <div className="cs_hero_btn_wrap text-center">
               <div className="cs_round_btn_wrap">
                 <a href="#" className="cs_hero_btn cs_round_btn btn-item"><span></span> Load More</a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

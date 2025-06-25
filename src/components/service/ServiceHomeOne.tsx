@@ -12,29 +12,45 @@ interface DataType {
 const service_data: DataType[] = [
   {
     id: 1,
-    title: `iOS & Android App Solutions`,
-    des: `iOS and android app solutions are revolutionizing the way millions live, work, and do business. At the forefront of this transformation is Xyvin, the most trusted  tech services providing company . We offer top-tier mobile app development services tailored for both startups and enterprise clients. Our team of skilled and professional developers creates smooth, seamless mobile applications designed to meet your specific needs that stand out in the market.`
+    title: `Custom Software Solutions`,
+    des: `At Xyvin, we build custom software solutions that solve real business problems. Whether you 
+need a tool to manage operations, automate tasks, or improve user experience, our 
+solutions are crafted to fit your goals. With smart technology and AI support, we help you 
+work faster, smarter, and more efficiently. `
   },
   {
     id: 2,
     title: `Web Development`,
-    des: `Our web development services promise to provide a user friendly interface for your business. The right development foundation is what makes a website truly exceptional. At Xyvin, we combine specialized expertise in web development with the latest project management tools to create top-quality websites. Our dedicated team is committed to elevating your brand to the next level!.`
+    des: `Your website is your digital face — and we make it intelligent. Our web development services 
+focus on performance, design, and user engagement. At Xyvin, we create responsive, 
+secure, and scalable websites that reflect your brand and are powered to grow with 
+AI-backed insights and modern web standards.`
   },
   {
     id: 3,
     title: `ERP Development `,
-    des: `An efficient ERP system is the backbone of your business operations. It integrates various processes across departments, ensuring smooth and seamless workflows. Therefore, developing a robust ERP solution is essential for the long-term success of your business. As a leading ERP development company we ensure our solutions meet international standards.`
+    des: `Xyvin delivers efficient ERP systems to simplify and streamline business processes. From 
+managing inventory to handling finances and HR, our ERP solutions bring everything under 
+one smart dashboard. With AI-powered automation and analytics, we help you save time 
+and make better business decisions.`
   },
   {
     id: 4,
     title: `API Integration Services`,
-    des: `Our API integration services are your gateway to seamless connectivity and enhanced functionality. APIs are the backbone of modern software systems, allowing different applications to communicate and share data effortlessly. At Xyvin , we specialize in integrating APIs to unlock new capabilities, streamline processes, and improve overall performance.`
+    des: `Connect your tools, apps, and systems effortlessly. Our API integration services enable 
+smooth data flow and automation across platforms. Whether it’s third-party apps or internal 
+systems, Xyvin ensures secure, fast, and AI-compatible integrations that help you run 
+smarter operations with less manual effort. `
   },
   {
     id: 5,
-    title: `Search Engine Optimisation `,
-    des: `Xyvin offers customized SEO solutions using the latest technologies and best practices. We approach each project by thoroughly researching your goals and target audience. Our team develops specialised SEO strategies that will significantly enhance your online presence and business growth. Understanding our clients' needs accurately has always been our greatest strength.`
-  },
+    title: `AI Agent Service `,
+    des: `Boost productivity and customer engagement with Xyvin’s AI Agent Services. We build smart 
+virtual agents and chatbots that can interact, assist, and learn — 24/7. From handling 
+customer support to automating internal tasks, our AI agents adapt to your needs and deliver 
+faster, more accurate service. 
+`
+  }
 ]
 
 const ServiceHomeOne = () => {
@@ -50,7 +66,7 @@ const ServiceHomeOne = () => {
                 Our Services
               </div>
               <h2 className="cs_section_title anim_heading_title">
-                Comprehensive Digital Stratergy Transformation
+                 Smart Digital Services Built with AI Intelligence
               </h2>
             </div>
             <div className="cs_section_heading_right cs_btn_anim">

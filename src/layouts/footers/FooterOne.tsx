@@ -21,7 +21,8 @@ const footer_data: DataType = {
   phone: `+91  813 891 6303`,
   location: `Xyvin Technologies Private Limited, dewSpace Business Center, Ernakulam North, Kochi, 
 India - 682018`,
-  footer_info: `Welcome to our digital agency We specialize in helping business most like yours succeed online. From website design and development.`,
+  footer_info: `Smart solutions for businesses to succeed online — powered by tech, crafted with AI 
+insight.`,
   links: [
     { title: `HOME`, link: "/" },
     { title: `ABOUT`, link: "/Xyvin/about" },
