@@ -32,7 +32,7 @@ const Gellary = () => {
             <div className="cs_section_heading_text">
               <div className="cs_section_subtitle anim_div_ShowZoom">Gallery</div>
               <h2 className="cs_section_title anim_heading_title">
-                Inspiring Creativity A Gallery of Work from Our Creative Agency
+                Inspiring Creativity A Gallery of Work from Our Creative team
               </h2>
             </div>
           </div>

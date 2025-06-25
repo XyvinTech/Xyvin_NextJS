@@ -14,8 +14,8 @@ interface DataType {
   des: string;
 }
 const about_content: DataType = {
-  subtitle: `Our Agency Story`,
-  title: `How Our Agency is Pushing the Boundaries of Online Marketing and Design`,
+  subtitle: `Our Story`,
+  title: `How Our Xyvin is Pushing the Boundaries of Online Marketing and Design`,
   des: `Xyvin technology is a Kerala based IT company that offers innovative solutions in the domain of Development and Growth. 
   Our vision is to transform your dreams into realities, providing startups and businesses with the tools they need to succeed. 
   Our team comprises a group of engineers turned designers, marketers, and developers, all dedicated to helping businesses and individuals grow. 

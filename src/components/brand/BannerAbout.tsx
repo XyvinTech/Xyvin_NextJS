@@ -13,7 +13,7 @@ const BannerAbout = () => {
         <div className="cs_section_heading cs_style_1 cs_type_1">
           <div className="cs_section_heading_text">
             <h2 className="cs_section_title anim_text_writting">
-              How Our Agency is Transforming <br /> Businesses and Brands through <br /> Online Solutions
+              How Xyvin is Transforming <br /> Businesses and Brands through <br /> Online Solutions
             </h2>
           </div>
           {/* <div className="cs_section_heading_right">
