@@ -2,9 +2,9 @@
 
 import React from 'react';
 import agency_story_1 from "@/assets/img/agent_1.png"
-import agency_story_2 from "@/assets/img/agent_2.png"
-import agency_story_4 from "@/assets/img/agent_3.png"
-import agency_story_3 from "@/assets/img/agent_4.png"
+import agency_story_2 from "@/assets/img/2024-10-14 (2).webp"
+import agency_story_4 from "@/assets/img/2024-10-14.webp"
+import agency_story_3 from "@/assets/img/2024-10-14 (1).webp"
 import Image from 'next/image';
 
 
