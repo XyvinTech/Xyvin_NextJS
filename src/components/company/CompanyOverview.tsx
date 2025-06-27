@@ -1,30 +1,41 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import { 
+  Rocket, 
+  Users, 
+  Briefcase, 
+  Clock, 
+  Building2, 
+  Lightbulb, 
+  Target, 
+  Zap,
+  ArrowRight 
+} from "lucide-react";
 
 const CompanyOverview = () => {
   const stats = [
-    { number: "150+", label: "Projects Delivered", icon: "🚀" },
-    { number: "50+", label: "Happy Clients", icon: "😊" },
-    { number: "5+", label: "Years Experience", icon: "💼" },
-    { number: "24/7", label: "Support", icon: "⏰" },
+    { number: "150+", label: "Projects Delivered", icon: Rocket },
+    { number: "50+", label: "Happy Clients", icon: Users },
+    { number: "5+", label: "Years Experience", icon: Briefcase },
+    { number: "24/7", label: "Support", icon: Clock },
   ];
 
   const features = [
     {
-      icon: "💡",
+      icon: Lightbulb,
       title: "Innovation First",
       description:
         "We leverage cutting-edge technologies to build solutions that drive digital transformation.",
     },
     {
-      icon: "🎯",
+      icon: Target,
       title: "Client-Focused",
       description:
         "Your success is our priority. We work closely with you to understand and exceed your expectations.",
     },
     {
-      icon: "⚡",
+      icon: Zap,
       title: "Agile Delivery",
       description:
         "Fast, iterative development process that ensures quick time-to-market without compromising quality.",
@@ -39,7 +50,7 @@ const CompanyOverview = () => {
           <div className="col-lg-6">
             <div className="overview-content">
               <div className="section-badge">
-                <span className="badge-icon">🏢</span>
+                <Building2 className="badge-icon" size={16} />
                 About Xyvin Tech
               </div>
 
@@ -56,21 +67,26 @@ const CompanyOverview = () => {
               </p>
 
               <div className="features-grid">
-                {features.map((feature, index) => (
-                  <div key={index} className="feature-item">
-                    <div className="feature-icon">{feature.icon}</div>
-                    <div className="feature-content">
-                      <h4>{feature.title}</h4>
-                      <p>{feature.description}</p>
+                {features.map((feature, index) => {
+                  const IconComponent = feature.icon;
+                  return (
+                    <div key={index} className="feature-item">
+                      <div className="feature-icon">
+                        <IconComponent size={24} />
+                      </div>
+                      <div className="feature-content">
+                        <h4>{feature.title}</h4>
+                        <p>{feature.description}</p>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
 
               <div className="overview-actions">
                 <Link href="/Xyvin/about" className="btn-primary">
                   Learn More About Us
-                  <span className="btn-arrow">→</span>
+                  <ArrowRight className="btn-arrow" size={16} />
                 </Link>
                 <Link href="/Xyvin/contact" className="btn-outline">
                   Let's Discuss Your Project
@@ -83,13 +99,18 @@ const CompanyOverview = () => {
           <div className="col-lg-6">
             <div className="stats-container">
               <div className="stats-grid">
-                {stats.map((stat, index) => (
-                  <div key={index} className="stat-card">
-                    <div className="stat-icon">{stat.icon}</div>
-                    <div className="stat-number">{stat.number}</div>
-                    <div className="stat-label">{stat.label}</div>
-                  </div>
-                ))}
+                {stats.map((stat, index) => {
+                  const IconComponent = stat.icon;
+                  return (
+                    <div key={index} className="stat-card">
+                      <div className="stat-icon">
+                        <IconComponent size={24} />
+                      </div>
+                      <div className="stat-number">{stat.number}</div>
+                      <div className="stat-label">{stat.label}</div>
+                    </div>
+                  );
+                })}
               </div>
 
               <div className="visual-element">
@@ -180,7 +201,7 @@ const CompanyOverview = () => {
         }
 
         .badge-icon {
-          font-size: 16px;
+          color: #0099cc;
         }
 
         .section-title {
@@ -237,7 +258,6 @@ const CompanyOverview = () => {
         }
 
         .feature-icon {
-          font-size: 24px;
           width: 48px;
           height: 48px;
           display: flex;
@@ -246,6 +266,7 @@ const CompanyOverview = () => {
           background: rgba(0, 180, 216, 0.1);
           border-radius: 12px;
           flex-shrink: 0;
+          color: #00b4d8;
         }
 
         .feature-content h4 {
@@ -343,8 +364,10 @@ const CompanyOverview = () => {
         }
 
         .stat-icon {
-          font-size: 24px;
+          color: #00b4d8;
           margin-bottom: 12px;
+          display: flex;
+          justify-content: center;
         }
 
         .stat-number {
@@ -485,5 +508,6 @@ const CompanyOverview = () => {
     </section>
   );
 };
+
 
 export default CompanyOverview;

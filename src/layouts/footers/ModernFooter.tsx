@@ -2,9 +2,29 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { 
+  Mail, 
+  Phone, 
+  MapPin, 
+  Linkedin, 
+  Github, 
+  Instagram,
+  Rocket
+} from "lucide-react";
 import footer_logo from "@/assets/img/Logo_white.png";
 
-const ModernFooter = () => {
+interface FooterLink {
+  name: string;
+  href: string;
+}
+
+interface SocialLink {
+  name: string;
+  href: string;
+  icon: React.ComponentType<{ size?: number; className?: string }>;
+}
+
+const ModernFooter: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   const footerSections = {
@@ -15,41 +35,30 @@ const ModernFooter = () => {
       { name: "ERP Solutions", href: "/Xyvin/service" },
       { name: "API Integration", href: "/Xyvin/service" },
       { name: "AI & ML Services", href: "/Xyvin/service" },
-    ],
+    ] as FooterLink[],
     company: [
       { name: "About Us", href: "/Xyvin/about" },
       { name: "Our Portfolio", href: "/Xyvin/portfolio" },
       { name: "Blog", href: "/Xyvin/blog" },
       { name: "Contact Us", href: "/Xyvin/contact" },
-    ],
-    support: [
-      { name: "Help Center", href: "/Xyvin/contact" },
-      { name: "Documentation", href: "/Xyvin/blog" },
-      { name: "API Reference", href: "/Xyvin/blog" },
-      { name: "Community", href: "/Xyvin/contact" },
-    ],
+    ] as FooterLink[],
   };
 
-  const socialLinks = [
+  const socialLinks: SocialLink[] = [
     {
       name: "LinkedIn",
       href: "https://linkedin.com/company/xyvin-technologies",
-      icon: "💼",
-    },
-    {
-      name: "Twitter",
-      href: "https://twitter.com/xyvintech",
-      icon: "🐦",
+      icon: Linkedin,
     },
     {
       name: "GitHub",
       href: "https://github.com/xyvintech",
-      icon: "👨‍💻",
+      icon: Github,
     },
     {
       name: "Instagram",
       href: "https://instagram.com/xyvintech",
-      icon: "📸",
+      icon: Instagram,
     },
   ];
 
@@ -77,15 +86,15 @@ const ModernFooter = () => {
                 </p>
                 <div className="contact-info">
                   <div className="contact-item">
-                    <span className="contact-icon">📧</span>
+                    <Mail size={18} className="contact-icon" />
                     <a href="mailto:admin@xyvin.com">admin@xyvin.com</a>
                   </div>
                   <div className="contact-item">
-                    <span className="contact-icon">📱</span>
+                    <Phone size={18} className="contact-icon" />
                     <a href="tel:+918138916303">+91 813 891 6303</a>
                   </div>
                   <div className="contact-item">
-                    <span className="contact-icon">📍</span>
+                    <MapPin size={18} className="contact-icon" />
                     <span>Kochi, Kerala, India</span>
                   </div>
                 </div>
@@ -120,44 +129,33 @@ const ModernFooter = () => {
               </div>
             </div>
 
-            {/* Support */}
-            <div className="col-lg-2 col-md-6 mb-4">
-              <div className="footer-section">
-                <h4 className="footer-title">Support</h4>
-                <ul className="footer-links">
-                  {footerSections.support.map((item, index) => (
-                    <li key={index}>
-                      <Link href={item.href}>{item.name}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-
             {/* Newsletter & Social */}
-            <div className="col-lg-2 col-md-6 mb-4">
+            <div className="col-lg-4 col-md-6 mb-4">
               <div className="footer-section">
                 <h4 className="footer-title">Stay Connected</h4>
                 <p className="newsletter-text">
                   Follow us for the latest updates and tech insights.
                 </p>
                 <div className="social-links">
-                  {socialLinks.map((social, index) => (
-                    <a
-                      key={index}
-                      href={social.href}
-                      className="social-link"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title={social.name}
-                    >
-                      <span className="social-icon">{social.icon}</span>
-                    </a>
-                  ))}
+                  {socialLinks.map((social, index) => {
+                    const IconComponent = social.icon;
+                    return (
+                      <a
+                        key={index}
+                        href={social.href}
+                        className="social-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title={social.name}
+                      >
+                        <IconComponent size={20} className="social-icon" />
+                      </a>
+                    );
+                  })}
                 </div>
                 <div className="quick-contact">
                   <Link href="/Xyvin/contact" className="contact-btn">
-                    <span className="btn-icon">🚀</span>
+                    <Rocket size={16} className="btn-icon" />
                     Get Started
                   </Link>
                 </div>
@@ -280,14 +278,14 @@ const ModernFooter = () => {
         .contact-item {
           display: flex;
           align-items: center;
-          gap: 10px;
-          margin-bottom: 12px;
+          gap: 12px;
+          margin-bottom: 15px;
           font-size: 0.95rem;
         }
 
         .contact-icon {
-          font-size: 1.1rem;
-          min-width: 20px;
+          color: #96ceb4;
+          flex-shrink: 0;
         }
 
         .contact-item a {
@@ -335,7 +333,11 @@ const ModernFooter = () => {
         }
 
         .social-icon {
-          font-size: 1.3rem;
+          transition: transform 0.3s ease;
+        }
+
+        .social-link:hover .social-icon {
+          transform: scale(1.1);
         }
 
         .contact-btn {
@@ -359,7 +361,11 @@ const ModernFooter = () => {
         }
 
         .btn-icon {
-          font-size: 1rem;
+          transition: transform 0.3s ease;
+        }
+
+        .contact-btn:hover .btn-icon {
+          transform: translateX(2px);
         }
 
         .footer-bottom {
@@ -428,6 +434,10 @@ const ModernFooter = () => {
           .footer-title::after {
             left: 50%;
             transform: translateX(-50%);
+          }
+
+          .contact-item {
+            justify-content: center;
           }
         }
       `}</style>

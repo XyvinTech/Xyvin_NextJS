@@ -10,7 +10,7 @@ const ServiceHero = () => {
           <div className="col-lg-8 mx-auto text-center">
             <div className="hero-badge">
               <span className="badge-icon">⚡</span>
-              Our Services
+              Our Services 
             </div>
             <h1 className="hero-title">
               Comprehensive IT Solutions

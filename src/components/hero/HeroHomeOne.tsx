@@ -1,6 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { 
+  Bot, 
+  Zap, 
+  Rocket, 
+  MessageSquare, 
+  CheckCircle 
+} from "lucide-react";
 
 const HeroHomeOne = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -8,7 +15,7 @@ const HeroHomeOne = () => {
 
   const heroData = [
     {
-      badge: "🤖 AI Engineering",
+      badge: { icon: Bot, text: "AI Engineering" },
       title: ["We Build", "Intelligent", "Systems"],
       description:
         "Engineering AI solutions that think, learn, and evolve with your business needs",
@@ -16,7 +23,7 @@ const HeroHomeOne = () => {
       cta: "Explore AI Solutions",
     },
     {
-      badge: "⚡ Smart Automation",
+      badge: { icon: Zap, text: "Smart Automation" },
       title: ["Automate", "Everything", "Smartly"],
       description:
         "From simple workflows to complex decision-making, we create AI that works for you",
@@ -24,7 +31,7 @@ const HeroHomeOne = () => {
       cta: "See Automation",
     },
     {
-      badge: "🚀 Future Ready",
+      badge: { icon: Rocket, text: "Future Ready" },
       title: ["Tomorrow's", "Technology", "Today"],
       description:
         "Advanced AI agents, neural networks, and machine learning at your fingertips",
@@ -46,6 +53,7 @@ const HeroHomeOne = () => {
   }, []);
 
   const currentData = heroData[currentSlide];
+  const BadgeIcon = currentData.badge.icon;
 
   return (
     <div className="hero-ai-container">
@@ -79,7 +87,10 @@ const HeroHomeOne = () => {
 
       {/* Main Content */}
       <div className="hero-content">
-        <div className="hero-badge">{currentData.badge}</div>
+        <div className="hero-badge">
+          <BadgeIcon size={16} className="badge-icon" />
+          {currentData.badge.text}
+        </div>
 
         <div className="hero-title-container">
           {currentData.title.map((word, index) => (
@@ -113,14 +124,19 @@ const HeroHomeOne = () => {
 
         {/* CTA Buttons */}
         <div className="hero-actions">
+          <div className="hero-badge">
+
           <Link href="/Xyvin/portfolio" className="btn-primary-ai">
-            <span className="btn-icon">🚀</span>
-            {currentData.cta}
+            <Rocket size={16} className="btn-icon" />{currentData.cta}
           </Link>
+          </div>
+          <div className="hero-badge">
+
           <Link href="/Xyvin/contact" className="btn-secondary-ai">
-            <span className="btn-icon">💬</span>
+            <MessageSquare size={16} className="btn-icon" />
             Let's Talk AI
           </Link>
+          </div>
         </div>
 
         {/* Slide Indicators */}
@@ -152,11 +168,13 @@ const HeroHomeOne = () => {
           </div>
           <div className="terminal-line">
             <span className="prompt">$</span>
-            <span className="success">✓ Neural networks loaded</span>
+            <CheckCircle size={12} className="success-icon" />
+            <span className="success">Neural networks loaded</span>
           </div>
           <div className="terminal-line">
             <span className="prompt">$</span>
-            <span className="success">✓ Ready to transform your business</span>
+            <CheckCircle size={12} className="success-icon" />
+            <span className="success">Ready to transform your business</span>
           </div>
         </div>
       </div>
@@ -175,6 +193,8 @@ const HeroHomeOne = () => {
           display: flex;
           align-items: center;
           justify-content: center;
+          margin-Top: 80px;
+          padding-Top: 80px;
         }
 
         .hero-bg-animated {
@@ -256,7 +276,9 @@ const HeroHomeOne = () => {
         }
 
         .hero-badge {
-          display: inline-block;
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
           background: rgba(0, 245, 255, 0.1);
           border: 1px solid #00f5ff;
           border-radius: 50px;
@@ -266,6 +288,10 @@ const HeroHomeOne = () => {
           font-weight: 500;
           margin-bottom: 30px;
           animation: glow 2s infinite alternate;
+        }
+
+        .badge-icon {
+          color: #00f5ff;
         }
 
         @keyframes glow {
@@ -412,6 +438,10 @@ const HeroHomeOne = () => {
           transform: translateY(-2px);
         }
 
+        .btn-icon {
+          color: inherit;
+        }
+
         .slide-indicators {
           display: flex;
           justify-content: center;
@@ -488,6 +518,9 @@ const HeroHomeOne = () => {
         .terminal-line {
           margin-bottom: 5px;
           color: #a0a0a0;
+          display: flex;
+          align-items: center;
+          gap: 5px;
         }
 
         .prompt {
@@ -497,6 +530,11 @@ const HeroHomeOne = () => {
 
         .success {
           color: #28ca42;
+        }
+
+        .success-icon {
+          color: #28ca42;
+          flex-shrink: 0;
         }
 
         .typing-text {
