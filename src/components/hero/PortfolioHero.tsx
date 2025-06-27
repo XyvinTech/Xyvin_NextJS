@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { Award, Rocket, Zap, Briefcase } from "lucide-react";
 
 const PortfolioHero = () => {
   return (
@@ -8,7 +9,7 @@ const PortfolioHero = () => {
         <div className="row align-items-center min-vh-50">
           <div className="col-lg-8 mx-auto text-center">
             <div className="hero-badge">
-              <span className="badge-icon">💼</span>
+              <Briefcase className="badge-icon" size={16} />
               Our Work Portfolio
             </div>
             <h1 className="hero-title">
@@ -22,15 +23,21 @@ const PortfolioHero = () => {
             </p>
             <div className="hero-highlights">
               <div className="highlight-item">
-                <div className="highlight-icon">🏆</div>
+                <div className="highlight-icon">
+                  <Award size={18} />
+                </div>
                 <div className="highlight-text">Award-Winning Projects</div>
               </div>
               <div className="highlight-item">
-                <div className="highlight-icon">🚀</div>
+                <div className="highlight-icon">
+                  <Rocket size={18} />
+                </div>
                 <div className="highlight-text">Scalable Solutions</div>
               </div>
               <div className="highlight-item">
-                <div className="highlight-icon">⚡</div>
+                <div className="highlight-icon">
+                  <Zap size={18} />
+                </div>
                 <div className="highlight-text">Fast Delivery</div>
               </div>
             </div>
@@ -49,18 +56,18 @@ const PortfolioHero = () => {
           display: inline-flex;
           align-items: center;
           gap: 8px;
-          background: rgba(255, 107, 107, 0.1);
-          border: 1px solid #ff6b6b;
+          background: rgba(0, 245, 255, 0.1);
+          border: 1px solid #00f5ff;
           border-radius: 50px;
           padding: 8px 20px;
-          color: #ff6b6b;
+          color: #00f5ff;
           font-size: 14px;
           font-weight: 500;
           margin-bottom: 24px;
         }
 
         .badge-icon {
-          font-size: 16px;
+          color: #00f5ff;
         }
 
         .hero-title {
@@ -72,10 +79,15 @@ const PortfolioHero = () => {
         }
 
         .text-gradient {
-          background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+          background: linear-gradient(45deg, #00f5ff, #4ecdc4);
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;
+        }
+
+        @keyframes gradientShift {
+          0%, 100% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
         }
 
         .hero-description {
@@ -104,10 +116,20 @@ const PortfolioHero = () => {
           border-radius: 50px;
           box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
           border: 1px solid #f0f0f0;
+          transition: all 0.3s ease;
+        }
+
+        .highlight-item:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 6px 20px rgba(0, 245, 255, 0.15);
+          border-color: #00f5ff;
         }
 
         .highlight-icon {
-          font-size: 18px;
+          color: #00f5ff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         .highlight-text {

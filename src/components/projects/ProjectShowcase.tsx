@@ -4,65 +4,190 @@ import Link from "next/link";
 import Image from "next/image";
 import { Rocket, ExternalLink } from "lucide-react";
 
+// Import your portfolio images
+import portfolio_img_6 from "@/assets/img/portfolio_1.jpg";
+import portfolio_img_7 from "@/assets/img/portfolio_2.jpg";
+import portfolio_img_8 from "@/assets/img/portfolio_3.jpg";
+import portfolio_img_9 from "@/assets/img/portfolio_4.jpg";
+import portfolio_img_10 from "@/assets/img/portfolio_6.jpg";
+import portfolio_img_11 from "@/assets/img/portfolio_7.jpg"; 
+import portfolio_img_12 from "@/assets/img/portfolio_8.jpg";
+import portfolio_img_13 from "@/assets/img/portfolio_9.jpg";
+import portfolio_img_14 from "@/assets/img/familytree.png";
+import portfolio_img_15 from "@/assets/img/Frame 1171276651.png";
+import portfolio_img_16 from "@/assets/img/HEF 1.png";
+import portfolio_img_17 from "@/assets/img/ipa.png";
+import portfolio_img_18 from "@/assets/img/ITCC.png";
+import portfolio_img_19 from "@/assets/img/kssia 1.png";
+import portfolio_img_20 from "@/assets/img/stoppick.png";
+import portfolio_img_21 from "@/assets/img/AIITS.png";
+import portfolio_img_22 from "@/assets/img/khedmah.png";
+
 const ProjectShowcase = () => {
   const [activeFilter, setActiveFilter] = useState("All");
 
   const filters = [
     "All",
-    "Web Development",
-    "Mobile Apps",
-    "AI/ML",
-    "ERP Systems",
+    "UI Design",
+    "UX Design", 
+    "Development",
+    "Finance",
   ];
 
+  // Your actual portfolio data
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      category: "Web Development",
-      image: "/assets/img/portfolio_1.jpg",
+      title: "Double Horse E-Commerce",
+      category: "UI Design",
+      image: portfolio_img_6,
       link: "https://doublehorse.in/",
       type: "Website",
+      description: "Digital Services / App Design"
     },
     {
       id: 2,
-      title: "Smart Healthcare App",
-      category: "Mobile Apps",
-      image: "/assets/img/portfolio_2.jpg",
+      title: "GOEC World Platform",
+      category: "UX Design",
+      image: portfolio_img_7,
       link: "https://www.goecworld.com/",
-      type: "Mobile App",
+      type: "Web Platform",
+      description: "Digital Services / App Design"
     },
     {
       id: 3,
-      title: "AI Document Analysis",
-      category: "AI/ML",
-      image: "/assets/img/portfolio_3.jpg",
+      title: "Basari Opticals",
+      category: "Development",
+      image: portfolio_img_8,
       link: "https://basariopticals.com/",
-      type: "AI Solution",
+      type: "E-Commerce",
+      description: "Digital Services / App Design"
     },
     {
       id: 4,
-      title: "Manufacturing ERP",
-      category: "ERP Systems",
-      image: "/assets/img/portfolio_4.jpg",
+      title: "Buziness Connect",
+      category: "Finance",
+      image: portfolio_img_9,
       link: "https://buzinessconnect.com/",
-      type: "Enterprise",
+      type: "Business Platform",
+      description: "Digital Services / App Design"
     },
     {
       id: 5,
-      title: "Real Estate Portal",
-      category: "Web Development",
-      image: "/assets/img/portfolio_5.jpg",
-      link: "https://www.special40.com/",
-      type: "Website",
+      title: "Worko India",
+      category: "UX Design",
+      image: portfolio_img_10,
+      link: "https://www.workoindia.com/",
+      type: "Job Portal",
+      description: "Digital Services / App Design"
     },
     {
       id: 6,
-      title: "Food Delivery App",
-      category: "Mobile Apps",
-      image: "/assets/img/portfolio_6.jpg",
-      link: "https://www.workoindia.com/",
+      title: "Azavista Platform",
+      category: "UI Design",
+      image: portfolio_img_11,
+      link: "https://www.azavista.com/",
+      type: "Web Application",
+      description: "Digital Services / App Design"
+    },
+    {
+      id: 7,
+      title: "Atlantis Medical",
+      category: "UI Design",
+      image: portfolio_img_12,
+      link: "https://atlantismedical.com.au/",
+      type: "Healthcare",
+      description: "Digital Services / App Design"
+    },
+    {
+      id: 8,
+      title: "Special40 Portal",
+      category: "UX Design",
+      image: portfolio_img_13,
+      link: "https://www.special40.com/",
+      type: "Web Portal",
+      description: "Digital Services / App Design"
+    },
+    {
+      id: 9,
+      title: "Family Tree App",
+      category: "Development",
+      image: portfolio_img_14,
+      link: "",
       type: "Mobile App",
+      description: "Digital Services / App Design"
+    },
+    {
+      id: 10,
+      title: "Financial Dashboard",
+      category: "Finance",
+      image: portfolio_img_15,
+      link: "",
+      type: "Dashboard",
+      description: "Digital Services / App Design"
+    },
+    {
+      id: 11,
+      title: "HEF Platform",
+      category: "UX Design",
+      image: portfolio_img_16,
+      link: "",
+      type: "Web Platform",
+      description: "Digital Services / App Design"
+    },
+    {
+      id: 12,
+      title: "IPA System",
+      category: "UI Design",
+      image: portfolio_img_17,
+      link: "",
+      type: "Management System",
+      description: "Digital Services / App Design"
+    },
+    {
+      id: 13,
+      title: "ITCC Platform",
+      category: "UI Design",
+      image: portfolio_img_18,
+      link: "",
+      type: "Tech Platform",
+      description: "Digital Services / App Design"
+    },
+    {
+      id: 14,
+      title: "KSSIA Portal",
+      category: "UX Design",
+      image: portfolio_img_19,
+      link: "",
+      type: "Association Portal",
+      description: "Digital Services / App Design"
+    },
+    {
+      id: 15,
+      title: "StopPick App",
+      category: "UX Design",
+      image: portfolio_img_20,
+      link: "",
+      type: "Mobile App",
+      description: "Digital Services / App Design"
+    },
+    {
+      id: 16,
+      title: "AIITS System",
+      category: "UX Design",
+      image: portfolio_img_21,
+      link: "",
+      type: "Educational System",
+      description: "Digital Services / App Design"
+    },
+    {
+      id: 17,
+      title: "Khedmah Platform",
+      category: "UX Design",
+      image: portfolio_img_22,
+      link: "",
+      type: "Service Platform",
+      description: "Digital Services / App Design"
     },
   ];
 
@@ -122,14 +247,22 @@ const ProjectShowcase = () => {
                 />
                 <div className="project-overlay">
                   <div className="project-type">{project.type}</div>
-                  <Link
-                    href={project.link}
-                    className="project-link"
-                    target="_blank"
-                  >
-                    <ExternalLink className="link-icon" size={16} />
-                    View Project
-                  </Link>
+                  {project.link && (
+                    <Link
+                      href={project.link}
+                      className="project-link"
+                      target="_blank"
+                    >
+                      <ExternalLink className="link-icon" size={16} />
+                      View Project
+                    </Link>
+                  )}
+                  {!project.link && (
+                    <div className="project-link-disabled">
+                      <ExternalLink className="link-icon" size={16} />
+                      Coming Soon
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -138,6 +271,7 @@ const ProjectShowcase = () => {
                   <h3 className="project-title">{project.title}</h3>
                   <span className="project-category">{project.category}</span>
                 </div>
+                <p className="project-description">{project.description}</p>
               </div>
             </div>
           ))}
@@ -314,23 +448,13 @@ const ProjectShowcase = () => {
 
         .projects-grid {
           display: grid;
-          grid-template-columns: repeat(3, minmax(300px, 400px));
+          grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
           gap: 30px;
           margin-bottom: 80px;
           justify-content: center;
           max-width: 1300px;
           margin-left: auto;
           margin-right: auto;
-        }
-
-        /* Handle different numbers of cards */
-        .projects-grid[data-count="1"] {
-          grid-template-columns: 400px;
-        }
-
-        .projects-grid[data-count="2"] {
-          grid-template-columns: repeat(2, 400px);
-          max-width: 850px;
         }
 
         .project-card {
@@ -346,6 +470,7 @@ const ProjectShowcase = () => {
           backdrop-filter: blur(10px);
           width: 100%;
           max-width: 400px;
+          margin: 0 auto;
         }
 
         @keyframes slideUp {
@@ -448,6 +573,24 @@ const ProjectShowcase = () => {
           box-shadow: 0 8px 30px rgba(0, 180, 216, 0.4);
         }
 
+        .project-link-disabled {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          background: rgba(255, 255, 255, 0.7);
+          color: #666;
+          padding: 12px 24px;
+          border-radius: 50px;
+          font-weight: 600;
+          transform: translateY(10px);
+          transition: transform 0.3s ease;
+          border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .project-card:hover .project-link-disabled {
+          transform: translateY(-2px);
+        }
+
         .link-icon {
           transition: transform 0.3s ease;
           color: currentColor;
@@ -467,6 +610,7 @@ const ProjectShowcase = () => {
           justify-content: space-between;
           align-items: flex-start;
           gap: 16px;
+          margin-bottom: 12px;
         }
 
         .project-title {
@@ -487,6 +631,13 @@ const ProjectShowcase = () => {
           font-weight: 600;
           white-space: nowrap;
           border: 1px solid rgba(0, 180, 216, 0.2);
+        }
+
+        .project-description {
+          color: #666;
+          font-size: 0.95rem;
+          line-height: 1.5;
+          margin: 0;
         }
 
         .showcase-cta {
@@ -599,17 +750,9 @@ const ProjectShowcase = () => {
 
         @media (max-width: 991px) {
           .projects-grid {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
             max-width: 820px;
-          }
-
-          .projects-grid:has(.project-card:only-child) {
-            grid-template-columns: 400px;
-          }
-
-          .projects-grid:has(.project-card:nth-child(2):last-child) {
-            grid-template-columns: repeat(2, 1fr);
           }
 
           .showcase-cta {
@@ -632,10 +775,6 @@ const ProjectShowcase = () => {
             grid-template-columns: 1fr;
             max-width: 400px;
             margin: 0 auto 80px;
-          }
-
-          .projects-grid:has(.project-card:only-child) {
-            grid-template-columns: 1fr;
           }
 
           .section-header {
@@ -667,6 +806,16 @@ const ProjectShowcase = () => {
           .showcase-cta {
             padding: 40px 24px;
           }
+
+          .project-header {
+            flex-direction: column;
+            gap: 12px;
+            align-items: flex-start;
+          }
+
+          .project-category {
+            align-self: flex-start;
+          }
         }
 
         @media (max-width: 480px) {
@@ -676,6 +825,7 @@ const ProjectShowcase = () => {
 
           .projects-grid {
             max-width: 100%;
+            grid-template-columns: 1fr;
           }
 
           .project-card {
