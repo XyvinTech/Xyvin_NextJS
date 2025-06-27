@@ -21,7 +21,7 @@ interface FooterLink {
 interface SocialLink {
   name: string;
   href: string;
-  icon: React.ComponentType<{ size?: number; className?: string }>;
+  icon: React.ComponentType<{ size?: string | number; className?: string  }>;
 }
 
 const ModernFooter: React.FC = () => {
@@ -49,11 +49,6 @@ const ModernFooter: React.FC = () => {
       name: "LinkedIn",
       href: "https://linkedin.com/company/xyvin-technologies",
       icon: Linkedin,
-    },
-    {
-      name: "GitHub",
-      href: "https://github.com/xyvintech",
-      icon: Github,
     },
     {
       name: "Instagram",
