@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import { Zap, Rocket, Eye } from "lucide-react";
 
 const ServiceHero = () => {
   return (
@@ -9,7 +10,9 @@ const ServiceHero = () => {
         <div className="row align-items-center min-vh-50">
           <div className="col-lg-8 mx-auto text-center">
             <div className="hero-badge">
-              <span className="badge-icon">⚡</span>
+              <span className="badge-icon">
+                <Zap size={16} />
+              </span>
               Our Services 
             </div>
             <h1 className="hero-title">
@@ -37,11 +40,15 @@ const ServiceHero = () => {
             </div>
             <div className="hero-actions">
               <Link href="/Xyvin/contact" className="btn-primary">
-                <span className="btn-icon">🚀</span>
+                <span className="btn-icon">
+                  <Rocket size={18} />
+                </span>
                 Get Started Today
               </Link>
               <Link href="/Xyvin/portfolio" className="btn-secondary">
-                <span className="btn-icon">👁️</span>
+                <span className="btn-icon">
+                  <Eye size={18} />
+                </span>
                 View Our Work
               </Link>
             </div>
@@ -78,17 +85,18 @@ const ServiceHero = () => {
           align-items: center;
           gap: 8px;
           background: rgba(96, 206, 180, 0.1);
-          border: 1px solid #96ceb4;
+          border: 1px solid #45b7d1;
           border-radius: 50px;
           padding: 8px 20px;
-          color: #96ceb4;
+          color: #45b7d1;
           font-size: 14px;
           font-weight: 500;
           margin-bottom: 24px;
         }
 
         .badge-icon {
-          font-size: 16px;
+          display: flex;
+          align-items: center;
         }
 
         .hero-title {
@@ -100,7 +108,7 @@ const ServiceHero = () => {
         }
 
         .text-gradient {
-          background: linear-gradient(45deg, #96ceb4, #4ecdc4);
+          background: linear-gradient(45deg, #45b7d1, #4ecdc4);
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -131,7 +139,7 @@ const ServiceHero = () => {
         .stat-number {
           font-size: 2.5rem;
           font-weight: bold;
-          color: #96ceb4;
+          color: #45b7d1;
           display: block;
           line-height: 1;
         }
@@ -165,7 +173,7 @@ const ServiceHero = () => {
         }
 
         .btn-primary {
-          background: linear-gradient(45deg, #96ceb4, #4ecdc4);
+          background: linear-gradient(45deg, #45b7d1, #4ecdc4);
           color: white;
           border: none;
         }
@@ -178,18 +186,19 @@ const ServiceHero = () => {
 
         .btn-secondary {
           background: transparent;
-          color: #96ceb4;
-          border: 2px solid #96ceb4;
+          color: #45b7d1;
+          border: 2px solid #45b7d1;
         }
 
         .btn-secondary:hover {
           background: rgba(150, 206, 180, 0.1);
           transform: translateY(-2px);
-          color: #96ceb4;
+          color: #45b7d1;
         }
 
         .btn-icon {
-          font-size: 18px;
+          display: flex;
+          align-items: center;
         }
 
         @media (max-width: 767px) {

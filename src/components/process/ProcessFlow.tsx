@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { Search, Palette, Zap, Rocket, Wrench, Settings } from "lucide-react";
 
 const ProcessFlow = () => {
   const processSteps = [
@@ -8,40 +9,40 @@ const ProcessFlow = () => {
       title: "Discovery & Planning",
       description:
         "We analyze your requirements, conduct market research, and create a comprehensive project roadmap.",
-      icon: "🔍",
-      color: "#FF6B6B",
+      icon: Search,
+      color: "#45b7d1",
     },
     {
       step: "02",
       title: "Design & Prototyping",
       description:
         "Our design team creates wireframes, mockups, and interactive prototypes for your approval.",
-      icon: "🎨",
-      color: "#4ECDC4",
+      icon: Palette,
+      color: "#4ecdc4",
     },
     {
       step: "03",
       title: "Development & Testing",
       description:
         "Agile development with regular testing, code reviews, and quality assurance throughout the process.",
-      icon: "⚡",
-      color: "#45B7D1",
+      icon: Zap,
+      color: "#45b7d1",
     },
     {
       step: "04",
       title: "Deployment & Launch",
       description:
         "Seamless deployment to production with performance optimization and security configuration.",
-      icon: "🚀",
-      color: "#96CEB4",
+      icon: Rocket,
+      color: "#4ecdc4",
     },
     {
       step: "05",
       title: "Support & Maintenance",
       description:
         "Ongoing support, updates, and enhancements to ensure optimal performance and security.",
-      icon: "🔧",
-      color: "#FFEAA7",
+      icon: Wrench,
+      color: "#45b7d1",
     },
   ];
 
@@ -50,7 +51,7 @@ const ProcessFlow = () => {
       <div className="container">
         <div className="section-header">
           <div className="section-badge">
-            <span className="badge-icon">⚙️</span>
+            <Settings size={16} />
             Our Process
           </div>
           <h2 className="section-title">
@@ -64,36 +65,39 @@ const ProcessFlow = () => {
         </div>
 
         <div className="process-timeline">
-          {processSteps.map((step, index) => (
-            <div
-              key={index}
-              className="process-step"
-              style={{
-                animationDelay: `${index * 0.2}s`,
-              }}
-            >
-              <div className="step-connector">
-                {index < processSteps.length - 1 && (
-                  <div className="connector-line"></div>
-                )}
-              </div>
-
-              <div className="step-content">
-                <div
-                  className="step-icon"
-                  style={{ backgroundColor: step.color }}
-                >
-                  <span className="icon-emoji">{step.icon}</span>
+          {processSteps.map((step, index) => {
+            const IconComponent = step.icon;
+            return (
+              <div
+                key={index}
+                className="process-step"
+                style={{
+                  animationDelay: `${index * 0.2}s`,
+                }}
+              >
+                <div className="step-connector">
+                  {index < processSteps.length - 1 && (
+                    <div className="connector-line"></div>
+                  )}
                 </div>
 
-                <div className="step-info">
-                  <div className="step-number">{step.step}</div>
-                  <h3 className="step-title">{step.title}</h3>
-                  <p className="step-description">{step.description}</p>
+                <div className="step-content">
+                  <div
+                    className="step-icon"
+                    style={{ backgroundColor: step.color }}
+                  >
+                    <IconComponent size={32} color="white" />
+                  </div>
+
+                  <div className="step-info">
+                    <div className="step-number">{step.step}</div>
+                    <h3 className="step-title">{step.title}</h3>
+                    <p className="step-description">{step.description}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="process-cta">
@@ -128,13 +132,13 @@ const ProcessFlow = () => {
           display: inline-flex;
           align-items: center;
           gap: 8px;
-          background: rgba(150, 206, 180, 0.1);
-          border: 1px solid rgba(150, 206, 180, 0.3);
+          background: rgba(69, 183, 209, 0.1);
+          border: 1px solid rgba(69, 183, 209, 0.3);
           padding: 8px 20px;
           border-radius: 50px;
           font-size: 14px;
           font-weight: 500;
-          color: #96ceb4;
+          color: #45b7d1;
           margin-bottom: 24px;
         }
 
@@ -147,7 +151,7 @@ const ProcessFlow = () => {
         }
 
         .highlight {
-          color: #96ceb4;
+          color: #4ecdc4;
         }
 
         .section-description {
@@ -243,10 +247,6 @@ const ProcessFlow = () => {
           transform: scale(1.05);
         }
 
-        .icon-emoji {
-          font-size: 2rem;
-        }
-
         .step-info {
           flex: 1;
         }
@@ -311,7 +311,7 @@ const ProcessFlow = () => {
           background: white;
           color: #45b7d1;
           padding: 14px 28px;
-          border: 2px solid grey;
+          border: 2px solid transparent;
           border-radius: 50px;
           text-decoration: none;
           font-weight: 600;
@@ -323,6 +323,7 @@ const ProcessFlow = () => {
           transform: translateY(-2px);
           box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
           color: #45b7d1;
+          border-color: white;
         }
 
         .button-arrow {
@@ -365,10 +366,6 @@ const ProcessFlow = () => {
           .step-icon {
             width: 60px;
             height: 60px;
-          }
-
-          .icon-emoji {
-            font-size: 1.5rem;
           }
 
           .cta-card {
