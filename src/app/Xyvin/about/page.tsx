@@ -1,22 +1,21 @@
-
-
-import React from 'react';
-import About from '@/components/about/About';
-import AwardsHomeOne from '@/components/awards/AwardsHomeOne';
-import BannerAbout from '@/components/brand/BannerAbout';
-import BrandHomeOne from '@/components/brand/BrandHomeOne';
-import FunFactHomeOne from '@/components/funfact/FunFactHomeOne';
-import Gellary from '@/components/gellary/Gellary';
-import TeamHomeTwo from '@/components/team/TeamHomeTwo';
-import Testimonial from '@/components/testimonial/Testimonial';
-import VideoHomeOne from '@/components/video/VideoHomeOne';
-import Wrapper from '@/layouts/Wrapper';
-import FooterOne from '@/layouts/footers/FooterOne';
-import HeaderOne from '@/layouts/headers/HeaderOne';
-// import Sticky from '@/components/sticky/Sticky';
+import React from "react";
+import AboutHero from "@/components/hero/AboutHero";
+import CompanyOverview from "@/components/company/CompanyOverview";
+import WhyChooseUs from "@/components/features/WhyChooseUs";
+import TeamSection from "@/components/team/TeamSection";
+import ProcessFlow from "@/components/process/ProcessFlow";
+import ClientTestimonials from "@/components/testimonials/ClientTestimonials";
+import TechStack from "@/components/tech/TechStack";
+import BrandHomeOne from "@/components/brand/BrandHomeOne";
+import ContactCTA from "@/components/contact/ContactCTA";
+import Wrapper from "@/layouts/Wrapper";
+import ModernFooter from "@/layouts/footers/ModernFooter";
+import HeaderOne from "@/layouts/headers/HeaderOne";
 
 export const metadata = {
-  title: "About Xyvin",
+  title: "About Xyvin - Leading IT Solutions Provider",
+  description:
+    "Learn about Xyvin Technologies - Your trusted partner for innovative IT solutions, software development, and digital transformation services.",
 };
 
 const index = () => {
@@ -24,17 +23,16 @@ const index = () => {
     <Wrapper>
       <HeaderOne />
       <div id="scrollsmoother-container">
-        <BannerAbout />
-        {/* <VideoHomeOne style_2={true} /> */}
-        <FunFactHomeOne style_3={true} />
-        <About />
-        <TeamHomeTwo style_2={true} style_3={true} />
-        {/* <AwardsHomeOne style_2={true} /> */}
-        <Testimonial />
-        <Gellary />
-        <BrandHomeOne  />
-        <FooterOne />
-        {/* <Sticky/> */}
+        <AboutHero />
+        <CompanyOverview />
+        <WhyChooseUs />
+        <TeamSection />
+        {/* <ProcessFlow />
+        <TechStack /> */}
+        <ClientTestimonials />
+        <BrandHomeOne />
+        <ContactCTA />
+        <ModernFooter />
       </div>
     </Wrapper>
   );
