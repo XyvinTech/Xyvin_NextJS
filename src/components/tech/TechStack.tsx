@@ -1,84 +1,108 @@
 "use client";
 import React from "react";
+import { 
+   
+  FaCogs, 
+  FaDatabase, 
+  FaCloud, 
+  FaMobile, 
+  FaPaintBrush, 
+  FaPython,
+  FaJava,
+  FaPhp,
+  FaAws,
+  FaRobot,
+  FaTools,
+   FaNodeJs,
+ 
+} from "react-icons/fa";
+import { SiNextdotjs, SiVuedotjs, SiAngular, SiTypescript, 
+  SiTailwindcss, SiSharp, SiGo, SiMongodb, SiPostgresql,
+   SiMysql, SiRedis, SiFirebase, SiElasticsearch, SiAmazon, 
+    SiDocker, SiKubernetes, SiJenkins, SiTerraform, 
+   SiReact, SiFlutter, SiApple, SiAndroid, SiIonic,  
+   SiTensorflow, SiPytorch, SiOpenai, SiScikitlearn, SiPandas, SiNumpy, } from "react-icons/si";
+import { TbBrandXamarin } from "react-icons/tb";
+import { RiReactjsFill } from "react-icons/ri";
 
 const TechStack = () => {
   const techCategories = [
     {
       category: "Frontend",
-      icon: "🎨",
+      icon: <FaPaintBrush className="w-8 h-8" />,
       color: "#FF6B6B",
       technologies: [
-        { name: "React", logo: "⚛️" },
-        { name: "Next.js", logo: "▲" },
-        { name: "Vue.js", logo: "🔷" },
-        { name: "Angular", logo: "🅰️" },
-        { name: "TypeScript", logo: "📘" },
-        { name: "Tailwind CSS", logo: "🎨" },
+        { name: "React", logo: <RiReactjsFill className="w-5 h-5 text-blue-500" /> },
+        { name: "Next.js", logo: <SiNextdotjs className="w-5 h-5" /> },
+        { name: "Vue.js", logo: <SiVuedotjs className="w-5 h-5 text-green-500" /> },
+        { name: "Angular", logo: <SiAngular className="w-5 h-5 text-red-500" /> },
+        { name: "TypeScript", logo: <SiTypescript className="w-5 h-5 text-blue-600" /> },
+        { name: "Tailwind CSS", logo: <SiTailwindcss className="w-5 h-5 text-teal-500" /> },
       ],
     },
     {
       category: "Backend",
-      icon: "⚙️",
+      icon: <FaCogs className="w-8 h-8" />,
       color: "#4ECDC4",
       technologies: [
-        { name: "Node.js", logo: "🟢" },
-        { name: "Python", logo: "🐍" },
-        { name: "Java", logo: "☕" },
-        { name: "PHP", logo: "🐘" },
-        { name: "C#", logo: "🔷" },
-        { name: "Go", logo: "🔵" },
+        { name: "Node.js", logo: <FaNodeJs className="w-5 h-5 text-green-500" /> },
+        { name: "Python", logo: <FaPython className="w-5 h-5 text-yellow-500" /> },
+        { name: "Java", logo: <FaJava className="w-5 h-5 text-orange-500" /> },
+        { name: "PHP", logo: <FaPhp className="w-5 h-5 text-purple-500" /> },
+        { name: "C#", logo: <SiSharp className="w-5 h-5 text-purple-600" /> },
+        { name: "Go", logo: <SiGo className="w-5 h-5 text-blue-500" /> },
       ],
     },
     {
       category: "Database",
-      icon: "🗄️",
+      icon: <FaDatabase className="w-8 h-8" />,
       color: "#45B7D1",
       technologies: [
-        { name: "MongoDB", logo: "🍃" },
-        { name: "PostgreSQL", logo: "🐘" },
-        { name: "MySQL", logo: "🐬" },
-        { name: "Redis", logo: "🔴" },
-        { name: "Firebase", logo: "🔥" },
-        { name: "Elasticsearch", logo: "🔍" },
+        { name: "MongoDB", logo: <SiMongodb className="w-5 h-5 text-green-600" /> },
+        { name: "PostgreSQL", logo: <SiPostgresql className="w-5 h-5 text-blue-600" /> },
+        { name: "MySQL", logo: <SiMysql className="w-5 h-5 text-orange-500" /> },
+        { name: "Redis", logo: <SiRedis className="w-5 h-5 text-red-500" /> },
+        { name: "Firebase", logo: <SiFirebase className="w-5 h-5 text-yellow-500" /> },
+        { name: "Elasticsearch", logo: <SiElasticsearch className="w-5 h-5 text-yellow-600" /> },
       ],
     },
     {
       category: "Cloud & DevOps",
-      icon: "☁️",
+      icon: <FaCloud className="w-8 h-8" />,
       color: "#96CEB4",
       technologies: [
-        { name: "AWS", logo: "☁️" },
-        { name: "Azure", logo: "🔷" },
-        { name: "Docker", logo: "🐳" },
-        { name: "Kubernetes", logo: "⚓" },
-        { name: "Jenkins", logo: "🏗️" },
-        { name: "Terraform", logo: "🏗️" },
+        { name: "AWS", logo: <SiAmazon className="w-5 h-5 text-orange-500" /> },
+        { name: "Azure", logo: <FaAws className="w-5 h-5 text-blue-500" /> },
+        { name: "Docker", logo: <SiDocker className="w-5 h-5 text-blue-600" /> },
+        { name: "Kubernetes", logo: <SiKubernetes className="w-5 h-5 text-blue-700" /> },
+        { name: "Jenkins", logo: <SiJenkins className="w-5 h-5 text-gray-600" /> },
+        { name: "Terraform", logo: <SiTerraform className="w-5 h-5 text-purple-600" /> },
       ],
     },
     {
       category: "Mobile",
-      icon: "📱",
+      icon: <FaMobile className="w-8 h-8" />,
       color: "#FFEAA7",
       technologies: [
-        { name: "React Native", logo: "📱" },
-        { name: "Flutter", logo: "🦋" },
-        { name: "iOS", logo: "🍎" },
-        { name: "Android", logo: "🤖" },
-        { name: "Ionic", logo: "⚡" },
-        { name: "Xamarin", logo: "🔷" },
+        { name: "React Native", logo: <SiReact className="w-5 h-5 text-blue-500" /> },
+        { name: "Flutter", logo: <SiFlutter className="w-5 h-5 text-blue-400" /> },
+        { name: "iOS", logo: <SiApple className="w-5 h-5" /> },
+        { name: "Android", logo: <SiAndroid className="w-5 h-5 text-green-500" /> },
+        { name: "Ionic", logo: <SiIonic className="w-5 h-5 text-blue-500" /> },
+        { name: "Xamarin", logo: <TbBrandXamarin className="w-5 h-5 text-blue-600" /> },
       ],
     },
     {
       category: "AI/ML",
-      icon: "🤖",
+      icon: <FaRobot className="w-8 h-8" />,
       color: "#DDA0DD",
       technologies: [
-        { name: "TensorFlow", logo: "🧠" },
-        { name: "PyTorch", logo: "🔥" },
-        { name: "OpenAI", logo: "🤖" },
-        { name: "Scikit-learn", logo: "📊" },
-        { name: "Pandas", logo: "🐼" },
-        { name: "NumPy", logo: "🔢" },
+        { name: "TensorFlow", logo: <SiTensorflow className="w-5 h-5 text-orange-500" /> },
+        { name: "PyTorch", logo: <SiPytorch className="w-5 h-5 text-red-500" /> },
+        { name: "OpenAI", logo: <SiOpenai className="w-5 h-5" /> },
+        { name: "Scikit-learn", logo: <SiScikitlearn className="w-5 h-5 text-orange-400" /> },
+        { name: "Pandas", logo: <SiPandas className="w-5 h-5 text-blue-600" /> },
+        { name: "NumPy", logo: <SiNumpy className="w-5 h-5 text-blue-500" /> },
       ],
     },
   ];
@@ -88,7 +112,7 @@ const TechStack = () => {
       <div className="container">
         <div className="section-header">
           <div className="section-badge">
-            <span className="badge-icon">🛠️</span>
+            <FaTools className="w-4 h-4" />
             Technology Stack
           </div>
           <h2 className="section-title">
@@ -186,6 +210,9 @@ const TechStack = () => {
         .container {
           position: relative;
           z-index: 2;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
         }
 
         .section-header {
@@ -204,12 +231,8 @@ const TechStack = () => {
           border-radius: 50px;
           font-size: 14px;
           font-weight: 500;
-          color: #96ceb4;
+          color: #00b4d8;
           margin-bottom: 24px;
-        }
-
-        .badge-icon {
-          font-size: 16px;
         }
 
         .section-title {
@@ -221,7 +244,7 @@ const TechStack = () => {
         }
 
         .highlight {
-          color: #96ceb4;
+          color: #00b4d8;
           position: relative;
         }
 
@@ -232,7 +255,7 @@ const TechStack = () => {
           left: 0;
           width: 100%;
           height: 3px;
-          background: linear-gradient(90deg, #96ceb4, #4ecdc4);
+          background: #00b4d8;
           border-radius: 2px;
         }
 
@@ -300,7 +323,6 @@ const TechStack = () => {
         }
 
         .category-icon {
-          font-size: 2rem;
           width: 60px;
           height: 60px;
           display: flex;
@@ -359,8 +381,10 @@ const TechStack = () => {
         }
 
         .tech-logo {
-          font-size: 1.2rem;
           flex-shrink: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         .tech-name {
