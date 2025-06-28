@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { Rocket } from "lucide-react";
 
 const AboutHero = () => {
   return (
@@ -8,7 +9,7 @@ const AboutHero = () => {
         <div className="row align-items-center min-vh-50">
           <div className="col-lg-8 mx-auto text-center">
             <div className="hero-badge">
-              <span className="badge-icon">🚀</span>
+              <span className="badge-icon"><Rocket size={16} /></span>
               About Xyvin Technologies
             </div>
             <h1 className="hero-title">
