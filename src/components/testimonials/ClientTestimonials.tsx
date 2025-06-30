@@ -28,7 +28,7 @@ const ClientTestimonials = () => {
       avatar: "SK"
     },
     {
-      name: "Ajoth Kumar",
+      name: "Ajith Kumar",
       position: " CEO, Continuity Oman",
       content:
         "From strategy to execution, they transformed our manual workflows into fully automated systems using AI. Their team was proactive, skilled, and truly committed to our success. Working with them was a game-changer for our business.",

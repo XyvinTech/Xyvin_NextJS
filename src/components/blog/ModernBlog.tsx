@@ -75,7 +75,7 @@ const ModernBlog = () => {
       </div>
 
       {/* Search and Filter */}
-      <div className="blog-controls">
+      {/* <div className="blog-controls">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
@@ -107,7 +107,7 @@ const ModernBlog = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Featured Posts */}
       {selectedCategory === "All" && (
