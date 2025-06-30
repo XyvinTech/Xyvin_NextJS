@@ -14,6 +14,7 @@ import {
   FaRobot,
   FaTools,
    FaNodeJs,
+   FaWindows,
  
 } from "react-icons/fa";
 import { SiNextdotjs, SiVuedotjs, SiAngular, SiTypescript, 
@@ -71,8 +72,8 @@ const TechStack = () => {
       icon: <FaCloud className="w-8 h-8" />,
       color: "#96CEB4",
       technologies: [
-        { name: "AWS", logo: <SiAmazon className="w-5 h-5 text-orange-500" /> },
-        { name: "Azure", logo: <FaAws className="w-5 h-5 text-blue-500" /> },
+        { name: "AWS", logo: <FaAws className="w-5 h-5 text-orange-500" /> },
+        { name: "Azure", logo: <FaWindows className="w-5 h-5 text-blue-500" /> },
         { name: "Docker", logo: <SiDocker className="w-5 h-5 text-blue-600" /> },
         { name: "Kubernetes", logo: <SiKubernetes className="w-5 h-5 text-blue-700" /> },
         { name: "Jenkins", logo: <SiJenkins className="w-5 h-5 text-gray-600" /> },

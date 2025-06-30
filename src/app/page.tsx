@@ -8,6 +8,7 @@ import ContactCTA from "@/components/contact/ContactCTA";
 import ModernFooter from "@/layouts/footers/ModernFooter";
 import Wrapper from "@/layouts/Wrapper";
 import Sticky from "@/components/sticky/Sticky";
+import BrandHomeOne from "@/components/brand/BrandHomeOne";
 
 export const metadata = {
   title: "Xyvin Tech - Leading IT Solutions & Software Development",
@@ -24,7 +25,9 @@ const index = () => {
           <HeroHomeOne />
           <CompanyOverview />
           <ServicesGrid />
-          <ProjectShowcase />
+          <BrandHomeOne />
+
+          {/* <ProjectShowcase /> */}
           <ContactCTA />
           <ModernFooter />
         </div>
