@@ -5,7 +5,7 @@ import team_data from "@/data/team_data";
 
 const TeamSection = () => {
   // Get first 4 team members for the showcase
-  const featuredTeam = team_data.slice(0, 4);
+  const featuredTeam = team_data.slice(0, 10);
 
   return (
     <section className="team-section">
