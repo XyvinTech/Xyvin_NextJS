@@ -35,7 +35,37 @@ const team_data: DataType[] = [
 		avatar_name: "Ramees",
 		designation: "Chief Marketing Officer",
 		linkedin:"https://www.linkedin.com/in/ramees-a-b379b7247/"
+	},
+	{
+		id: 5,
+		img: "/assets/img/team/Frame 1171276608.png",
+		avatar_name: "Tijo Joseph",
+		designation: "Tech Alchemist",
+		linkedin:"https://in.linkedin.com/in/tijo-t-joseph"
+	},
+	{
+		id: 6,
+		img: "/assets/img/team/Frame 1171276607.png",
+		avatar_name: "Anjana",
+		designation: "Pixel Perfectionist",
+		linkedin:"https://in.linkedin.com/in/anjana-vu-dev"
+	},
+	{
+		id: 7,
+		img: "/assets/img/team/Frame 1171276605.png",
+		avatar_name: "Sreeram",
+		designation: "App Developer",
+		linkedin:"https://www.linkedin.com/in/sreeram-i-s-37403a204?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+	},
+	{
+		id: 8,
+		img: "/assets/img/team/Frame 1171276606.png",
+		avatar_name: "Nihal Anil",
+		designation: "AI Specialist",
+		linkedin:" https://www.linkedin.com/in/cntrlx?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+
 	}
+
 	// team data
 
 ];
