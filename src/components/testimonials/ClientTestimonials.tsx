@@ -4,28 +4,36 @@ import React from "react";
 const ClientTestimonials = () => {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      position: "CEO, TechCorp",
+      name: "PG Ramnath",
+      position: "CEO, GOEC",
       content:
         "Xyvin Tech transformed our business with their innovative solutions. Their team is professional, skilled, and truly understands our needs.",
       rating: 5,
-      avatar: "SJ"
+      avatar: "PR"
     },
     {
-      name: "Michael Chen",
-      position: "CTO, StartupX",
+      name: "Noushad Hameed",
+      position: "CEO, Exctel Engineering",
       content:
-        "Outstanding work! They delivered our project on time and exceeded all expectations. Highly recommend their services.",
+        "They helped us automate several of our core business engineering processes using AI, saving us countless hours and significantly improving efficiency. Their expertise in AI-driven automation is top-notch. We’re extremely happy with the results and would gladly work with them again!",
       rating: 5,
-      avatar: "MC"
+      avatar: "NH"
     },
     {
-      name: "Emily Davis",
-      position: "Product Manager, InnovateCo",
+      name: "Suresh Kumar",
+      position: "Founder & CEO, Skybertech",
       content:
         "The best IT partner we have worked with. Their expertise in AI and modern technologies is remarkable.",
       rating: 5,
-      avatar: "ED"
+      avatar: "SK"
+    },
+    {
+      name: "Ajith Kumar",
+      position: " CEO, Continuity Oman",
+      content:
+        "From strategy to execution, they transformed our manual workflows into fully automated systems using AI. Their team was proactive, skilled, and truly committed to our success. Working with them was a game-changer for our business.",
+      rating: 5,
+      avatar: "AK"
     },
   ];
 

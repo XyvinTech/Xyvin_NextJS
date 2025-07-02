@@ -1,13 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { 
-  Bot, 
-  Zap, 
-  Rocket, 
-  MessageSquare, 
-  CheckCircle 
-} from "lucide-react";
+import { Bot, Zap, Rocket, MessageSquare, CheckCircle } from "lucide-react";
 
 const HeroHomeOne = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -19,7 +13,7 @@ const HeroHomeOne = () => {
       title: ["We Build", "Intelligent", "Systems"],
       description:
         "Engineering AI solutions that think, learn, and evolve with your business needs",
-      stats: { projects: "50+", accuracy: "99.7%", clients: "25+" },
+      stats: { projects: "150+", accuracy: "99.7%", clients: "50+" },
       cta: "Explore AI Solutions",
     },
     {
@@ -125,17 +119,16 @@ const HeroHomeOne = () => {
         {/* CTA Buttons */}
         <div className="hero-actions">
           <div className="hero-badge">
-
-          <Link href="/Xyvin/portfolio" className="btn-primary-ai">
-            <Rocket size={16} className="btn-icon" />{currentData.cta}
-          </Link>
+            <Link href="/Xyvin/portfolio" className="btn-primary-ai">
+              <Rocket size={16} className="btn-icon" />
+              {currentData.cta}
+            </Link>
           </div>
           <div className="hero-badge">
-
-          <Link href="/Xyvin/contact" className="btn-secondary-ai">
-            <MessageSquare size={16} className="btn-icon" />
-            Let's Talk AI
-          </Link>
+            <Link href="/Xyvin/contact" className="btn-secondary-ai">
+              <MessageSquare size={16} className="btn-icon" />
+              Let's Talk AI
+            </Link>
           </div>
         </div>
 
@@ -152,7 +145,7 @@ const HeroHomeOne = () => {
       </div>
 
       {/* Terminal Window Effect */}
-      <div className="ai-terminal">
+      <div className="ai-terminal ">
         <div className="terminal-header">
           <div className="terminal-dots">
             <span></span>
@@ -193,8 +186,8 @@ const HeroHomeOne = () => {
           display: flex;
           align-items: center;
           justify-content: center;
-          margin-Top: 80px;
-          padding-Top: 80px;
+          margin-top: 80px;
+          padding-top: 80px;
         }
 
         .hero-bg-animated {
@@ -563,12 +556,7 @@ const HeroHomeOne = () => {
           }
 
           .ai-terminal {
-            position: relative;
-            left: auto;
-            bottom: auto;
-            margin: 20px auto 0;
-            width: 90%;
-            max-width: 350px;
+            display: none;
           }
         }
       `}</style>

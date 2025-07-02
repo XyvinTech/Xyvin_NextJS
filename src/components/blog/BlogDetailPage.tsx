@@ -1,8 +1,19 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { getRelatedPosts, getAllBlogPosts } from "@/data/blog_data";
+import { getRelatedPosts } from "@/data/blog_data";
+import {
+  ArrowLeft,
+  Clock,
+  User,
+  Calendar,
+  Share2,
+  Twitter,
+  Linkedin,
+  Facebook,
+  Link as LinkIcon,
+} from "lucide-react";
 
 interface BlogPost {
   id: number;
@@ -25,6 +36,7 @@ interface BlogDetailPageProps {
 }
 
 const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ post }) => {
+  const [showShare, setShowShare] = useState(false);
   const relatedPosts = getRelatedPosts(post.slug, 3);
 
   const formatDate = (dateString: string) => {
@@ -38,558 +50,564 @@ const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ post }) => {
 
   const shareUrl = typeof window !== "undefined" ? window.location.href : "";
   const shareTitle = encodeURIComponent(post.title);
-  const shareText = encodeURIComponent(post.excerpt);
+
+  const handleCopyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(shareUrl);
+      setShowShare(false);
+    } catch (err) {
+      console.error("Failed to copy link");
+    }
+  };
 
   return (
-    <article className="blog-detail">
-      {/* Blog Header */}
-      <section className="blog-header">
+    <article className="blog-detail-simple">
+      {/* Header */}
+      <div className="blog-header-simple">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-8 mx-auto">
-              <nav className="breadcrumb-nav">
-                <Link href="/Xyvin/blog" className="breadcrumb-link">
-                  ← Back to Blog
-                </Link>
-              </nav>
+          <div className="header-content">
+            <Link href="/Xyvin/blog" className="back-button">
+              <ArrowLeft size={18} />
+              Back to Blog
+            </Link>
 
-              <div className="article-meta">
-                <span className="category-badge">{post.category}</span>
-                <div className="meta-info">
-                  <time dateTime={post.date}>{formatDate(post.date)}</time>
-                  <span className="separator">•</span>
-                  <span className="read-time">{post.readTime}</span>
-                  <span className="separator">•</span>
-                  <span className="author">By {post.author}</span>
+            <div className="article-meta-simple">
+              <span className="category">{post.category}</span>
+              <div className="meta-items">
+                <div className="meta-item">
+                  <Calendar size={14} />
+                  {formatDate(post.date)}
+                </div>
+                <div className="meta-item">
+                  <Clock size={14} />
+                  {post.readTime}
+                </div>
+                <div className="meta-item">
+                  <User size={14} />
+                  {post.author}
                 </div>
               </div>
+            </div>
 
-              <h1 className="article-title">{post.title}</h1>
-              <p className="article-excerpt">{post.excerpt}</p>
+            <h1 className="article-title-simple">{post.title}</h1>
+            <p className="article-excerpt-simple">{post.excerpt}</p>
 
-              {/* Tags */}
-              <div className="tags-container">
-                {post.tags.map((tag, index) => (
-                  <span key={index} className="tag">
-                    #{tag}
+            <div className="article-actions">
+              <div className="tags-simple">
+                {post.tags.slice(0, 3).map((tag, index) => (
+                  <span key={index} className="tag-simple">
+                    {tag}
                   </span>
                 ))}
               </div>
+
+              <div className="share-section">
+                <button
+                  className="share-button"
+                  onClick={() => setShowShare(!showShare)}
+                >
+                  <Share2 size={16} />
+                  Share
+                </button>
+
+                {showShare && (
+                  <div className="share-menu-simple">
+                    <a
+                      href={`https://twitter.com/intent/tweet?text=${shareTitle}&url=${shareUrl}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="share-link"
+                    >
+                      <Twitter size={14} />
+                    </a>
+                    <a
+                      href={`https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="share-link"
+                    >
+                      <Linkedin size={14} />
+                    </a>
+                    <a
+                      href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="share-link"
+                    >
+                      <Facebook size={14} />
+                    </a>
+                    <button onClick={handleCopyLink} className="share-link">
+                      <LinkIcon size={14} />
+                    </button>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Featured Image */}
-      <section className="featured-image">
+      <div className="featured-image-simple">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-10 mx-auto">
-              <div className="image-container">
-                <Image
-                  src={post.image}
-                  alt={post.title}
-                  width={1200}
-                  height={600}
-                  className="article-image"
-                  priority
-                />
-              </div>
-            </div>
+          <div className="image-wrapper">
+            <Image
+              src={post.image}
+              alt={post.title}
+              width={1200}
+              height={600}
+              className="article-image-simple"
+              priority
+            />
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* Article Content */}
-      <section className="article-content">
+      {/* Content */}
+      <div className="content-section-simple">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-8 mx-auto">
-              <div className="content-wrapper">
-                <div
-                  className="prose"
-                  dangerouslySetInnerHTML={{ __html: post.content }}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+          <div className="content-wrapper-simple">
+            <div
+              className="article-content-simple"
+              dangerouslySetInnerHTML={{ __html: post.content }}
+            />
 
-      {/* Author Info */}
-      <section className="author-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-8 mx-auto">
-              <div className="author-card">
-                <div className="author-avatar">
-                  {post.authorImage && (
+            {/* Author */}
+            <div className="author-section-simple">
+              <div className="author-info-simple">
+                <div className="author-avatar-simple">
+                  {post.authorImage ? (
                     <Image
                       src={post.authorImage}
                       alt={post.author}
-                      width={80}
-                      height={80}
-                      className="avatar-image"
+                      width={60}
+                      height={60}
+                      className="avatar"
                     />
+                  ) : (
+                    <div className="avatar-placeholder">
+                      <User size={24} />
+                    </div>
                   )}
                 </div>
-                <div className="author-info">
-                  <h4 className="author-name">{post.author}</h4>
-                  <p className="author-bio">
-                    Expert software developer and technology consultant with
-                    years of experience in building scalable applications and
-                    digital solutions.
+                <div className="author-details-simple">
+                  <h4 className="author-name-simple">{post.author}</h4>
+                  <p className="author-bio-simple">
+                    Software Developer & Tech Writer sharing insights on modern
+                    development practices.
                   </p>
-                  <div className="author-social">
-                    <a href="#" className="social-link" title="LinkedIn">
-                      <span>💼</span>
-                    </a>
-                    <a href="#" className="social-link" title="Twitter">
-                      <span>🐦</span>
-                    </a>
-                    <a href="#" className="social-link" title="GitHub">
-                      <span>👨‍💻</span>
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Social Share */}
-      <section className="social-share">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-8 mx-auto">
-              <div className="share-container">
-                <h4 className="share-title">Share this article</h4>
-                <div className="share-buttons">
-                  <a
-                    href={`https://twitter.com/intent/tweet?text=${shareTitle}&url=${shareUrl}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="share-btn twitter"
-                  >
-                    <span className="icon">🐦</span>
-                    Twitter
-                  </a>
-                  <a
-                    href={`https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="share-btn linkedin"
-                  >
-                    <span className="icon">💼</span>
-                    LinkedIn
-                  </a>
-                  <a
-                    href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="share-btn facebook"
-                  >
-                    <span className="icon">📘</span>
-                    Facebook
-                  </a>
-                  <button
-                    onClick={() => navigator.clipboard.writeText(shareUrl)}
-                    className="share-btn copy"
-                  >
-                    <span className="icon">🔗</span>
-                    Copy Link
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
 
       {/* Related Posts */}
       {relatedPosts.length > 0 && (
-        <section className="related-posts">
+        <div className="related-section-simple">
           <div className="container">
-            <div className="row">
-              <div className="col-lg-10 mx-auto">
-                <h3 className="section-title">Related Articles</h3>
-                <div className="related-grid">
-                  {relatedPosts.map((relatedPost) => (
-                    <Link
-                      key={relatedPost.id}
-                      href={`/Xyvin/blog/${relatedPost.slug}`}
-                      className="related-card"
-                    >
-                      <div className="card-image">
-                        <Image
-                          src={relatedPost.image}
-                          alt={relatedPost.title}
-                          width={400}
-                          height={200}
-                          className="related-image"
-                        />
-                      </div>
-                      <div className="card-content">
-                        <span className="card-category">
-                          {relatedPost.category}
-                        </span>
-                        <h4 className="card-title">{relatedPost.title}</h4>
-                        <p className="card-excerpt">{relatedPost.excerpt}</p>
-                        <div className="card-meta">
-                          <span className="read-time">
-                            {relatedPost.readTime}
-                          </span>
-                          <span className="date">
-                            {formatDate(relatedPost.date)}
-                          </span>
-                        </div>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              </div>
+            <h3 className="related-title">Related Articles</h3>
+            <div className="related-grid-simple">
+              {relatedPosts.map((relatedPost) => (
+                <Link
+                  key={relatedPost.id}
+                  href={`/Xyvin/blog/${relatedPost.slug}`}
+                  className="related-card-simple"
+                >
+                  <div className="related-image-wrapper">
+                    <Image
+                      src={relatedPost.image}
+                      alt={relatedPost.title}
+                      width={300}
+                      height={180}
+                      className="related-image"
+                    />
+                  </div>
+                  <div className="related-content">
+                    <span className="related-category">
+                      {relatedPost.category}
+                    </span>
+                    <h4 className="related-title-text">{relatedPost.title}</h4>
+                    <p className="related-excerpt">{relatedPost.excerpt}</p>
+                    <div className="related-meta">
+                      <span>{relatedPost.readTime}</span>
+                      <span>•</span>
+                      <span>{formatDate(relatedPost.date)}</span>
+                    </div>
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
-        </section>
+        </div>
       )}
 
       <style jsx>{`
-        .blog-detail {
-          padding-top: 120px;
+        .blog-detail-simple {
+          padding-top: 100px;
+          background: #ffffff;
         }
 
-        .blog-header {
-          padding: 60px 0;
+        .blog-header-simple {
+          padding: 40px 0 60px;
+          background: #f8f9fa;
+          border-bottom: 1px solid #e9ecef;
         }
 
-        .breadcrumb-nav {
-          margin-bottom: 30px;
+        .header-content {
+          max-width: 800px;
+          margin: 0 auto;
+          text-align: center;
         }
 
-        .breadcrumb-link {
-          color: #4ecdc4;
-          text-decoration: none;
-          font-weight: 500;
+        .back-button {
           display: inline-flex;
           align-items: center;
           gap: 8px;
+          color: #4ecdc4;
+          text-decoration: none;
+          font-weight: 500;
+          margin-bottom: 30px;
           transition: color 0.3s ease;
         }
 
-        .breadcrumb-link:hover {
+        .back-button:hover {
           color: #45b7d1;
         }
 
-        .article-meta {
+        .article-meta-simple {
           margin-bottom: 30px;
         }
 
-        .category-badge {
-          background: linear-gradient(45deg, #4ecdc4, #45b7d1);
+        .category {
+          display: inline-block;
+          background: #4ecdc4;
           color: white;
           padding: 6px 16px;
           border-radius: 20px;
           font-size: 0.85rem;
           font-weight: 500;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-        }
-
-        .meta-info {
-          margin-top: 12px;
-          color: #666;
-          font-size: 0.9rem;
-        }
-
-        .separator {
-          margin: 0 8px;
-          color: #ccc;
-        }
-
-        .article-title {
-          font-size: clamp(2rem, 5vw, 3rem);
-          font-weight: 700;
-          line-height: 1.2;
-          color: #1a1a1a;
-          margin: 30px 0;
-        }
-
-        .article-excerpt {
-          font-size: 1.2rem;
-          line-height: 1.6;
-          color: #666;
-          margin-bottom: 30px;
-        }
-
-        .tags-container {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 12px;
-          margin-bottom: 40px;
-        }
-
-        .tag {
-          background: #f8f9fa;
-          color: #4ecdc4;
-          padding: 8px 14px;
-          border-radius: 20px;
-          font-size: 0.85rem;
-          font-weight: 500;
-          border: 1px solid #e9ecef;
-        }
-
-        .featured-image {
-          margin-bottom: 60px;
-        }
-
-        .image-container {
-          border-radius: 20px;
-          overflow: hidden;
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .article-image {
-          width: 100%;
-          height: auto;
-          display: block;
-        }
-
-        .article-content {
-          padding: 60px 0;
-        }
-
-        .content-wrapper {
-          background: white;
-          padding: 60px;
-          border-radius: 20px;
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
-        }
-
-        .prose {
-          font-size: 1.1rem;
-          line-height: 1.8;
-          color: #333;
-        }
-
-        .prose h2 {
-          font-size: 1.8rem;
-          font-weight: 600;
-          color: #1a1a1a;
-          margin: 40px 0 20px;
-          border-bottom: 2px solid #4ecdc4;
-          padding-bottom: 10px;
-        }
-
-        .prose h3 {
-          font-size: 1.4rem;
-          font-weight: 600;
-          color: #1a1a1a;
-          margin: 30px 0 15px;
-        }
-
-        .prose h4 {
-          font-size: 1.2rem;
-          font-weight: 600;
-          color: #1a1a1a;
-          margin: 25px 0 12px;
-        }
-
-        .prose p {
           margin-bottom: 20px;
         }
 
-        .prose ul,
-        .prose ol {
-          margin: 20px 0;
-          padding-left: 30px;
+        .meta-items {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          flex-wrap: wrap;
         }
 
-        .prose li {
-          margin-bottom: 8px;
-        }
-
-        .prose pre {
-          background: #f8f9fa;
-          border: 1px solid #e9ecef;
-          border-radius: 8px;
-          padding: 20px;
-          margin: 20px 0;
-          overflow-x: auto;
-          font-family: "Monaco", "Courier New", monospace;
+        .meta-item {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          color: #666;
           font-size: 0.9rem;
         }
 
-        .prose code {
-          background: #f8f9fa;
-          padding: 2px 6px;
-          border-radius: 4px;
-          font-family: "Monaco", "Courier New", monospace;
-          font-size: 0.9em;
-        }
-
-        .prose pre code {
-          background: none;
-          padding: 0;
-        }
-
-        .prose strong {
-          font-weight: 600;
+        .article-title-simple {
+          font-size: clamp(2rem, 5vw, 3.5rem);
+          font-weight: 700;
           color: #1a1a1a;
+          line-height: 1.2;
+          margin: 30px 0 20px;
         }
 
-        .author-section {
-          padding: 60px 0;
-          background: #f8f9fa;
-        }
-
-        .author-card {
-          display: flex;
-          gap: 20px;
-          background: white;
-          padding: 30px;
-          border-radius: 20px;
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
-        }
-
-        .author-avatar {
-          flex-shrink: 0;
-        }
-
-        .avatar-image {
-          width: 80px;
-          height: 80px;
-          border-radius: 50%;
-          object-fit: cover;
-        }
-
-        .author-info {
-          flex: 1;
-        }
-
-        .author-name {
-          font-size: 1.3rem;
-          font-weight: 600;
-          color: #1a1a1a;
-          margin-bottom: 8px;
-        }
-
-        .author-bio {
+        .article-excerpt-simple {
+          font-size: 1.2rem;
           color: #666;
           line-height: 1.6;
-          margin-bottom: 15px;
+          margin-bottom: 30px;
+          max-width: 600px;
+          margin-left: auto;
+          margin-right: auto;
         }
 
-        .author-social {
+        .article-actions {
           display: flex;
-          gap: 12px;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 40px;
+          flex-wrap: wrap;
+          gap: 20px;
         }
 
-        .social-link {
+        .tags-simple {
+          display: flex;
+          gap: 10px;
+          flex-wrap: wrap;
+        }
+
+        .tag-simple {
+          background: #f8f9fa;
+          color: #4ecdc4;
+          padding: 6px 12px;
+          border-radius: 15px;
+          font-size: 0.85rem;
+          border: 1px solid #e9ecef;
+        }
+
+        .share-section {
+          position: relative;
+        }
+
+        .share-button {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          background: transparent;
+          border: 2px solid #4ecdc4;
+          color: #4ecdc4;
+          padding: 10px 20px;
+          border-radius: 25px;
+          cursor: pointer;
+          font-weight: 500;
+          transition: all 0.3s ease;
+        }
+
+        .share-button:hover {
+          background: #4ecdc4;
+          color: white;
+        }
+
+        .share-menu-simple {
+          position: absolute;
+          top: 120%;
+          right: 0;
+          background: white;
+          border: 1px solid #e9ecef;
+          border-radius: 10px;
+          padding: 10px;
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+          display: flex;
+          gap: 10px;
+          z-index: 10;
+        }
+
+        .share-link {
           display: flex;
           align-items: center;
           justify-content: center;
           width: 36px;
           height: 36px;
-          background: #f8f9fa;
           border-radius: 50%;
+          background: #f8f9fa;
+          color: #666;
           text-decoration: none;
+          border: none;
+          cursor: pointer;
           transition: all 0.3s ease;
         }
 
-        .social-link:hover {
+        .share-link:hover {
           background: #4ecdc4;
-          transform: translateY(-2px);
+          color: white;
         }
 
-        .social-share {
-          padding: 60px 0;
+        .featured-image-simple {
+          padding: 0 0 60px;
         }
 
-        .share-container {
-          text-align: center;
-          background: white;
-          padding: 40px;
-          border-radius: 20px;
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+        .image-wrapper {
+          max-width: 1000px;
+          margin: 0 auto;
+          border-radius: 15px;
+          overflow: hidden;
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
-        .share-title {
+        .article-image-simple {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+
+        .content-section-simple {
+          padding: 80px 0 100px;
+        }
+
+        .content-wrapper-simple {
+          max-width: 900px;
+          margin: 0 auto;
+          padding: 0 20px;
+        }
+
+        .article-content-simple {
+          font-size: 1.15rem;
+          line-height: 1.9;
+          color: #2c3e50;
+          margin-bottom: 80px;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            sans-serif;
+        }
+
+        .article-content-simple h2 {
+          font-size: 2rem;
+          font-weight: 600;
+          color: #1a1a1a;
+          margin: 60px 0 30px;
+          border-left: 4px solid #4ecdc4;
+          padding-left: 25px;
+          line-height: 1.3;
+        }
+
+        .article-content-simple h3 {
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: #1a1a1a;
+          margin: 50px 0 25px;
+          line-height: 1.4;
+        }
+
+        .article-content-simple p {
+          margin-bottom: 28px;
+          max-width: none;
+        }
+
+        .article-content-simple ul,
+        .article-content-simple ol {
+          margin: 30px 0;
+          padding-left: 35px;
+        }
+
+        .article-content-simple li {
+          margin-bottom: 12px;
+          line-height: 1.8;
+        }
+
+        .article-content-simple blockquote {
+          border-left: 4px solid #4ecdc4;
+          background: #f8f9fa;
+          padding: 30px 35px;
+          margin: 40px 0;
+          font-style: italic;
+          color: #555;
+          font-size: 1.1rem;
+          line-height: 1.7;
+          border-radius: 8px;
+        }
+
+        .article-content-simple pre {
+          background: #f8f9fa;
+          border: 1px solid #e9ecef;
+          border-radius: 12px;
+          padding: 30px;
+          margin: 40px 0;
+          overflow-x: auto;
+          font-family: "Monaco", "Courier New", monospace;
+          font-size: 0.95rem;
+          line-height: 1.6;
+        }
+
+        .article-content-simple code {
+          background: #f8f9fa;
+          padding: 3px 8px;
+          border-radius: 6px;
+          font-family: "Monaco", "Courier New", monospace;
+          font-size: 0.9em;
+          color: #d63384;
+          border: 1px solid #e9ecef;
+        }
+
+        .article-content-simple h4 {
+          font-size: 1.25rem;
+          font-weight: 600;
+          color: #1a1a1a;
+          margin: 40px 0 20px;
+          line-height: 1.4;
+        }
+
+        .article-content-simple strong {
+          font-weight: 600;
+          color: #1a1a1a;
+        }
+
+        .author-section-simple {
+          border-top: 1px solid #e9ecef;
+          padding-top: 40px;
+        }
+
+        .author-info-simple {
+          display: flex;
+          gap: 20px;
+          align-items: center;
+        }
+
+        .author-avatar-simple {
+          flex-shrink: 0;
+        }
+
+        .avatar {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .avatar-placeholder {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background: #f8f9fa;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #666;
+        }
+
+        .author-name-simple {
           font-size: 1.2rem;
           font-weight: 600;
           color: #1a1a1a;
-          margin-bottom: 25px;
+          margin: 0 0 8px;
         }
 
-        .share-buttons {
-          display: flex;
-          justify-content: center;
-          gap: 15px;
-          flex-wrap: wrap;
-        }
-
-        .share-btn {
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          padding: 12px 20px;
-          border: 2px solid #e9ecef;
-          border-radius: 50px;
-          text-decoration: none;
+        .author-bio-simple {
           color: #666;
-          background: white;
-          font-weight: 500;
-          transition: all 0.3s ease;
+          margin: 0;
+          line-height: 1.5;
         }
 
-        .share-btn:hover {
-          border-color: #4ecdc4;
-          color: #4ecdc4;
-          transform: translateY(-2px);
-        }
-
-        .share-btn.copy {
-          cursor: pointer;
-        }
-
-        .related-posts {
+        .related-section-simple {
           padding: 80px 0;
           background: #f8f9fa;
         }
 
-        .section-title {
+        .related-title {
           font-size: 2rem;
           font-weight: 600;
           color: #1a1a1a;
-          margin-bottom: 50px;
           text-align: center;
+          margin-bottom: 50px;
         }
 
-        .related-grid {
+        .related-grid-simple {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
           gap: 30px;
+          max-width: 1200px;
+          margin: 0 auto;
         }
 
-        .related-card {
+        .related-card-simple {
           background: white;
-          border-radius: 20px;
+          border-radius: 15px;
           overflow: hidden;
           text-decoration: none;
           color: inherit;
-          transition: all 0.3s ease;
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
         }
 
-        .related-card:hover {
+        .related-card-simple:hover {
           transform: translateY(-5px);
-          box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
           color: inherit;
         }
 
-        .card-image {
-          position: relative;
-          height: 200px;
+        .related-image-wrapper {
+          height: 180px;
           overflow: hidden;
         }
 
@@ -600,72 +618,127 @@ const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ post }) => {
           transition: transform 0.3s ease;
         }
 
-        .related-card:hover .related-image {
+        .related-card-simple:hover .related-image {
           transform: scale(1.05);
         }
 
-        .card-content {
+        .related-content {
           padding: 25px;
         }
 
-        .card-category {
-          background: rgba(78, 205, 196, 0.1);
-          color: #4ecdc4;
+        .related-category {
+          display: inline-block;
+          background: #4ecdc4;
+          color: white;
           padding: 4px 12px;
-          border-radius: 15px;
+          border-radius: 12px;
           font-size: 0.8rem;
           font-weight: 500;
-          text-transform: uppercase;
+          margin-bottom: 15px;
         }
 
-        .card-title {
-          font-size: 1.1rem;
+        .related-title-text {
+          font-size: 1.2rem;
           font-weight: 600;
           color: #1a1a1a;
-          margin: 15px 0 10px;
+          margin: 0 0 10px;
           line-height: 1.4;
         }
 
-        .card-excerpt {
+        .related-excerpt {
           color: #666;
           font-size: 0.9rem;
           line-height: 1.5;
-          margin-bottom: 15px;
+          margin: 0 0 15px;
           display: -webkit-box;
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
           overflow: hidden;
         }
 
-        .card-meta {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+        .related-meta {
           color: #999;
-          font-size: 0.8rem;
+          font-size: 0.85rem;
+          display: flex;
+          gap: 8px;
         }
 
         @media (max-width: 768px) {
-          .blog-detail {
-            padding-top: 100px;
+          .blog-detail-simple {
+            padding-top: 80px;
           }
 
-          .content-wrapper {
-            padding: 30px 20px;
+          .blog-header-simple {
+            padding: 30px 0 40px;
           }
 
-          .author-card {
+          .content-wrapper-simple {
+            padding: 0 15px;
+          }
+
+          .content-section-simple {
+            padding: 60px 0 80px;
+          }
+
+          .article-content-simple {
+            font-size: 1.1rem;
+            line-height: 1.8;
+          }
+
+          .article-content-simple h2 {
+            font-size: 1.7rem;
+            margin: 40px 0 20px;
+            padding-left: 20px;
+          }
+
+          .article-content-simple h3 {
+            font-size: 1.3rem;
+            margin: 35px 0 20px;
+          }
+
+          .article-content-simple p {
+            margin-bottom: 24px;
+          }
+
+          .article-content-simple blockquote {
+            padding: 20px 25px;
+            margin: 30px 0;
+          }
+
+          .article-content-simple pre {
+            padding: 20px;
+            margin: 30px 0;
+            font-size: 0.9rem;
+          }
+
+          .article-actions {
+            justify-content: center;
+            text-align: center;
+          }
+
+          .meta-items {
+            flex-direction: column;
+            gap: 10px;
+          }
+
+          .author-info-simple {
             flex-direction: column;
             text-align: center;
           }
 
-          .share-buttons {
-            flex-direction: column;
-            align-items: center;
+          .related-grid-simple {
+            grid-template-columns: 1fr;
           }
 
-          .related-grid {
-            grid-template-columns: 1fr;
+          .share-menu-simple {
+            right: 50%;
+            transform: translateX(50%);
+          }
+        }
+
+        @media (max-width: 480px) {
+          .tags-simple {
+            justify-content: center;
           }
         }
       `}</style>

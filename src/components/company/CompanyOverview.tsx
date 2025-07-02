@@ -134,7 +134,7 @@ const CompanyOverview = () => {
                 })}
               </div>
 
-              <div className="achievements-section">
+              {/* <div className="achievements-section">
                 <h3 className="achievements-title">Our Achievements</h3>
                 <div className="achievements-list">
                   {achievements.map((achievement, index) => (
@@ -144,7 +144,7 @@ const CompanyOverview = () => {
                     </div>
                   ))}
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Right Column - Visual Elements */}

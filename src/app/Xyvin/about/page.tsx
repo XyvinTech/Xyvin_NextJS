@@ -1,11 +1,7 @@
 import React from "react";
 import AboutHero from "@/components/hero/AboutHero";
-import CompanyOverview from "@/components/company/CompanyOverview";
-import WhyChooseUs from "@/components/features/WhyChooseUs";
 import TeamSection from "@/components/team/TeamSection";
-import ProcessFlow from "@/components/process/ProcessFlow";
 import ClientTestimonials from "@/components/testimonials/ClientTestimonials";
-import TechStack from "@/components/tech/TechStack";
 import BrandHomeOne from "@/components/brand/BrandHomeOne";
 import ContactCTA from "@/components/contact/ContactCTA";
 import Wrapper from "@/layouts/Wrapper";
@@ -24,11 +20,7 @@ const index = () => {
       <HeaderOne />
       <div id="scrollsmoother-container">
         <AboutHero />
-        <CompanyOverview />
-        <WhyChooseUs />
         <TeamSection />
-        {/* <ProcessFlow />
-        <TechStack /> */}
         <ClientTestimonials />
         <BrandHomeOne />
         <ContactCTA />
