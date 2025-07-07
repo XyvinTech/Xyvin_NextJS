@@ -57,6 +57,10 @@ interface BrandHomeOneProps {
 }
 
 const BrandHomeOne: React.FC<BrandHomeOneProps> = ({ style_2 = false }) => {
+  // Split logos into two groups for different carousel rows
+  const firstRowLogos = brand_data.slice(0, Math.ceil(brand_data.length / 2));
+  const secondRowLogos = brand_data.slice(Math.ceil(brand_data.length / 2));
+
   return (
     <section className="brand-section">
       {/* Header Section */}
@@ -79,7 +83,8 @@ const BrandHomeOne: React.FC<BrandHomeOneProps> = ({ style_2 = false }) => {
         {/* First Row - Left to Right */}
         <div className="brand-row">
           <div className="brand-track brand-track-ltr">
-            {[...brand_data, ...brand_data].map((item, i) => (
+            {/* Triple the logos for seamless loop */}
+            {[...firstRowLogos, ...firstRowLogos, ...firstRowLogos].map((item, i) => (
               <div key={`ltr-${i}`} className="brand-logo">
                 <Image
                   src={item.image}
@@ -99,7 +104,8 @@ const BrandHomeOne: React.FC<BrandHomeOneProps> = ({ style_2 = false }) => {
         {/* Second Row - Right to Left */}
         <div className="brand-row">
           <div className="brand-track brand-track-rtl">
-            {[...brand_data, ...brand_data].map((item, i) => (
+            {/* Triple the logos for seamless loop */}
+            {[...secondRowLogos, ...secondRowLogos, ...secondRowLogos].map((item, i) => (
               <div key={`rtl-${i}`} className="brand-logo">
                 <Image
                   src={item.image}
@@ -152,17 +158,19 @@ const BrandHomeOne: React.FC<BrandHomeOneProps> = ({ style_2 = false }) => {
           display: inline-flex;
           align-items: center;
           gap: 60px;
-          animation-duration: 30s;
           animation-timing-function: linear;
           animation-iteration-count: infinite;
+          width: fit-content;
         }
 
         .brand-track-ltr {
           animation-name: scrollLeft;
+          animation-duration: 40s;
         }
 
         .brand-track-rtl {
           animation-name: scrollRight;
+          animation-duration: 35s;
         }
 
         .brand-logo {
@@ -173,6 +181,7 @@ const BrandHomeOne: React.FC<BrandHomeOneProps> = ({ style_2 = false }) => {
           padding: 20px;
           transition: all 0.3s ease;
           opacity: 0.7;
+          min-width: 160px; /* Ensures consistent spacing */
         }
 
         .brand-logo:hover {
@@ -203,13 +212,13 @@ const BrandHomeOne: React.FC<BrandHomeOneProps> = ({ style_2 = false }) => {
             transform: translateX(0);
           }
           100% {
-            transform: translateX(-50%);
+            transform: translateX(-33.333%);
           }
         }
 
         @keyframes scrollRight {
           0% {
-            transform: translateX(-50%);
+            transform: translateX(-33.333%);
           }
           100% {
             transform: translateX(0);
@@ -220,11 +229,19 @@ const BrandHomeOne: React.FC<BrandHomeOneProps> = ({ style_2 = false }) => {
         @media (max-width: 768px) {
           .brand-track {
             gap: 40px;
-            animation-duration: 20s;
+          }
+
+          .brand-track-ltr {
+            animation-duration: 30s;
+          }
+
+          .brand-track-rtl {
+            animation-duration: 25s;
           }
 
           .brand-logo {
             padding: 15px;
+            min-width: 120px;
           }
 
           .brand-image {
@@ -241,11 +258,19 @@ const BrandHomeOne: React.FC<BrandHomeOneProps> = ({ style_2 = false }) => {
         @media (max-width: 480px) {
           .brand-track {
             gap: 30px;
-            animation-duration: 15s;
+          }
+
+          .brand-track-ltr {
+            animation-duration: 25s;
+          }
+
+          .brand-track-rtl {
+            animation-duration: 20s;
           }
 
           .brand-logo {
             padding: 10px;
+            min-width: 100px;
           }
 
           .brand-image {
@@ -266,6 +291,13 @@ const BrandHomeOne: React.FC<BrandHomeOneProps> = ({ style_2 = false }) => {
         /* Better performance */
         .brand-track {
           will-change: transform;
+        }
+
+        /* Ensure smooth transitions */
+        .brand-track-ltr,
+        .brand-track-rtl {
+          backface-visibility: hidden;
+          perspective: 1000px;
         }
       `}</style>
     </section>

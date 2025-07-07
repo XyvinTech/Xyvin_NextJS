@@ -10,7 +10,10 @@ const ContactCTA = () => {
           <div className="cta-text">
             <h2 className="cta-title">
               Ready to Transform Your
-              <span className="highlight"> Digital Vision</span> into Reality?
+              {/* <span className="highlight"> */}
+                 Digital Vision
+                 {/* </span> */}
+                  into Reality?
             </h2>
             <p className="cta-description">
               Let's discuss your project and explore how our expertise can help
