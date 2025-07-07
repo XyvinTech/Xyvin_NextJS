@@ -22,6 +22,7 @@ import brand_img_16 from "@/assets/img/Skopick.png";
 import brand_img_17 from "@/assets/img/Frame 1485460.png";
 import brand_img_18 from "@/assets/img/myg-logo__2_ 1.png";
 import brand_img_19 from "@/assets/img/Subtract.png";
+import brand_img_20 from "@/assets/img/logo kk 2.png";
 
 interface BrandData {
   image: StaticImageData;
@@ -50,6 +51,7 @@ const brand_data: BrandData[] = [
   { image: brand_img_17, name: "Brand Partner 11", width: 120, height: 60 },
   { image: brand_img_18, name: "Brand Partner 12", width: 120, height: 60 },
   { image: brand_img_19, name: "Brand Partner 13", width: 120, height: 60 },
+  { image: brand_img_20, name: "Brand Partner 14", width: 120, height: 60 },
 ];
 
 interface BrandHomeOneProps {
