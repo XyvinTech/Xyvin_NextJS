@@ -136,7 +136,7 @@ const ClientTestimonials = () => {
           border-radius: 50px;
           font-size: 14px;
           font-weight: 500;
-          color: #45b7d1;
+          color: #1d4ed8;
           margin-bottom: 24px;
         }
 
@@ -154,7 +154,7 @@ const ClientTestimonials = () => {
         }
 
         .highlight {
-          color: #45b7d1;
+          color: #1d4ed8;
         }
 
         .section-description {
@@ -188,7 +188,7 @@ const ClientTestimonials = () => {
           left: 0;
           right: 0;
           height: 4px;
-          background: linear-gradient(90deg, #45b7d1, #4ecdc4);
+          background: linear-gradient(135deg, #45b7d1 0%, #1d4ed8 100%);
           transform: scaleX(0);
           transition: transform 0.4s ease;
         }
@@ -248,7 +248,7 @@ const ClientTestimonials = () => {
           width: 50px;
           height: 50px;
           border-radius: 50%;
-          background: linear-gradient(135deg, #45b7d1, #4ecdc4);
+          background: linear-gradient(135deg, #45b7d1 0%, #1d4ed8 100%);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -299,7 +299,7 @@ const ClientTestimonials = () => {
         .stat-number {
           font-size: 2.5rem;
           font-weight: 700;
-          color: #45b7d1;
+          color: #1d4ed8;
           margin-bottom: 8px;
         }
 

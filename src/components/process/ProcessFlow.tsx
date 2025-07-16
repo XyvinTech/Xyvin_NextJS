@@ -10,7 +10,7 @@ const ProcessFlow = () => {
       description:
         "We analyze your requirements, conduct market research, and create a comprehensive project roadmap.",
       icon: Search,
-      color: "#45b7d1",
+      color: "#1d4ed8",
     },
     {
       step: "02",
@@ -18,7 +18,7 @@ const ProcessFlow = () => {
       description:
         "Our design team creates wireframes, mockups, and interactive prototypes for your approval.",
       icon: Palette,
-      color: "#4ecdc4",
+      color: "#1d4ed8",
     },
     {
       step: "03",
@@ -26,7 +26,7 @@ const ProcessFlow = () => {
       description:
         "Agile development with regular testing, code reviews, and quality assurance throughout the process.",
       icon: Zap,
-      color: "#45b7d1",
+      color: "#1d4ed8",
     },
     {
       step: "04",
@@ -34,7 +34,7 @@ const ProcessFlow = () => {
       description:
         "Seamless deployment to production with performance optimization and security configuration.",
       icon: Rocket,
-      color: "#4ecdc4",
+      color: "#1d4ed8",
     },
     {
       step: "05",
@@ -42,7 +42,7 @@ const ProcessFlow = () => {
       description:
         "Ongoing support, updates, and enhancements to ensure optimal performance and security.",
       icon: Wrench,
-      color: "#45b7d1",
+      color: "#1d4ed8",
     },
   ];
 
@@ -138,7 +138,7 @@ const ProcessFlow = () => {
           border-radius: 50px;
           font-size: 14px;
           font-weight: 500;
-          color: #45b7d1;
+          color: #1d4ed8;
           margin-bottom: 24px;
         }
 
@@ -151,7 +151,7 @@ const ProcessFlow = () => {
         }
 
         .highlight {
-          color: #4ecdc4;
+          color: #1d4ed8;
         }
 
         .section-description {
@@ -284,7 +284,7 @@ const ProcessFlow = () => {
         }
 
         .cta-card {
-          background: linear-gradient(135deg, #45b7d1, #4ecdc4);
+          background: linear-gradient(135deg, #45b7d1 0%, #1d4ed8 100%);
           padding: 50px 40px;
           border-radius: 20px;
           color: white;
@@ -309,7 +309,7 @@ const ProcessFlow = () => {
           align-items: center;
           gap: 8px;
           background: white;
-          color: #45b7d1;
+          color: #1d4ed8;
           padding: 14px 28px;
           border: 2px solid transparent;
           border-radius: 50px;
@@ -322,7 +322,7 @@ const ProcessFlow = () => {
         .cta-button:hover {
           transform: translateY(-2px);
           box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-          color: #45b7d1;
+          color: #1d4ed8;
           border-color: white;
         }
 

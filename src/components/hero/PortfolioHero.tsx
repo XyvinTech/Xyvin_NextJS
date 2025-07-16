@@ -57,17 +57,17 @@ const PortfolioHero = () => {
           align-items: center;
           gap: 8px;
           background: rgba(0, 245, 255, 0.1);
-          border: 1px solid #00f5ff;
+          border: 1px solid #1d4ed8;
           border-radius: 50px;
           padding: 8px 20px;
-          color: #00f5ff;
+          color: #1d4ed8;
           font-size: 14px;
           font-weight: 500;
           margin-bottom: 24px;
         }
 
         .badge-icon {
-          color: #00f5ff;
+          color: #1d4ed8;
         }
 
         .hero-title {
@@ -79,7 +79,7 @@ const PortfolioHero = () => {
         }
 
         .text-gradient {
-          background: linear-gradient(45deg, #00f5ff, #4ecdc4);
+          background: linear-gradient(135deg, #45b7d1 0%, #1d4ed8 100%);
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -122,11 +122,11 @@ const PortfolioHero = () => {
         .highlight-item:hover {
           transform: translateY(-2px);
           box-shadow: 0 6px 20px rgba(0, 245, 255, 0.15);
-          border-color: #00f5ff;
+          border-color: #1d4ed8;
         }
 
         .highlight-icon {
-          color: #00f5ff;
+          color: #1d4ed8;
           display: flex;
           align-items: center;
           justify-content: center;

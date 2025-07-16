@@ -85,10 +85,10 @@ const ServiceHero = () => {
           align-items: center;
           gap: 8px;
           background: rgba(96, 206, 180, 0.1);
-          border: 1px solid #45b7d1;
+          border: 1px solid #1d4ed8;
           border-radius: 50px;
           padding: 8px 20px;
-          color: #45b7d1;
+          color: #1d4ed8;
           font-size: 14px;
           font-weight: 500;
           margin-bottom: 24px;
@@ -108,7 +108,7 @@ const ServiceHero = () => {
         }
 
         .text-gradient {
-          background: linear-gradient(45deg, #45b7d1, #4ecdc4);
+          background:  linear-gradient(135deg, #45b7d1 0%, #1d4ed8 100%);
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -139,7 +139,7 @@ const ServiceHero = () => {
         .stat-number {
           font-size: 2.5rem;
           font-weight: bold;
-          color: #45b7d1;
+          color: #1d4ed8;
           display: block;
           line-height: 1;
         }
@@ -173,7 +173,7 @@ const ServiceHero = () => {
         }
 
         .btn-primary {
-          background: linear-gradient(45deg, #45b7d1, #4ecdc4);
+          background:  linear-gradient(135deg, #45b7d1 0%, #1d4ed8 100%);
           color: white;
           border: none;
         }
@@ -186,14 +186,14 @@ const ServiceHero = () => {
 
         .btn-secondary {
           background: transparent;
-          color: #45b7d1;
-          border: 2px solid #45b7d1;
+          color: #1d4ed8;
+          border: 2px solid #1d4ed8;
         }
 
         .btn-secondary:hover {
           background: rgba(150, 206, 180, 0.1);
           transform: translateY(-2px);
-          color: #45b7d1;
+          color: #1d4ed8;
         }
 
         .btn-icon {

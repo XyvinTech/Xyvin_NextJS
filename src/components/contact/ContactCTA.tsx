@@ -39,7 +39,7 @@ const ContactCTA = () => {
       <style jsx>{`
         .contact-cta-section {
           padding: 120px 0;
-          background: linear-gradient(135deg, #45b7d1, #4ecdc4);
+          background: linear-gradient(135deg, #45b7d1 0%, #1d4ed8 100%);
           color: white;
           position: relative;
           overflow: hidden;

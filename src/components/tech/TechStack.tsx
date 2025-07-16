@@ -232,7 +232,7 @@ const TechStack = () => {
           border-radius: 50px;
           font-size: 14px;
           font-weight: 500;
-          color: #00b4d8;
+          color: #1d4ed8;
           margin-bottom: 24px;
         }
 
@@ -245,7 +245,7 @@ const TechStack = () => {
         }
 
         .highlight {
-          color: #00b4d8;
+          color: #1d4ed8;
           position: relative;
         }
 
@@ -256,7 +256,7 @@ const TechStack = () => {
           left: 0;
           width: 100%;
           height: 3px;
-          background: #00b4d8;
+          background: #1d4ed8;
           border-radius: 2px;
         }
 
@@ -417,7 +417,7 @@ const TechStack = () => {
         .stat-number {
           font-size: 2.5rem;
           font-weight: 700;
-          color: #45b7d1;
+          color: #1d4ed8;
           margin-bottom: 8px;
         }
 

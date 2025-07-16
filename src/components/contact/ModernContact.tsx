@@ -521,7 +521,7 @@ const ModernContact = () => {
         .shape {
           position: absolute;
           border-radius: 50%;
-          background: linear-gradient(45deg, #45b7d1, #4ecdc4);
+          background: linear-gradient(135deg, #45b7d1 0%, #1d4ed8 100%);
           opacity: 0.1;
           animation: float 6s ease-in-out infinite;
         }
@@ -579,7 +579,7 @@ const ModernContact = () => {
         }
 
         .text-gradient {
-          background: linear-gradient(45deg, #45b7d1, #4ecdc4);
+          background:linear-gradient(135deg, #45b7d1 0%, #1d4ed8 100%);
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -647,7 +647,7 @@ const ModernContact = () => {
           left: 0;
           right: 0;
           height: 4px;
-          background: linear-gradient(45deg, #45b7d1, #4ecdc4);
+          background:linear-gradient(135deg, #45b7d1 0%, #1d4ed8 100%);
           transform: scaleX(0);
           transition: transform 0.3s ease;
         }
@@ -823,7 +823,7 @@ const ModernContact = () => {
           align-items: center;
           gap: 12px;
           padding: 16px 48px;
-          background: linear-gradient(45deg, #45b7d1, #4ecdc4);
+          background: linear-gradient(135deg, #45b7d1 0%, #1d4ed8 100%);
           color: white;
           border: none;
           border-radius: 50px;

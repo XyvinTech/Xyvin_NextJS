@@ -203,7 +203,7 @@ const ServicesGrid = () => {
         .highlight {
           color: #6366f1;
           position: relative;
-          background: linear-gradient(135deg, #6366f1, #10b981);
+          background: linear-gradient(135deg, #45b7d1 0%, #1d4ed8 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -216,7 +216,7 @@ const ServicesGrid = () => {
           left: 0;
           width: 100%;
           height: 4px;
-          background: linear-gradient(90deg, #6366f1, #10b981);
+          background: linear-gradient(135deg, #45b7d1 0%, #1d4ed8 100%);
           border-radius: 3px;
           opacity: 0.3;
         }
@@ -383,7 +383,7 @@ const ServicesGrid = () => {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          background: linear-gradient(135deg, #45b7d1, #4ecdc4);
+          background: linear-gradient(135deg, #45b7d1 0%, #1d4ed8 100%);;
           padding: 40px 50px;
           border-radius: 20px;
           color: white;

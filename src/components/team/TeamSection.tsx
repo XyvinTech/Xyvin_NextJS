@@ -116,7 +116,7 @@ const TeamSection = () => {
           border-radius: 50px;
           font-size: 14px;
           font-weight: 500;
-          color: #4ecdc4;
+          color: #1d4ed8;
           margin-bottom: 24px;
         }
 
@@ -129,7 +129,7 @@ const TeamSection = () => {
         }
 
         .highlight {
-          color: #4ecdc4;
+          color: #1d4ed8;
         }
 
         .section-description {
@@ -192,11 +192,7 @@ const TeamSection = () => {
           left: 0;
           right: 0;
           bottom: 0;
-          background: linear-gradient(
-            45deg,
-            rgba(78, 205, 196, 0.9),
-            rgba(69, 183, 209, 0.9)
-          );
+          background: linear-gradient(135deg, #45b7d1 0%, #1d4ed8 100%);
           opacity: 0;
           visibility: hidden;
           transition: all 0.3s ease;
@@ -229,14 +225,14 @@ const TeamSection = () => {
           height: 45px;
           background: white;
           border-radius: 50%;
-          color: #4ecdc4;
+          color: #1d4ed8;
           text-decoration: none;
           transition: all 0.3s ease;
           font-size: 16px;
         }
 
         .social-link:hover {
-          background: #4ecdc4;
+          background: #1d4ed8;
           color: white;
           transform: translateY(-3px) scale(1.1);
         }
@@ -255,7 +251,7 @@ const TeamSection = () => {
 
         .member-role {
           font-size: 0.95rem;
-          color: #4ecdc4;
+          color: #1d4ed8;
           font-weight: 500;
           margin-bottom: 15px;
         }
@@ -287,7 +283,7 @@ const TeamSection = () => {
           display: inline-flex;
           align-items: center;
           gap: 8px;
-          background: linear-gradient(45deg, #4ecdc4, #45b7d1);
+          background: linear-gradient(135deg, #45b7d1 0%, #1d4ed8 100%);
           color: white;
           padding: 14px 28px;
           border: none;

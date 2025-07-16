@@ -51,10 +51,10 @@ const AboutHero = () => {
           align-items: center;
           gap: 8px;
           background: rgba(69, 183, 209, 0.1);
-          border: 1px solid #45b7d1;
+          border: 1px solid #1d4ed8;
           border-radius: 50px;
           padding: 8px 20px;
-          color: #45b7d1;
+          color: #1d4ed8;
           font-size: 14px;
           font-weight: 500;
           margin-bottom: 24px;
@@ -73,7 +73,7 @@ const AboutHero = () => {
         }
 
         .text-gradient {
-          background: linear-gradient(45deg, #45b7d1, #4ecdc4);
+          background: linear-gradient(135deg, #45b7d1 0%, #1d4ed8 100%);
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -103,7 +103,7 @@ const AboutHero = () => {
         .stat-number {
           font-size: 2.5rem;
           font-weight: bold;
-          color: #45b7d1;
+          color: #1d4ed8;
           display: block;
           line-height: 1;
         }
