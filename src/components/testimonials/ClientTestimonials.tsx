@@ -92,7 +92,7 @@ const ClientTestimonials = () => {
         <div className="testimonials-footer">
           <div className="stats-container">
             <div className="stat-item">
-              <div className="stat-number">150+</div>
+              <div className="stat-number">75+</div>
               <div className="stat-label">Happy Clients</div>
             </div>
             <div className="stat-item">

@@ -206,8 +206,7 @@ button {
 }
 
 a:hover {
-    text-decoration: none;
-    color: #ff6b00;
+    color: #96ceb4 !important;
 }
 
 table {

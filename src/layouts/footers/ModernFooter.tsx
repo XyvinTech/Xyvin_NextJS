@@ -90,7 +90,8 @@ const ModernFooter: React.FC = () => {
                   </div>
                   <div className="contact-item">
                     <MapPin size={18} className="contact-icon" />
-                    <span>Kochi, Kerala, India</span>
+                    <span>Kochi, India</span><br/>
+                    <span>Dubai, UAE</span>
                   </div>
                 </div>
               </div>
@@ -253,17 +254,16 @@ const ModernFooter: React.FC = () => {
           margin-bottom: 12px;
         }
 
-        .footer-links a {
-          color: #a0a0a0;
+        .modern-footer .footer-links a {
+          color: #a0a0a0 !important;
           text-decoration: none;
           font-size: 0.95rem;
-          transition: all 0.3s ease;
+          transition: color 0.3s ease;
           display: inline-block;
         }
 
-        .footer-links a:hover {
-          color: #96ceb4;
-          transform: translateX(5px);
+        .modern-footer .footer-links a:hover {
+          color: #96ceb4 !important;
         }
 
         .contact-info {
@@ -283,14 +283,14 @@ const ModernFooter: React.FC = () => {
           flex-shrink: 0;
         }
 
-        .contact-item a {
-          color: #a0a0a0;
+        .modern-footer .contact-item a {
+          color: #a0a0a0 !important;
           text-decoration: none;
           transition: color 0.3s ease;
         }
 
-        .contact-item a:hover {
-          color: #96ceb4;
+        .modern-footer .contact-item a:hover {
+          color: #96ceb4 !important;
         }
 
         .newsletter-text {
@@ -383,15 +383,15 @@ const ModernFooter: React.FC = () => {
           justify-content: flex-end;
         }
 
-        .footer-bottom-links a {
-          color: #a0a0a0;
+        .modern-footer .footer-bottom-links a {
+          color: #a0a0a0 !important;
           text-decoration: none;
           font-size: 0.9rem;
           transition: color 0.3s ease;
         }
 
-        .footer-bottom-links a:hover {
-          color: #96ceb4;
+        .modern-footer .footer-bottom-links a:hover {
+          color: #96ceb4 !important;
         }
 
         @media (max-width: 768px) {
@@ -434,6 +434,10 @@ const ModernFooter: React.FC = () => {
           .contact-item {
             justify-content: center;
           }
+        }
+        html body a:hover {
+          color: #96ceb4 !important;
+          background: yellow !important;
         }
       `}</style>
     </footer>

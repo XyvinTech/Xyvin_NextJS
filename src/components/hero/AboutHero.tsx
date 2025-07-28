@@ -23,15 +23,15 @@ const AboutHero = () => {
             </p>
             <div className="hero-stats">
               <div className="stat-item">
-                <div className="stat-number">5+</div>
+                <div className="stat-number">4+</div>
                 <div className="stat-label">Years Experience</div>
               </div>
               <div className="stat-item">
-                <div className="stat-number">150+</div>
+                <div className="stat-number">125+</div>
                 <div className="stat-label">Projects Delivered</div>
               </div>
               <div className="stat-item">
-                <div className="stat-number">50+</div>
+                <div className="stat-number">75+</div>
                 <div className="stat-label">Happy Clients</div>
               </div>
             </div>

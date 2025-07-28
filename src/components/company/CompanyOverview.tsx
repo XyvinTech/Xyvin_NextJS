@@ -13,12 +13,13 @@ import {
   CheckCircle,
   Award
 } from "lucide-react";
+import Link from "next/link";
 
 const CompanyOverview = () => {
   const stats = [
-    { number: "150+", label: "Projects Delivered", icon: Rocket },
-    { number: "50+", label: "Happy Clients", icon: Users },
-    { number: "5+", label: "Years Experience", icon: Briefcase },
+    { number: "125+", label: "Projects Delivered", icon: Rocket },
+    { number: "75+", label: "Happy Clients", icon: Users },
+    { number: "4+", label: "Years Experience", icon: Briefcase },
     { number: "24/7", label: "Support", icon: Clock },
   ];
 
@@ -70,11 +71,15 @@ const CompanyOverview = () => {
             
             <div className="hero-actions">
               <button className="btn-primary">
+                <Link href="/Xyvin/service">
                 Explore Our Solutions
+                </Link>
                 <ArrowRight size={18} />
               </button>
               <button className="btn-secondary">
+                <Link href="/Xyvin/contact">
                 Schedule Consultation
+                </Link>
               </button>
             </div>
           </div>
