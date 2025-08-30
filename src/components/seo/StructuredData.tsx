@@ -168,6 +168,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ type, data }) => {
             },
           ],
         };
+        
 
       case "article":
         if (!data) return null;
