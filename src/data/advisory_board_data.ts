@@ -1,8 +1,9 @@
 import sureshPortrait from "@/assets/img/Suresh_Portrait.jpg";
+import { StaticImageData } from "next/image";
 
 interface AdvisoryBoardType {
 	id: number;
-	img: any;
+	img: StaticImageData; // Proper typing for Next.js images
 	name: string;
 	designation: string;
 	company: string;

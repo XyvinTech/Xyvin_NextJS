@@ -4,7 +4,16 @@ import { createProxyMiddleware } from 'http-proxy-middleware';
 const nextConfig = {
   reactStrictMode: false,
   images: {
-    domains: ['media2.dev.to','darkorange-albatross-944944.hostingersite.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'media2.dev.to',
+      },
+      {
+        protocol: 'https',
+        hostname: 'darkorange-albatross-944944.hostingersite.com',
+      },
+    ],
   },
   async rewrites() {
     return [
