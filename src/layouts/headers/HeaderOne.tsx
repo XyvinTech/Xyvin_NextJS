@@ -8,6 +8,7 @@ import Image from "next/image";
 import logo from "@/assets/img/logo.svg";
 import Logo_white from "@/assets/img/Logo_white.png";
 
+
 interface DataType {
   id: number;
   title: string;
