@@ -12,7 +12,7 @@ interface AdvisoryBoardType {
 const advisory_board_data: AdvisoryBoardType[] = [
 	{
 		id: 1,
-		img: "/assets/img/Suresh - Portrait.jpg",
+		img: "/assets/img/Suresh_Portrait.jpg",
 		name: "Suresh Kumar",
 		designation: "Senior Technology Advisor",
 		company: "Tech Innovations Inc.",
