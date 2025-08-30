@@ -1,6 +1,8 @@
+import sureshPortrait from "@/assets/img/Suresh_Portrait.jpg";
+
 interface AdvisoryBoardType {
 	id: number;
-	img: string;
+	img: any;
 	name: string;
 	designation: string;
 	company: string;
@@ -12,7 +14,7 @@ interface AdvisoryBoardType {
 const advisory_board_data: AdvisoryBoardType[] = [
 	{
 		id: 1,
-		img: "/assets/img/Suresh_Portrait.jpg",
+		img: sureshPortrait,
 		name: "Suresh Kumar",
 		designation: "Senior Technology Advisor",
 		company: "Tech Innovations Inc.",
