@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 
+
 const CompanyOverview = () => {
   const stats = [
     { number: "125+", label: "Projects Delivered", icon: Rocket },
