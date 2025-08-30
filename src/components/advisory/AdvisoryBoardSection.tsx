@@ -20,6 +20,7 @@ const AdvisoryBoardSection = () => {
           </p>
         </div>
 
+
         <div className="advisory-grid">
           {advisory_board_data.map((advisor, index) => (
             <div key={advisor.id} className="advisory-card">
