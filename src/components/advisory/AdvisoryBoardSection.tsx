@@ -9,7 +9,7 @@ const AdvisoryBoardSection = () => {
       <div className="container">
         <div className="section-header">
           <div className="section-badge">
-            <span className="badge-icon">🎯</span>
+            <span className="badge-icon"></span>
             Our Advisors
           </div>
           <h2 className="section-title">
